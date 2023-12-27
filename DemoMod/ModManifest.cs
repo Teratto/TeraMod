@@ -1,0 +1,463 @@
+﻿using CobaltCoreModding.Definitions;
+using CobaltCoreModding.Definitions.ExternalItems;
+using CobaltCoreModding.Definitions.ModContactPoints;
+using CobaltCoreModding.Definitions.ModManifests;
+using CobaltCoreModding.Definitions.OverwriteItems;
+using DemoMod.Actions;
+using DemoMod.Cards;
+using Microsoft.Extensions.Logging;
+
+namespace DemoMod
+{
+    public class ModManifest : IModManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest, IAddinManifest
+    {
+        public static ExternalStatus? demo_status;
+        internal static ICustomEventHub? EventHub;
+        internal static int x = 0;
+        //private ExternalSprite? demo_status_sprite;
+        //private ExternalSprite? DemoAttackSprite;
+        private ExternalDeck? tera_deck;
+        //private ExternalSprite? dracular_border;
+        //private ExternalSprite? mini_dracula_sprite;
+        //private ExternalSprite? pinker_per_border_over_sprite;
+
+        private ISpriteRegistry? sprite_registry;
+        private IAnimationRegistry? animation_registry;
+        private IDeckRegistry? deck_registry;
+       
+
+        public IEnumerable<DependencyEntry> Dependencies => new DependencyEntry[0];
+        public DirectoryInfo? GameRootFolder { get; set; }
+        public ILogger? Logger { get; set; }
+        public DirectoryInfo? ModRootFolder { get; set; }
+        public string Name => "EWanderer.DemoMod.MainManifest";
+
+        public void BootMod(IModLoaderContact contact)
+        {
+            //Nothing to do here lol.
+        }
+
+        /// <summary>
+        /// Convenience method to load a sprite! Call this from the LoadManifest method below!
+        /// </summary>
+        private ExternalSprite LoadSprite(ISpriteRegistry artRegistry, string globalName, string spritesPath)
+        {
+            var path = Path.Combine(ModRootFolder!.FullName, "Sprites", spritesPath);
+            ExternalSprite sprite = new ExternalSprite(globalName, new FileInfo(path));
+            if (!artRegistry.RegisterArt(sprite))
+                throw new Exception("Cannot register sprite.");
+            return sprite;
+        }
+
+        /// <summary>
+        /// Load and register your sprites here!
+        /// </summary>
+        public void LoadManifest(ISpriteRegistry artRegistry)
+        {
+            if (ModRootFolder == null)
+                throw new Exception("No root folder set!");
+
+            sprite_registry = artRegistry;
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Blush1", "BlushIdle\\Bird_Blush_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Blush2", "BlushIdle\\Bird_Blush_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Blush3", "BlushIdle\\Bird_Blush_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Blush4", "BlushIdle\\Bird_Blush_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Blush5", "BlushIdle\\Bird_Blush_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Closed1", "ClosedIdle\\Bird_eyesClosed_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Closed2", "ClosedIdle\\Bird_eyesClosed_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Closed3", "ClosedIdle\\Bird_eyesClosed_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Closed4", "ClosedIdle\\Bird_eyesClosed_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Closed5", "ClosedIdle\\Bird_eyesClosed_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Happy1", "HappyIdle\\Bird_happy_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Happy2", "HappyIdle\\Bird_happy_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Happy3", "HappyIdle\\Bird_happy_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Happy4", "HappyIdle\\Bird_happy_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Happy5", "HappyIdle\\Bird_happy_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.LookAway1", "LookAwayIdle\\Bird_lookAway_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.LookAway2", "LookAwayIdle\\Bird_lookAway_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.LookAway3", "LookAwayIdle\\Bird_lookAway_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.LookAway4", "LookAwayIdle\\Bird_lookAway_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.LookAway5", "LookAwayIdle\\Bird_lookAway_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Nervous1", "LookAwayIdleNervousIdle\\Bird_lookAwayNervous_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Nervous2", "LookAwayIdleNervousIdle\\Bird_lookAwayNervous_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Nervous3", "LookAwayIdleNervousIdle\\Bird_lookAwayNervous_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Nervous4", "LookAwayIdleNervousIdle\\Bird_lookAwayNervous_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Nervous5", "LookAwayIdleNervousIdle\\Bird_lookAwayNervous_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Neutral1", "NormalIdle\\Bird_neutral_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Neutral2", "NormalIdle\\Bird_neutral_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Neutral3", "NormalIdle\\Bird_neutral_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Neutral4", "NormalIdle\\Bird_neutral_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Neutral5", "NormalIdle\\Bird_neutral_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Sad1", "SadIdle\\Bird_Sad_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Sad2", "SadIdle\\Bird_Sad_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Sad3", "SadIdle\\Bird_Sad_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Sad4", "SadIdle\\Bird_Sad_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Sad5", "SadIdle\\Bird_Sad_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Scared1", "ScaredIdle\\Bird_scared_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Scared2", "ScaredIdle\\Bird_scared_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Scared3", "ScaredIdle\\Bird_scared_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Scared4", "ScaredIdle\\Bird_scared_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Scared5", "ScaredIdle\\Bird_scared_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Squint1", "SquintIdle\\Bird_squint_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Squint2", "SquintIdle\\Bird_squint_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Squint3", "SquintIdle\\Bird_squint_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Squint4", "SquintIdle\\Bird_squint_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Squint5", "SquintIdle\\Bird_squint_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.HappyTaxBoi1", "TaxesHappyIdle\\Bird_taxesHappy_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.HappyTaxBoi2", "TaxesHappyIdle\\Bird_taxesHappy_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.HappyTaxBoi3", "TaxesHappyIdle\\Bird_taxesHappy_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.HappyTaxBoi4", "TaxesHappyIdle\\Bird_taxesHappy_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.HappyTaxBoi5", "TaxesHappyIdle\\Bird_taxesHappy_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi1", "TaxesIdle\\Bird_taxes_1.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi2", "TaxesIdle\\Bird_taxes_2.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi3", "TaxesIdle\\Bird_taxes_3.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi4", "TaxesIdle\\Bird_taxes_4.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi5", "TaxesIdle\\Bird_taxes_5.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.TeraBorder", "border_tera.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Mini1", "bird_mini_0.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Panel", "panel_tera.png");
+
+            LoadSprite(artRegistry, "Teratto.TeraMod.taxes", "taxes.png");
+
+        }
+
+        /// <summary>
+        /// Load animations in this Method.
+        /// </summary>
+        public void LoadManifest(IAnimationRegistry registry)
+        {
+            animation_registry = registry;
+
+            //VVVV Animation registry
+            ExternalAnimation blushAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.blush", tera_deck, "blush", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush5")
+            });
+            registry.RegisterAnimation(blushAnimation);
+
+            ExternalAnimation closedAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.closed", tera_deck, "closed", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed5")
+            });
+            registry.RegisterAnimation(closedAnimation);
+
+            ExternalAnimation happyAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happy", tera_deck, "happy", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy5")
+            });
+            registry.RegisterAnimation(happyAnimation);
+
+            ExternalAnimation lookawayAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.lookaway", tera_deck, "lookaway", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway5")
+            });
+            registry.RegisterAnimation(lookawayAnimation);
+
+            ExternalAnimation nervousAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.nervous", tera_deck, "nervous", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous5")
+            });
+            registry.RegisterAnimation(nervousAnimation);
+
+            ExternalAnimation neutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.neutral", tera_deck, "neutral", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral5")
+            });
+            registry.RegisterAnimation(neutralAnimation);
+
+            ExternalAnimation sadAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.sad", tera_deck, "sad", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad5")
+            });
+            registry.RegisterAnimation(sadAnimation);
+
+            ExternalAnimation scaredAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.scared", tera_deck, "scared", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared5")
+            });
+            registry.RegisterAnimation(scaredAnimation);
+
+            ExternalAnimation squintAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.squint", tera_deck, "squint", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint5")
+            });
+            registry.RegisterAnimation(squintAnimation);
+
+            ExternalAnimation happytaxAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happytax", tera_deck, "happytax", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi5")
+            });
+            registry.RegisterAnimation(happytaxAnimation);
+
+            ExternalAnimation taxneutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.taxneutral", tera_deck, "taxneutral", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi1"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi2"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi3"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi4"),
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi5")
+            });
+            registry.RegisterAnimation(taxneutralAnimation);
+
+            ExternalAnimation defaultAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.default", tera_deck, "neutral", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral1")
+            });
+            registry.RegisterAnimation(defaultAnimation);
+
+            ExternalAnimation miniAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.mini", tera_deck, "mini", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Mini1")
+            });
+            registry.RegisterAnimation(miniAnimation);
+
+            // ^ TODO: Copy paste this for each animation
+            // Change the variable name (e.g: ExternalAnimation newAnimationName )
+
+
+
+            // ----------------------------------
+            // Demo mod code commented out below.
+            // ----------------------------------
+
+            //default_animation = new ExternalAnimation("ewanderer.demomod.dracula.neutral", tera_deck ?? throw new NullReferenceException(), "neutral", false, new ExternalSprite[] {
+            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_0),
+            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_1),
+            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_2),
+            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_3),
+            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_4),
+            //});
+
+            //registry.RegisterAnimation(default_animation);
+            //if (mini_dracula_sprite == null)
+            //    throw new Exception();
+
+            //mini_animation = new ExternalAnimation("ewanderer.demomod.dracula.mini", tera_deck, "mini", false, new ExternalSprite[] { mini_dracula_sprite });
+
+            //registry.RegisterAnimation(mini_animation);
+        }
+
+        /// <summary>
+        /// Set up and register custom decks here!
+        /// </summary>
+        public void LoadManifest(IDeckRegistry registry)
+        {
+            deck_registry = registry;
+
+            // TODO FOR TERATTO:
+            // Load your custom border sprite in the `LoadManifest(ISpriteRegistry registry)` method above.
+            // Then Replace the `ExternalSprite.GetRaw` calls here with `sprite_registry.LookupSprite("SpriteId")`
+            // (remember that "SpriteId" needs to match the string that you register the sprites with)
+            ExternalSprite art = ExternalSprite.GetRaw((int)Spr.cards_colorless);
+            ExternalSprite border = sprite_registry.LookupSprite("Teratto.TeraMod.TeraBorder");
+
+            tera_deck = new ExternalDeck("Teratto.TeraMod.Tera", System.Drawing.Color.FromArgb(0x26, 0x6f, 0xd8), System.Drawing.Color.Black, art, border, null);
+
+
+            if (!registry.RegisterDeck(tera_deck))
+                return;
+        }
+
+        /// <summary>
+        /// Set up custom cards here!
+        /// </summary>
+        /// <param name="registry"></param>
+        public void LoadManifest(ICardRegistry registry)
+        {
+            ExternalCard teraEggCard = new ExternalCard("Teratto.TeraMod.TeraEgg", typeof(TeraCardEgg), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            //add card name in english
+            teraEggCard.AddLocalisation("Egg Toss");
+            //register card in the db extender.
+            registry.RegisterCard(teraEggCard);
+
+            ExternalCard teraCardCower = new ExternalCard("Teratto.TeraMod.TeraCower", typeof(TeraCardCower), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardCower.AddLocalisation("Taunt");
+            registry.RegisterCard(teraCardCower);
+
+            ExternalCard teraCardCaw = new ExternalCard("Teratto.TeraMod.TeraCaw", typeof(TeraCardCaw), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardCaw.AddLocalisation("Incessant Cawing");
+            registry.RegisterCard(teraCardCaw);
+
+
+            //
+            // DemoMode code below 
+            //
+
+            ////make card meta data
+            //var card = new ExternalCard("Ewanderer.DemoMod.DemoCard", typeof(EWandererDemoCard), card_art_sprite, null, new string[] { "status.stun" });
+            ////add card name in english
+            //card.AddLocalisation(addin?.tbValue.Text ?? "Schwarzmagier");
+            ////register card in the db extender.
+            //registry.RegisterCard(card);
+        }
+
+        /// <summary>
+        /// Register any card overwrites here! Card overwrites change cards that exist in the base game.
+        /// </summary>
+        public void LoadManifest(ICardOverwriteRegistry registry)
+        {
+            // --------------------------------
+            // DemoMod code commented out below
+            // --------------------------------
+
+            //var new_meta = new CardMetaOverwrite("EWanderer.DemoMod.Meta")
+            //{
+            //    Deck = ExternalDeck.GetRaw((int)Deck.dracula),
+            //    DontLoc = false,
+            //    DontOffer = false,
+            //    ExtraGlossary = new string[] { "Help", "Why" },
+            //    Rarity = (int)Rarity.rare,
+            //    Unreleased = false,
+            //    UpgradesTo = new int[] { (int)Upgrade.A, (int)Upgrade.B },
+            //    WeirdCard = false
+            //};
+
+            //registry.RegisterCardMetaOverwrite(new_meta, typeof(CannonColorless).Name);
+
+            //var better_dodge = new PartialCardStatOverwrite("ewanderer.demomod.betterdodge", typeof(DodgeColorless)) { Cost = 0, Buoyant = true, Retain = true };
+
+            //registry.RegisterCardStatOverwrite(better_dodge);
+
+            ///*
+            //dbRegistry.RegisterCardMetaOverwrite(new_meta, typeof(CannonColorless).Name);
+            //var all_normal_cards = Assembly.GetAssembly(typeof(Card))?.GetTypes().Where(e => !e.IsAbstract && e.IsClass && e.IsSubclassOf(typeof(Card)));
+            //if (all_normal_cards != null)
+            //{
+            //    foreach (var card_type in all_normal_cards)
+            //    {
+            //        var zero_cost_overwrite = new PartialCardStatOverwrite("ewanderer.demomod.partialoverwrite." + card_type.Name, card_type);
+            //        zero_cost_overwrite.Cost = -1;
+            //        registry.RegisterCardStatOverwrite(zero_cost_overwrite);
+            //    }
+            //}
+            //*/
+        }
+
+        public void LoadManifest(ICharacterRegistry registry)
+        {
+            var tera_spr = sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Panel");
+
+            ExternalAnimation default_animation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.default");
+            ExternalAnimation mini_animation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
+
+            var start_cards = new Type[] { typeof(TeraCardEgg) };
+            var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
+            playable_birdnerd_character.AddNameLocalisation("Tera");
+            playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards use enemy debuffs as a resource for gaining movement and attacks.");
+            registry.RegisterCharacter(playable_birdnerd_character);
+        }
+
+        public void LoadManifest(IGlossaryRegisty registry)
+        {
+            var icon = ExternalSprite.GetRaw((int)Spr.icons_ace);
+            var glossary = new ExternalGlossary("Ewanderer.DemoMod.DemoCard.Glossary", "ewandererdemocard", false, ExternalGlossary.GlossayType.action, icon);
+            glossary.AddLocalisation("en", "EWDemoaction", "Have all the cheesecake in the world!");
+            registry.RegisterGlossary(glossary);
+            EWandererDemoAction.glossary_item = glossary.Head;
+        }
+
+        public void LoadManifest(IArtifactRegistry registry)
+        {
+            {
+                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var artifact = new ExternalArtifact("EWanderer.DemoMod.PortableBlackHoleArtifact", typeof(Artifacts.PortableBlackHole), spr, new ExternalGlossary[0], null, null);
+                artifact.AddLocalisation("Black Hole Generator 3000", "Bring your own black hole to a fight. Why would you bring it along? It will consume us all!");
+                registry.RegisterArtifact(artifact);
+            }
+            {
+                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_HealBooster);
+                var artifact = new ExternalArtifact("EWanderer.DemoMod.DemoWingArtifactAA", typeof(Artifacts.DemoWingArtifact), spr, new ExternalGlossary[0], null, new int[] { (int)PType.wing });
+                artifact.AddLocalisation("Solar Wings", "Stylish wings for a stylish commander");
+                registry.RegisterArtifact(artifact);
+            }
+        }
+
+        public void LoadManifest(IStatusRegistry statusRegistry)
+        {
+            //demo_status = new ExternalStatus("EWanderer.DemoMod.DoomStatus", false, System.Drawing.Color.Red, null, demo_status_sprite ?? throw new Exception("missing sprite"), false);
+            //statusRegistry.RegisterStatus(demo_status);
+            //demo_status.AddLocalisation("Radio", "We got a signal. Exciting!");
+
+            ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.taxes");
+
+            ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
+            statusRegistry.RegisterStatus(taxationStatus);
+
+        }
+
+        public void LoadManifest(ICustomEventHub eventHub)
+        {
+            // throw new NotImplementedException();
+            eventHub.MakeEvent<Combat>("EWanderer.DemoMod.TestEvent");
+            eventHub.ConnectToEvent<Combat>("EWanderer.DemoMod.TestEvent", (c) => { c.QueueImmediate(new ACardOffering() { amount = 10, battleType = BattleType.Elite, inCombat = true }); });
+            ModManifest.EventHub = eventHub;
+
+
+            
+
+            //eventHub.ConnectToEvent<Combat>("Teratto.DemoMod.TaxationHandler", (combat) =>
+            //{
+                
+            //});
+
+
+        }
+
+        private DemoAddinPanel? addin;
+
+        public void ModifyLauncher(object? launcherUI)
+        {
+            if (launcherUI is Form)
+            {
+                var parent = launcherUI.GetType().GetField("MainTabControl")?.GetValue(launcherUI) as TabControl;
+                if (parent == null)
+                    return;
+                var page = new TabPage("DemoMod");
+                addin = new DemoAddinPanel();
+                page.Controls.Add(addin);
+                addin.Dock = DockStyle.Fill;
+                parent.TabPages.Add(page);
+            }
+        }
+    }
+}
