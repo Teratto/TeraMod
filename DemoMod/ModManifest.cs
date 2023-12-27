@@ -251,30 +251,6 @@ namespace DemoMod
             });
             registry.RegisterAnimation(miniAnimation);
 
-            // ^ TODO: Copy paste this for each animation
-            // Change the variable name (e.g: ExternalAnimation newAnimationName )
-
-
-
-            // ----------------------------------
-            // Demo mod code commented out below.
-            // ----------------------------------
-
-            //default_animation = new ExternalAnimation("ewanderer.demomod.dracula.neutral", tera_deck ?? throw new NullReferenceException(), "neutral", false, new ExternalSprite[] {
-            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_0),
-            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_1),
-            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_2),
-            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_3),
-            //    ExternalSprite.GetRaw((int)Spr.characters_dracula_dracula_neutral_4),
-            //});
-
-            //registry.RegisterAnimation(default_animation);
-            //if (mini_dracula_sprite == null)
-            //    throw new Exception();
-
-            //mini_animation = new ExternalAnimation("ewanderer.demomod.dracula.mini", tera_deck, "mini", false, new ExternalSprite[] { mini_dracula_sprite });
-
-            //registry.RegisterAnimation(mini_animation);
         }
 
         /// <summary>
@@ -284,10 +260,6 @@ namespace DemoMod
         {
             deck_registry = registry;
 
-            // TODO FOR TERATTO:
-            // Load your custom border sprite in the `LoadManifest(ISpriteRegistry registry)` method above.
-            // Then Replace the `ExternalSprite.GetRaw` calls here with `sprite_registry.LookupSprite("SpriteId")`
-            // (remember that "SpriteId" needs to match the string that you register the sprites with)
             ExternalSprite art = ExternalSprite.GetRaw((int)Spr.cards_colorless);
             ExternalSprite border = sprite_registry.LookupSprite("Teratto.TeraMod.TeraBorder");
 
