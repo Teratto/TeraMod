@@ -1,0 +1,6 @@
+CobaltCore.dll
+bin
+obj
+
+.vs
+*.user
