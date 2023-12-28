@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DemoMod.Cards
-{
+{ //TODO - MAKE THIS INTO A CONDITIONAL CARD
 
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardPayment : Card
+    public class TeraCardRefund : Card
     {
         private int GetTaxAmnt(State s, Combat c)
         {
@@ -41,8 +41,8 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = TaxationStatusPatches.TaxationStatus,
-                        mode = AStatusMode.Set,
-                        statusAmount = 0,
+                        mode = AStatusMode.Add,
+                        statusAmount = -1,
                         targetPlayer = false
 
                     });
@@ -95,12 +95,12 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-                int cost = 1;
-                if (upgrade == Upgrade.B)
-                {
-                     cost = 0;
-                }
-                return new CardData()
+            int cost = 1;
+            if (upgrade == Upgrade.B)
+            {
+                cost = 0;
+            }
+            return new CardData()
             {
                 cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
@@ -109,7 +109,7 @@ namespace DemoMod.Cards
 
         public override string Name()
         {
-            return "TeraCardPayment";
+            return "TeraCardRefund";
         }
     }
 }

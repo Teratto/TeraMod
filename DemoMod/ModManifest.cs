@@ -319,6 +319,14 @@ namespace DemoMod
             teraCardPayment.AddLocalisation("Payment");
             registry.RegisterCard(teraCardPayment);
 
+            ExternalCard teraCardMarketCrash = new ExternalCard("Teratto.TeraMod.TeraMarketCrash", typeof(TeraMarketCrash), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardMarketCrash.AddLocalisation("Market Crash");
+            registry.RegisterCard(teraCardMarketCrash);
+
+            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardRefund.AddLocalisation("Tax Refund");
+            registry.RegisterCard(teraCardRefund);
+
             //
             // DemoMode code below 
             //
