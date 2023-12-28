@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
     //TO DO: Use the missingTera Status in this card
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraMarketCrash : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
@@ -53,7 +53,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
