@@ -67,24 +67,22 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AStatus()
-                    {
-                        targetPlayer = true,
-                        status = Status.evade,
-                        statusAmount = 2
-                    });
                     list.Add(new AMove()
                     {
                         isRandom = true,
                         targetPlayer = true,
                         dir = 1
                     });
+                    list.Add(new AAttack() { damage = 0, fast = true });
+              
                     list.Add(new AMove()
                     {
                         isRandom = true,
                         targetPlayer = true,
                         dir = 2
                     });
+
+                    list.Add(new AAttack() { damage = 0, fast = true });
                     list.Add(new AMove()
                     {
                         isRandom = true,
@@ -103,7 +101,7 @@ namespace DemoMod.Cards
             {
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
-                flippable = upgrade == Upgrade.A
+                //flippable = upgrade == Upgrade.A
             };
         }
 
