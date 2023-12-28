@@ -28,6 +28,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Actions\ATaxingDamage.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Actions\NewFile1.txt" />
+    <None Remove="NewFile1.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="CobaltCore">
       <HintPath>..\CobaltCore.dll</HintPath>
     </Reference>

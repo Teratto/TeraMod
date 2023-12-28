@@ -6,6 +6,8 @@ using CobaltCoreModding.Definitions.OverwriteItems;
 using DemoMod.Actions;
 using DemoMod.Cards;
 using Microsoft.Extensions.Logging;
+using HarmonyLib;
+using System.Runtime.Loader;
 
 namespace DemoMod
 {
@@ -30,11 +32,20 @@ namespace DemoMod
         public DirectoryInfo? GameRootFolder { get; set; }
         public ILogger? Logger { get; set; }
         public DirectoryInfo? ModRootFolder { get; set; }
-        public string Name => "EWanderer.DemoMod.MainManifest";
+        public string Name => "Teratto.TeraMod.MainManifest";
 
         public void BootMod(IModLoaderContact contact)
         {
-            //Nothing to do here lol.
+            // Setup stuff for Harmony
+            AssemblyLoadContext currentAssemblyLoadContext = AssemblyLoadContext.GetLoadContext(typeof(ModManifest).Assembly) ?? AssemblyLoadContext.CurrentContextualReflectionContext ?? AssemblyLoadContext.Default;
+            //currentAssemblyLoadContext.LoadFromAssemblyPath(Path.Combine(ModRootFolder!.FullName, "Shrike.dll"));
+            //currentAssemblyLoadContext.LoadFromAssemblyPath(Path.Combine(ModRootFolder!.FullName, "Shrike.Harmony.dll"));
+            //var perModModLoaderContactType = AccessTools.TypeByName("CobaltCoreModding.Components.Services.PerModModLoaderContact, CobaltCoreModding.Components");
+            //var proxyManagerField = AccessTools.DeclaredField(perModModLoaderContactType, "proxyManager");
+
+            Harmony harmony = new Harmony(Name);
+
+            TaxationStatusPatches.Apply(harmony, Logger);
         }
 
         /// <summary>
@@ -290,6 +301,21 @@ namespace DemoMod
             teraCardCaw.AddLocalisation("Incessant Cawing");
             registry.RegisterCard(teraCardCaw);
 
+            ExternalCard teraCardGetaway = new ExternalCard("Teratto.TeraMod.TeraGetaway", typeof(TeraCardGetaway), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardGetaway.AddLocalisation("Frenzied Getaway");
+            registry.RegisterCard(teraCardGetaway);
+
+            ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardPanic.AddLocalisation("Panic Flight");
+            registry.RegisterCard(teraCardPanic);
+
+            ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardTariff.AddLocalisation("Tariff");
+            registry.RegisterCard(teraCardTariff);
+
+            ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.TeraPayment", typeof(TeraCardPayment), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardPayment.AddLocalisation("Payment");
+            registry.RegisterCard(teraCardPayment);
 
             //
             // DemoMode code below 
@@ -352,7 +378,7 @@ namespace DemoMod
             ExternalAnimation default_animation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.default");
             ExternalAnimation mini_animation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
 
-            var start_cards = new Type[] { typeof(TeraCardEgg) };
+            var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardPayment)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
             playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards use enemy debuffs as a resource for gaining movement and attacks.");
@@ -395,6 +421,7 @@ namespace DemoMod
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
             statusRegistry.RegisterStatus(taxationStatus);
 
+            TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id;
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
