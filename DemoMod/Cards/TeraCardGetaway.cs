@@ -60,9 +60,8 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                cost = 0,
+                cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true
                 //exhaust = upgrade == Upgrade.B
             };
         }
