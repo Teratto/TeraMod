@@ -19,12 +19,6 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
                     list.Add(new ATaxingAttack() 
                     { 
                         Tax = 1,
@@ -33,16 +27,10 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 2,
-                        targetPlayer = true
-                    });
                     list.Add(new ATaxingAttack()
                     {
                         Tax = 1,
-                        damage = 1
+                        damage = 2
                     });
                     break;
 
@@ -56,7 +44,7 @@ namespace DemoMod.Cards
                     list.Add(new ATaxingAttack() 
                     { 
                         Tax = 1,
-                        damage = 2
+                        damage = 1
                     });
                     break;
             }
