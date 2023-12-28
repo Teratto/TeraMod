@@ -16,13 +16,6 @@ namespace DemoMod.Cards
         {
             var list = new List<CardAction>();
 
-            // testing!!!
-            list.Add(new ATaxingAttack()
-            {
-                damage = 1,
-                Tax = 5
-            });
-
             switch (this.upgrade)
             {
                 case Upgrade.None:

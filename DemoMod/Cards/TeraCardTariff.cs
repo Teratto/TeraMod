@@ -25,10 +25,10 @@ namespace DemoMod.Cards
                         statusAmount = 1,
                         targetPlayer = true
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 1
+                    list.Add(new ATaxingAttack() 
+                    { 
+                        Tax = 1,
+                        damage = 1
                     });
                     break;
 
@@ -39,10 +39,10 @@ namespace DemoMod.Cards
                         statusAmount = 2,
                         targetPlayer = true
                     });
-                    list.Add(new AStatus()
+                    list.Add(new ATaxingAttack()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 1
+                        Tax = 1,
+                        damage = 1
                     });
                     break;
 
@@ -53,10 +53,10 @@ namespace DemoMod.Cards
                         statusAmount = 1,
                         targetPlayer = true
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 2
+                    list.Add(new ATaxingAttack() 
+                    { 
+                        Tax = 1,
+                        damage = 2
                     });
                     break;
             }

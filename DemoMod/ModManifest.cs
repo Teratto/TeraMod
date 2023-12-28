@@ -26,7 +26,9 @@ namespace DemoMod
         private ISpriteRegistry? sprite_registry;
         private IAnimationRegistry? animation_registry;
         private IDeckRegistry? deck_registry;
-       
+
+        public static ExternalSprite? TaxesSprite;
+
 
         public IEnumerable<DependencyEntry> Dependencies => new DependencyEntry[0];
         public DirectoryInfo? GameRootFolder { get; set; }
@@ -141,7 +143,7 @@ namespace DemoMod
 
             LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Panel", "panel_tera.png");
 
-            LoadSprite(artRegistry, "Teratto.TeraMod.taxes", "taxes.png");
+            TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.taxes", "taxes.png");
 
         }
 
@@ -419,9 +421,10 @@ namespace DemoMod
             ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.taxes");
 
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
+            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</> damage for every <c=keyword>3</> taxation. (Does not reset to 0)");
             statusRegistry.RegisterStatus(taxationStatus);
 
-            TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id;
+            TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id!;
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
