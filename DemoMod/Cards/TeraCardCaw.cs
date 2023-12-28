@@ -76,7 +76,7 @@ namespace DemoMod.Cards
 
         public override string Name()
         {
-            return "TeraCardEgg";
+            return "TeraCardCaw";
         }
     }
 }

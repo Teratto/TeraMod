@@ -10,45 +10,39 @@ namespace DemoMod.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardCower : Card
+    public class TeraCardTariff : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
+
             switch (this.upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 3,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
-
-                        status = Status.overdrive,
-                        statusAmount = 1,
-                        targetPlayer = false
-
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 1
                     });
                     break;
 
                 case Upgrade.A:
-
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 4,
+                        statusAmount = 2,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
-
-                        status = Status.overdrive,
-                        statusAmount = 1,
-                        targetPlayer = false
-
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 1
                     });
                     break;
 
@@ -56,23 +50,13 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 3,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.tempShield,
-                        statusAmount = 3,
-                        targetPlayer = true
-
-                    });
-                    list.Add(new AStatus()
-                    {
-
-                        status = Status.overdrive,
-                        statusAmount = 2,
-                        targetPlayer = false
-
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 2
                     });
                     break;
             }
@@ -82,17 +66,23 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
+            //int cost = 1;
+          //  if (upgrade == Upgrade.B)
+            //{
+           //     cost = 0;
+           // }
+
             return new CardData()
             {
-                cost = 0,
+                cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
-                //exhaust = upgrade == Upgrade.B
+                exhaust = upgrade == Upgrade.B
             };
         }
 
         public override string Name()
         {
-            return "TeraCardCower";
+            return "TeraCardTariff";
         }
     }
 }

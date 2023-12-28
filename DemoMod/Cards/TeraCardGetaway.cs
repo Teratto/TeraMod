@@ -8,28 +8,34 @@ using System.Threading.Tasks;
 
 namespace DemoMod.Cards
 {
-    
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardEgg : Card
+
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    public class TeraCardGetaway : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
-
-            // testing!!!
-            list.Add(new ATaxingAttack()
-            {
-                damage = 1,
-                Tax = 5
-            });
-
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy= true });
-                    list.Add(new ADrawCard() { count = 1 });
+                    list.Add(new AStatus()
+                    {
+                        status = Status.evade,
+                        statusAmount = 3,
+                        targetPlayer = true
+
+                    });
                     break;
-               
+
+                    list.Add(new AStatus()
+                    {
+                        status = Status.evade,
+                        statusAmount = 3,
+                        targetPlayer = true
+
+                    });
+                    break;
+
                 case Upgrade.A:
                     list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
                     list.Add(new AMove()
@@ -56,14 +62,14 @@ namespace DemoMod.Cards
             {
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true 
+                exhaust = true
                 //exhaust = upgrade == Upgrade.B
             };
         }
 
         public override string Name()
         {
-            return "TeraCardEgg";
+            return "TeraCardGetaway";
         }
     }
 }
