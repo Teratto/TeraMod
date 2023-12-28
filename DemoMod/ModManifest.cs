@@ -143,7 +143,9 @@ namespace DemoMod
 
             LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Panel", "panel_tera.png");
 
-            TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.taxes", "taxes.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.Tera.coin", "coin.png");
+
+            TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.coin", "coin.png");
 
         }
 
@@ -263,6 +265,11 @@ namespace DemoMod
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Mini1")
             });
             registry.RegisterAnimation(miniAnimation);
+
+            ExternalAnimation coinAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.coin", tera_deck, "coin", false, new ExternalSprite[] {
+                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.coin1")
+            });
+            registry.RegisterAnimation(coinAnimation);
 
         }
 
@@ -388,7 +395,7 @@ namespace DemoMod
             ExternalAnimation default_animation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.default");
             ExternalAnimation mini_animation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
 
-            var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardPayment)};
+            var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
             playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards use enemy debuffs as a resource for gaining movement and attacks.");
@@ -426,10 +433,11 @@ namespace DemoMod
             //statusRegistry.RegisterStatus(demo_status);
             //demo_status.AddLocalisation("Radio", "We got a signal. Exciting!");
 
-            ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.taxes");
+            ///FOR CERES - It looks like changing this code to say Teramod.coin breaks the whole status effect?
+            ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.coin");
 
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
-            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</> damage for every <c=keyword>3</> taxation. (Does not reset to 0)");
+            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
             statusRegistry.RegisterStatus(taxationStatus);
 
             TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id!;

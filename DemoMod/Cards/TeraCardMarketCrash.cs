@@ -26,13 +26,14 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 2,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
                         status = Status.missingBooks,
-                        statusAmount = 1
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
                     break;
 
@@ -40,55 +41,48 @@ namespace DemoMod.Cards
 
                     list.Add(new AStatus()
                     {
-                        targetPlayer = true,
-                        status = Status.evade,
-                        statusAmount = 1
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 2
                     });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        status = Status.tempShield,
+                        statusAmount = 2,
+                        targetPlayer = true
                     });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        status = Status.shield,
+                        statusAmount = 2,
+                        targetPlayer = true
                     });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        status = Status.missingBooks,
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AStatus()
-                    {
-                        targetPlayer = true,
-                        status = Status.evade,
-                        statusAmount = 2
-                    });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
-                    });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 2
-                    });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
-                    });
+                list.Add(new AStatus()
+                {
+                    status = TaxationStatusPatches.TaxationStatus,
+                    statusAmount = 3
+                });
+                list.Add(new AStatus()
+                {
+                    status = Status.tempShield,
+                    statusAmount = 3,
+                    targetPlayer = true
+                });
+                list.Add(new AStatus()
+                {
+                    status = Status.missingBooks,
+                    statusAmount = 2,
+                    targetPlayer = true
+
+                });
                     break;
             }
 
@@ -99,9 +93,8 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                cost = 0,
+                cost = 2,
                 art = new Spr?(Spr.cards_GoatDrone),
-                flippable = upgrade == Upgrade.A
             };
         }
 

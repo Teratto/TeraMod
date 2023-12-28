@@ -26,7 +26,7 @@ namespace DemoMod.Cards
                     });
                     break;
 
-                case Upgrade.A:
+                case Upgrade.B:
                     list.Add(new ATaxingAttack()
                     {
                         Tax = 1,
@@ -34,7 +34,7 @@ namespace DemoMod.Cards
                     });
                     break;
 
-                case Upgrade.B:
+                case Upgrade.A:
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
