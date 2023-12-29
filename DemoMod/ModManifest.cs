@@ -334,6 +334,10 @@ namespace DemoMod
             teraCardRefund.AddLocalisation("Tax Refund");
             registry.RegisterCard(teraCardRefund);
 
+            ExternalCard teraCardTaxRun = new ExternalCard("Teratto.TeraMod.TeraTaxRun", typeof(TeraCardTaxRun), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardTaxRun.AddLocalisation("Tax and Run");
+            registry.RegisterCard(teraCardTaxRun);
+
             //
             // DemoMode code below 
             //
