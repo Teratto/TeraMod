@@ -84,13 +84,13 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
                         status = Status.evade,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     break;

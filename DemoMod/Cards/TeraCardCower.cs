@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardCower : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
@@ -62,7 +62,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 4,
                         targetPlayer = true
 
                     });
