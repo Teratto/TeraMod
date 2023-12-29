@@ -50,7 +50,8 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.evade,
-                        statusAmount = 1
+                        statusAmount = 1,
+                        targetPlayer = true
 
                     });
                     list.Add(new AStatus()
@@ -72,8 +73,8 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.evade,
-                        statusAmount = 2
-
+                        statusAmount = 2,
+                        targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
