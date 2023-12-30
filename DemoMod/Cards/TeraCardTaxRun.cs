@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace DemoMod.Cards
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
                     });
@@ -34,7 +35,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.MissingTera,
+                        status = Status.missingBooks,
                         statusAmount = 1,
                         targetPlayer = true
                     });
@@ -43,7 +44,7 @@ namespace DemoMod.Cards
                 case Upgrade.A:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
                     });
@@ -56,7 +57,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.MissingTera,
+                        status = Status.missingBooks,
                         statusAmount = 1,
                         targetPlayer = true
                     });
@@ -66,7 +67,7 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
                     });
@@ -78,7 +79,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.MissingTera,
+                        status = Status.missingBooks,
                         statusAmount = 2,
                         targetPlayer = true
                     });

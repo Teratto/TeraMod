@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace DemoMod.Cards
             int num = 0;
             if (s.route is Combat)
             {
-                num = c.otherShip.Get(TaxationStatusPatches.TaxationStatus);
+                num = c.otherShip.Get(TeraModStatuses.Taxation);
             }
 
             return num;
@@ -31,7 +32,7 @@ namespace DemoMod.Cards
                 case Upgrade.None:
                     list.Add(new AVariableHint()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                     });
                     list.Add(new AAttack()
                     {
@@ -40,7 +41,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         mode = AStatusMode.Set,
                         statusAmount = 0,
                         targetPlayer = false
@@ -52,7 +53,7 @@ namespace DemoMod.Cards
                 case Upgrade.A:
                     list.Add(new AVariableHint()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                     });
                     list.Add(new AAttack()
                     {
@@ -61,7 +62,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         mode = AStatusMode.Set,
                         statusAmount = 1,
                         targetPlayer = false
@@ -72,7 +73,7 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AVariableHint()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                     });
                     list.Add(new AAttack()
                     {
@@ -81,7 +82,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         mode = AStatusMode.Set,
                         statusAmount = 0,
                         targetPlayer = false
