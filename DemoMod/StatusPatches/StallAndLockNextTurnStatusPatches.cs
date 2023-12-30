@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoMod
+namespace DemoMod.StatusPatches
 {
     public static class StallAndLockNextTurnStatusPatches
     {

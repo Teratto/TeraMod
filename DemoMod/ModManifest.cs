@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using HarmonyLib;
 using System.Runtime.Loader;
 using System.Reflection;
+using DemoMod.StatusPatches;
 
 namespace DemoMod
 {
@@ -460,7 +461,7 @@ namespace DemoMod
             taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
             statusRegistry.RegisterStatus(taxationStatus);
 
-            TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id!;
+            TeraModStatuses.Taxation = (Status)taxationStatus.Id!;
 
             ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
             ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
