@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace DemoMod.Cards
             int num = 0;
             if (s.route is Combat)
             {
-                num = c.otherShip.Get(TaxationStatusPatches.TaxationStatus);
+                num = c.otherShip.Get(TeraModStatuses.Taxation);
             }
 
             return num;
@@ -37,7 +38,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = -2,
                         targetPlayer = false
                     });
@@ -53,7 +54,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = -1,
                         targetPlayer = false
                     });
@@ -62,7 +63,7 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
                     });
@@ -75,7 +76,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = -3,
                         targetPlayer = false
                     });

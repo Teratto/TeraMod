@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 { //TODO - MAKE THIS INTO A CONDITIONAL CARD
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardRefund : Card
     {
         private int GetTaxAmnt(State s, Combat c)
@@ -17,7 +18,7 @@ namespace DemoMod.Cards
             int num = 0;
             if (s.route is Combat)
             {
-                num = c.otherShip.Get(TaxationStatusPatches.TaxationStatus);
+                num = c.otherShip.Get(TeraModStatuses.Taxation);
             }
 
             return num;
@@ -29,69 +30,63 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
+                    list.Add(new AAttack()
+                    {
+                        damage = GetTaxAmnt(s, c),
+                        xHint = 1
+                    });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         mode = AStatusMode.Add,
                         statusAmount = -1,
                         targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.tempShield,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.evade,
-                        statusAmount = 1,
-                        targetPlayer = true
+
                     });
 
                     break;
 
                 case Upgrade.A:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
+                    list.Add(new AAttack()
+                    {
+                        damage = GetTaxAmnt(s, c),
+                        xHint = 1
+                    });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
-                        mode = AStatusMode.Add,
-                        statusAmount = -1,
+                        status = TeraModStatuses.Taxation,
+                        mode = AStatusMode.Set,
+                        statusAmount = 1,
                         targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.evade,
-                        statusAmount = 1,
-                        targetPlayer = true
+
                     });
                     break;
 
                 case Upgrade.B:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
+                    list.Add(new AAttack()
+                    {
+                        damage = GetTaxAmnt(s, c),
+                        xHint = 1
+                    });
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
-                        mode = AStatusMode.Add,
-                        statusAmount = -2,
+                        status = TeraModStatuses.Taxation,
+                        mode = AStatusMode.Set,
+                        statusAmount = 0,
                         targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 2,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.evade,
-                        statusAmount = 1,
-                        targetPlayer = true
+
                     });
                     break;
             }
@@ -101,9 +96,14 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
+            int cost = 1;
+            if (upgrade == Upgrade.B)
+            {
+                cost = 0;
+            }
             return new CardData()
             {
-                cost = 1,
+                cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
             };
         }

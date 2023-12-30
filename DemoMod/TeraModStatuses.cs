@@ -8,8 +8,10 @@ namespace DemoMod
 {
     public static class TeraModStatuses
     {
+        public static Status Taxation;
         public static Status MissingTera;
         public static Status EngineStallNextTurn;
         public static Status EngineLockNextTurn;
+        public static Status Interest;
     }
 }

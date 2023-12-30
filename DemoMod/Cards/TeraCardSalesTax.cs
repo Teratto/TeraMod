@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
 
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 3,
                         targetPlayer = true
 
@@ -45,7 +46,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
 
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 3,
                         targetPlayer = true
 
@@ -62,7 +63,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
 
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 6,
                         targetPlayer = true
 

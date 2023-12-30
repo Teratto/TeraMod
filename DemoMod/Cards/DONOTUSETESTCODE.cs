@@ -15,7 +15,7 @@
 
 list.Add(new AStatus()
 {
-    status = TaxationStatusPatches.TaxationStatus,
+    status = TeraModStatuses.TaxationStatus,
     statusAmount = 1
 });
 

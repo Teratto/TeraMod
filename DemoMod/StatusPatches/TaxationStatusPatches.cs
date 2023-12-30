@@ -9,14 +9,11 @@ using System.Reflection.Emit;
 using System.Reflection;
 using DemoMod.Actions;
 
-namespace DemoMod
+namespace DemoMod.StatusPatches
 {
 
     public static class TaxationStatusPatches
     {
-        public static Status TaxationStatus;
-
-
         public static void Apply(Harmony harmony, ILogger logger)
         {
             harmony.Patch(
@@ -28,16 +25,14 @@ namespace DemoMod
                 original: AccessTools.DeclaredMethod(typeof(AAttack), nameof(AAttack.Begin)),
                 transpiler: new HarmonyMethod(typeof(TaxationStatusPatches), nameof(AAttack_Begin_Transpiler))
             );
-
-            
         }
 
         private static void Ship_OnAfterTurn_Postfix(Ship __instance, State s, Combat c)
         {
-            int taxationStatusAmmount = __instance.Get(TaxationStatus);
+            int taxationStatusAmmount = __instance.Get(TeraModStatuses.Taxation);
             if (taxationStatusAmmount >= 3)
             {
-                
+
                 c.QueueImmediate(new AHurt()
                 {
                     hurtShieldsFirst = true,
@@ -72,7 +67,7 @@ namespace DemoMod
 
                         wasAbleToInject = true;
                     }
-                } 
+                }
             }
 
             if (!wasAbleToInject)
@@ -87,7 +82,7 @@ namespace DemoMod
 
             if (attackAction is ATaxingAttack taxingAttackAction)
             {
-                targetShip.Add(TaxationStatus, taxingAttackAction.Tax);
+                targetShip.Add(TeraModStatuses.Taxation, taxingAttackAction.Tax);
             }
         }
 
