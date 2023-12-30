@@ -32,25 +32,53 @@ namespace DemoMod.Cards
                     {
                         status = Status.shield,
                         statusAmount = GetTaxAmnt(s, c),
-                        targetPlayer = true
+                        targetPlayer = true,
+                        mode = AStatusMode.Add 
                     });
-
+                    list.Add(new AStatus()
+                    {
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = -2,
+                        targetPlayer = false
+                    });
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        dir = -1,
-                        targetPlayer = true
-
+                        status = Status.shield,
+                        statusAmount = GetTaxAmnt(s, c),
+                        targetPlayer = true,
+                        mode = AStatusMode.Add
                     });
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new ADrawCard() { count = 1 });
+                    list.Add(new AStatus()
+                    {
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = -1,
+                        targetPlayer = false
+                    });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack() { damage = 2, fast = true, stunEnemy = true });
+                    list.Add(new AStatus()
+                    {
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 1,
+                        targetPlayer = false
+                    });
+                   list.Add(new AStatus()
+                    {
+                        status = Status.shield,
+                        statusAmount = GetTaxAmnt(s, c),
+                        targetPlayer = true,
+                        mode = AStatusMode.Add
+                    });
+                    list.Add(new AStatus()
+                    {
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = -3,
+                        targetPlayer = false
+                    });
                     break;
             }
 
@@ -59,8 +87,20 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
+            string desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove two tax.</c>";
+            if(upgrade == Upgrade.A)
+            {
+                desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
+
+            }
+            else if(upgrade == Upgrade.B)
+            {
+                desc = "Give one <c=status>tax</c>, gain <c=status>shield</c> equal to <c=status>tax</c>, then <c=downside>remove three tax.</c>";
+
+            }
             return new CardData()
             {
+                description = desc,
                 cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
                 //exhaust = upgrade == Upgrade.B
