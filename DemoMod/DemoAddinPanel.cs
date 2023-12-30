@@ -17,11 +17,6 @@ namespace DemoMod
             InitializeComponent();
         }
 
-        private void btnGenerateRandom_Click(object sender, EventArgs e)
-        {
-            tbValue.Text = RandomString(10);
-        }
-
         private static Random random = new Random();
 
         private static string RandomString(int length)
@@ -29,6 +24,19 @@ namespace DemoMod
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length)
                 .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StringBuilder builder = new();
+            textBox1.Clear();
+
+            foreach (KeyValuePair<string, uint> kvp in Colors.colorDict)
+            {
+                builder.AppendLine($"{kvp.Key} - {kvp.Value:x}");
+            }
+
+            textBox1.Text = builder.ToString();
         }
     }
 }
