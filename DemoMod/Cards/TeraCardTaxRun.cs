@@ -35,7 +35,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.missingBooks,
+                        status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true
                     });
@@ -57,7 +57,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.missingBooks,
+                        status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true
                     });
@@ -79,7 +79,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.missingBooks,
+                        status = TeraModStatuses.MissingTera,
                         statusAmount = 2,
                         targetPlayer = true
                     });

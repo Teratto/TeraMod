@@ -29,4 +29,5 @@ list.Add(new AStatus()
 
 //Teratto To Do list
 //1. Program Hefty Tax
+//2. Balance Sales Tax and A taxing escape
 //3. Make Payment a Text Card. 

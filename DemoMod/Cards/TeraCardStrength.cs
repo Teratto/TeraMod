@@ -41,11 +41,6 @@ namespace DemoMod.Cards
                     {
                         changeAmount = 1
                     });
-                    list.Add(new ADrawCard()
-                    {
-                        count = 1
-
-                    });
 
                     break;
 
@@ -96,11 +91,6 @@ namespace DemoMod.Cards
                     list.Add(new AEnergy()
                     {
                         changeAmount = 1
-                    });
-                    list.Add(new ADrawCard()
-                    {
-                        count = 1
-
                     });
 
                     break;
