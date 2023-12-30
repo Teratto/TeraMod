@@ -17,12 +17,7 @@ namespace DemoMod
         public static ExternalStatus? demo_status;
         internal static ICustomEventHub? EventHub;
         internal static int x = 0;
-        //private ExternalSprite? demo_status_sprite;
-        //private ExternalSprite? DemoAttackSprite;
         private static ExternalDeck? tera_deck;
-        //private ExternalSprite? dracular_border;
-        //private ExternalSprite? mini_dracula_sprite;
-        //private ExternalSprite? pinker_per_border_over_sprite;
 
         private ISpriteRegistry? sprite_registry;
         private IAnimationRegistry? animation_registry;
@@ -50,6 +45,7 @@ namespace DemoMod
             harmony = new Harmony(Name);
 
             TaxationStatusPatches.Apply(harmony, Logger);
+            StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
         }
 
         /// <summary>
@@ -473,6 +469,18 @@ namespace DemoMod
             TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
             ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");
             StatusMeta.deckToMissingStatus[(Deck)teraDeck.Id!] = TeraModStatuses.MissingTera;
+
+            ExternalSprite engineStallNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
+            ExternalStatus engineStallNextTurnStatus = new("Teratto.DemoMod.EngineStallNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineStallNextTurnSprite, affectedByTimestop: false);
+            engineStallNextTurnStatus.AddLocalisation("Engine Stall Next Turn", "(write me, teratto!)");
+            statusRegistry.RegisterStatus(engineStallNextTurnStatus);
+            TeraModStatuses.EngineStallNextTurn = (Status)engineStallNextTurnStatus.Id!;
+
+            ExternalSprite engineLockNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
+            ExternalStatus engineLockNextTurnStatus = new("Teratto.DemoMod.EngineLockNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineLockNextTurnSprite, affectedByTimestop: false);
+            engineStallNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "(write me, teratto!)");
+            statusRegistry.RegisterStatus(engineLockNextTurnStatus);
+            TeraModStatuses.EngineLockNextTurn = (Status)engineLockNextTurnStatus.Id!;
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
@@ -481,16 +489,6 @@ namespace DemoMod
             eventHub.MakeEvent<Combat>("EWanderer.DemoMod.TestEvent");
             eventHub.ConnectToEvent<Combat>("EWanderer.DemoMod.TestEvent", (c) => { c.QueueImmediate(new ACardOffering() { amount = 10, battleType = BattleType.Elite, inCombat = true }); });
             ModManifest.EventHub = eventHub;
-
-
-            
-
-            //eventHub.ConnectToEvent<Combat>("Teratto.DemoMod.TaxationHandler", (combat) =>
-            //{
-                
-            //});
-
-
         }
 
         private DemoAddinPanel? addin;
