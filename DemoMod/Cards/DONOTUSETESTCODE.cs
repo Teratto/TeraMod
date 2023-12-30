@@ -22,7 +22,6 @@ list.Add(new AStatus()
 */
 
 //TO DO LIST
-//4. Make a "Tax enemy once every turn" status
 //5. Make Ataxing attack not red, and also have it display its damage and tax application separately
 //6. How do conditional cards???
 //7. How do cards related to energy?
@@ -30,5 +29,4 @@ list.Add(new AStatus()
 
 //Teratto To Do list
 //1. Program Hefty Tax
-//2. Program Interest card
 //3. Make Payment a Text Card. 

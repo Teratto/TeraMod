@@ -47,6 +47,7 @@ namespace DemoMod
 
             TaxationStatusPatches.Apply(harmony, Logger);
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
+            InterestStatusPatches.Apply(harmony, Logger);
         }
 
         /// <summary>
@@ -147,6 +148,8 @@ namespace DemoMod
             TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.coin", "coin.png");
 
             LoadSprite(artRegistry, "Teratto.Teramod.MissingTera", "missingTera.png");
+
+            LoadSprite(artRegistry, "Teratto.Teramod.Taxes", "taxes.png");
 
         }
 
@@ -355,6 +358,10 @@ namespace DemoMod
             teraCardSalesTax.AddLocalisation("Sales Tax");
             registry.RegisterCard(teraCardSalesTax);
 
+            ExternalCard teraCardPersistence = new ExternalCard("Teratto.TeraMod.teraPersistence", typeof(TeraCardPersistence), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardPersistence.AddLocalisation("Persistence");
+            registry.RegisterCard(teraCardPersistence);
+
             //
             // DemoMode code below 
             //
@@ -453,8 +460,6 @@ namespace DemoMod
             //demo_status = new ExternalStatus("EWanderer.DemoMod.DoomStatus", false, System.Drawing.Color.Red, null, demo_status_sprite ?? throw new Exception("missing sprite"), false);
             //statusRegistry.RegisterStatus(demo_status);
             //demo_status.AddLocalisation("Radio", "We got a signal. Exciting!");
-
-            ///FOR CERES - It looks like changing this code to say Teramod.coin breaks the whole status effect?
             ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.coin");
 
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
@@ -482,6 +487,12 @@ namespace DemoMod
             engineLockNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "Gain one engine lock next turn. Decreases by 1 at end of turn.");
             statusRegistry.RegisterStatus(engineLockNextTurnStatus);
             TeraModStatuses.EngineLockNextTurn = (Status)engineLockNextTurnStatus.Id!;
+
+            ExternalSprite interestSprite = sprite_registry.LookupSprite("Teratto.Teramod.Taxes");
+            ExternalStatus interestStatus = new("Teratto.DemoMod.interest", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, interestSprite, affectedByTimestop: false);
+            interestStatus.AddLocalisation("Interest", "Gain one <c=status>tax</c> every turn.");
+            statusRegistry.RegisterStatus(interestStatus);
+            TeraModStatuses.Interest = (Status)interestStatus.Id!;
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
