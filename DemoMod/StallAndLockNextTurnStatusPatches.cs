@@ -17,7 +17,7 @@ namespace DemoMod
         {
             harmony.Patch(
                 original: AccessTools.DeclaredMethod(typeof(Ship), nameof(Ship.OnBeginTurn)),
-                postfix: new HarmonyMethod(typeof(TaxationStatusPatches), nameof(Ship_OnBeginTurn_Postfix))
+                postfix: new HarmonyMethod(typeof(StallAndLockNextTurnStatusPatches), nameof(Ship_OnBeginTurn_Postfix))
             );
         }
 

@@ -284,7 +284,7 @@ namespace DemoMod
             ExternalSprite border = sprite_registry.LookupSprite("Teratto.TeraMod.TeraBorder");
 
             tera_deck = new ExternalDeck("Teratto.TeraMod.Tera", System.Drawing.Color.FromArgb(0x26, 0x6f, 0xd8), System.Drawing.Color.Black, art, border, null);
-
+        
 
             if (!registry.RegisterDeck(tera_deck))
                 return;
@@ -472,13 +472,13 @@ namespace DemoMod
 
             ExternalSprite engineStallNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
             ExternalStatus engineStallNextTurnStatus = new("Teratto.DemoMod.EngineStallNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineStallNextTurnSprite, affectedByTimestop: false);
-            engineStallNextTurnStatus.AddLocalisation("Engine Stall Next Turn", "(write me, teratto!)");
+            engineStallNextTurnStatus.AddLocalisation("Engine Stall Next Turn", "Gain one engine stall next turn. Decreases by 1 at end of turn.");
             statusRegistry.RegisterStatus(engineStallNextTurnStatus);
             TeraModStatuses.EngineStallNextTurn = (Status)engineStallNextTurnStatus.Id!;
 
             ExternalSprite engineLockNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
             ExternalStatus engineLockNextTurnStatus = new("Teratto.DemoMod.EngineLockNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineLockNextTurnSprite, affectedByTimestop: false);
-            engineStallNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "(write me, teratto!)");
+            engineLockNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "Gain one engine lock next turn. Decreases by 1 at end of turn.");
             statusRegistry.RegisterStatus(engineLockNextTurnStatus);
             TeraModStatuses.EngineLockNextTurn = (Status)engineLockNextTurnStatus.Id!;
         }
@@ -526,7 +526,7 @@ namespace DemoMod
                 return;
             }
 
-            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "Tera is missing!");
+            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "The next <c=status>{0}</c> <c=266fd8>Tera</c> card you play does nothing.");
         }
     }
 }

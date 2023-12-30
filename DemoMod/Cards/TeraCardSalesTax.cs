@@ -20,16 +20,9 @@ namespace DemoMod.Cards
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
-                        status = Status.powerdrive,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-
                         status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 3,
-                        targetPlayer = true
+                        statusAmount = 1,
+                        targetPlayer = false
 
                     });
                     break;
@@ -38,15 +31,15 @@ namespace DemoMod.Cards
 
                     list.Add(new AStatus()
                     {
-                        status = Status.powerdrive,
+                        status = TaxationStatusPatches.TaxationStatus,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = false
                     });
                     list.Add(new AStatus()
                     {
 
-                        status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 3,
+                        status = Status.tempShield,
+                        statusAmount = 1,
                         targetPlayer = true
 
                     });
@@ -55,17 +48,9 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = Status.powerdrive,
-                        statusAmount = 2,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-
                         status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 6,
-                        targetPlayer = true
-
+                        statusAmount = 2,
+                        targetPlayer = false
                     });
                     break;
             }
@@ -75,17 +60,13 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            int cost = 1;
-            if (upgrade == Upgrade.A)
-            {
-                cost = 0;
-            }
+            int cost = 0;
             return new CardData()
 
             {
                 cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true
+                exhaust = upgrade == Upgrade.B
             };
         }
         public override string Name()
