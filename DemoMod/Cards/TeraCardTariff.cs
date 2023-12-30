@@ -64,7 +64,7 @@ namespace DemoMod.Cards
             {
                 cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B
+
             };
         }
 
