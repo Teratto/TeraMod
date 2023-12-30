@@ -8,17 +8,18 @@ using DemoMod.Cards;
 using Microsoft.Extensions.Logging;
 using HarmonyLib;
 using System.Runtime.Loader;
+using System.Reflection;
 
 namespace DemoMod
 {
-    public class ModManifest : IModManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest, IAddinManifest
+    public class ModManifest : IModManifest, IPrelaunchManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest, IAddinManifest
     {
         public static ExternalStatus? demo_status;
         internal static ICustomEventHub? EventHub;
         internal static int x = 0;
         //private ExternalSprite? demo_status_sprite;
         //private ExternalSprite? DemoAttackSprite;
-        private ExternalDeck? tera_deck;
+        private static ExternalDeck? tera_deck;
         //private ExternalSprite? dracular_border;
         //private ExternalSprite? mini_dracula_sprite;
         //private ExternalSprite? pinker_per_border_over_sprite;
@@ -29,6 +30,7 @@ namespace DemoMod
 
         public static ExternalSprite? TaxesSprite;
 
+        private Harmony harmony;
 
         public IEnumerable<DependencyEntry> Dependencies => new DependencyEntry[0];
         public DirectoryInfo? GameRootFolder { get; set; }
@@ -45,7 +47,7 @@ namespace DemoMod
             //var perModModLoaderContactType = AccessTools.TypeByName("CobaltCoreModding.Components.Services.PerModModLoaderContact, CobaltCoreModding.Components");
             //var proxyManagerField = AccessTools.DeclaredField(perModModLoaderContactType, "proxyManager");
 
-            Harmony harmony = new Harmony(Name);
+            harmony = new Harmony(Name);
 
             TaxationStatusPatches.Apply(harmony, Logger);
         }
@@ -146,6 +148,8 @@ namespace DemoMod
             LoadSprite(artRegistry, "Teratto.Teramod.Tera.coin", "coin.png");
 
             TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.coin", "coin.png");
+
+            LoadSprite(artRegistry, "Teratto.Teramod.MissingTera", "missingTera.png");
 
         }
 
@@ -458,6 +462,14 @@ namespace DemoMod
             statusRegistry.RegisterStatus(taxationStatus);
 
             TaxationStatusPatches.TaxationStatus = (Status)taxationStatus.Id!;
+
+            ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
+            ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
+            missingTeraStatus.AddLocalisation("Missing Tera", "Tera is missing!");
+            statusRegistry.RegisterStatus(missingTeraStatus);
+            TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
+            ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");
+            StatusMeta.deckToMissingStatus[(Deck)teraDeck.Id!] = TeraModStatuses.MissingTera;
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
@@ -493,6 +505,27 @@ namespace DemoMod
                 addin.Dock = DockStyle.Fill;
                 parent.TabPages.Add(page);
             }
+        }
+
+        public void FinalizePreperations(IPrelaunchContactPoint prelaunchManifest)
+        {
+            harmony.Patch(
+                original: AccessTools.DeclaredMethod(typeof(DB), nameof(DB.LoadStringsForLocale)),
+                postfix: new HarmonyMethod(typeof(ModManifest), nameof(LoadStringsForLocale_Postfix))
+            );
+        }
+
+        private static void LoadStringsForLocale_Postfix(string locale, ref Dictionary<string, string> __result)
+        {
+            Console.WriteLine("Patching Localization for TeraMod...");
+
+            if (locale != "en")
+            {
+                // We aren't localized ;-;
+                return;
+            }
+
+            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "Tera is missing!");
         }
     }
 }

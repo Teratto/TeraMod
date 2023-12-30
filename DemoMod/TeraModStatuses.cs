@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DemoMod
 {
-    // cool beans! test me! yay!
-    internal class TaxationStatus
+    public static class TeraModStatuses
     {
+        public static Status MissingTera;
     }
 }
