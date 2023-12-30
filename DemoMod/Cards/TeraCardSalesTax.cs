@@ -21,7 +21,7 @@ namespace DemoMod.Cards
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
 
@@ -32,7 +32,7 @@ namespace DemoMod.Cards
 
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 1,
                         targetPlayer = false
                     });
@@ -49,7 +49,7 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = TeraModStatuses.Taxation,
                         statusAmount = 2,
                         targetPlayer = false
                     });
