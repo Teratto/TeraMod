@@ -68,7 +68,7 @@ namespace DemoMod.Cards
                 list.Add(new AStatus()
                 {
                     status = TaxationStatusPatches.TaxationStatus,
-                    statusAmount = 3
+                    statusAmount = 4
                 });
                 list.Add(new AStatus()
                 {

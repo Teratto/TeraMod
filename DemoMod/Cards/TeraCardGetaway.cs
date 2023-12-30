@@ -21,12 +21,19 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.evade,
-                        statusAmount = 3,
+                        statusAmount = 2,
                         targetPlayer = true
 
                     });
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.EngineStallNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    });
                     break;
 
+                case Upgrade.A:
                     list.Add(new AStatus()
                     {
                         status = Status.evade,
@@ -34,22 +41,28 @@ namespace DemoMod.Cards
                         targetPlayer = true
 
                     });
-                    break;
-
-                case Upgrade.A:
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        dir = -1,
+                        status = TeraModStatuses.EngineStallNextTurn,
+                        statusAmount = 1,
                         targetPlayer = true
-
                     });
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new ADrawCard() { count = 1 });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack() { damage = 2, fast = true, stunEnemy = true });
+                    list.Add(new AStatus()
+                    {
+                        status = Status.evade,
+                        statusAmount = 4,
+                        targetPlayer = true
+
+                    });
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.EngineLockNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    });
                     break;
             }
 
