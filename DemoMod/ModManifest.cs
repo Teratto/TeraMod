@@ -354,6 +354,9 @@ namespace DemoMod
             teraCardStrength.AddLocalisation("Strength");
             registry.RegisterCard(teraCardStrength);
 
+            ExternalCard teraCardSalesTax = new ExternalCard("Teratto.TeraMod.TeraSalesTax", typeof(TeraCardSalesTax), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardSalesTax.AddLocalisation("Sales Tax");
+            registry.RegisterCard(teraCardSalesTax);
 
             //
             // DemoMode code below 

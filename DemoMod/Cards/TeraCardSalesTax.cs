@@ -9,78 +9,63 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardTaxRun : Card
+    [CardMeta(deck = Deck.test, rarity = Rarity.rare, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    public class TeraCardSalesTax: Card
     {
-       
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
-
             switch (this.upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
-                        status = TaxationStatusPatches.TaxationStatus,
+                        status = Status.powerdrive,
                         statusAmount = 1,
-                        targetPlayer = false
-                    });
-                    list.Add(new AMove()
-                    {
-                        dir = 1,
                         targetPlayer = true
-                        
                     });
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.MissingTera,
-                        statusAmount = 1,
+
+                        status = TaxationStatusPatches.TaxationStatus,
+                        statusAmount = 3,
                         targetPlayer = true
+
                     });
                     break;
 
                 case Upgrade.A:
+
                     list.Add(new AStatus()
                     {
+                        status = Status.powerdrive,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    });
+                    list.Add(new AStatus()
+                    {
+
                         status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 1,
-                        targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.evade,
-                        statusAmount = 1,
+                        statusAmount = 3,
                         targetPlayer = true
 
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.MissingTera,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
-
                     break;
 
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
+                        status = Status.powerdrive,
+                        statusAmount = 2,
+                        targetPlayer = true
+                    });
+                    list.Add(new AStatus()
+                    {
+
                         status = TaxationStatusPatches.TaxationStatus,
-                        statusAmount = 1,
-                        targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.evade,
-                        statusAmount = 2,
+                        statusAmount = 6,
                         targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.MissingTera,
-                        statusAmount = 2,
-                        targetPlayer = true
+
                     });
                     break;
             }
@@ -90,17 +75,22 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            return new CardData()
+            int cost = 1;
+            if (upgrade == Upgrade.A)
             {
-                flippable = (upgrade == Upgrade.None ? true : false),
-                cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
+                cost = 0;
+            }
+            return new CardData()
 
+            {
+                cost = cost,
+                art = new Spr?(Spr.cards_GoatDrone),
+                exhaust = true
             };
         }
         public override string Name()
         {
-            return "TeraCardTaxRun";
+            return "TeraCardDesperation";
         }
     }
 }
