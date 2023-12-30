@@ -28,64 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblDesc = new Label();
-            tbValue = new TextBox();
-            btnGenerateRandom = new Button();
+            button1 = new Button();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // lblDesc
+            // button1
             // 
-            lblDesc.BackColor = System.Drawing.Color.Blue;
-            lblDesc.Dock = DockStyle.Top;
-            lblDesc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDesc.ForeColor = System.Drawing.Color.White;
-            lblDesc.Location = new Point(0, 0);
-            lblDesc.Name = "lblDesc";
-            lblDesc.Size = new Size(526, 34);
-            lblDesc.TabIndex = 0;
-            lblDesc.Text = "Check EWandererDemoCard.Name";
-            lblDesc.TextAlign = ContentAlignment.MiddleCenter;
+            button1.Dock = DockStyle.Top;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(751, 47);
+            button1.TabIndex = 3;
+            button1.Text = "Dump Color Keys";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // tbValue
+            // textBox1
             // 
-            tbValue.Dock = DockStyle.Top;
-            tbValue.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            tbValue.Location = new Point(0, 34);
-            tbValue.Name = "tbValue";
-            tbValue.Size = new Size(526, 35);
-            tbValue.TabIndex = 1;
-            // 
-            // btnGenerateRandom
-            // 
-            btnGenerateRandom.BackColor = System.Drawing.Color.Yellow;
-            btnGenerateRandom.Dock = DockStyle.Fill;
-            btnGenerateRandom.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGenerateRandom.Location = new Point(0, 69);
-            btnGenerateRandom.Name = "btnGenerateRandom";
-            btnGenerateRandom.Size = new Size(526, 371);
-            btnGenerateRandom.TabIndex = 2;
-            btnGenerateRandom.Text = "Generate Random Text";
-            btnGenerateRandom.UseVisualStyleBackColor = false;
-            btnGenerateRandom.Click += btnGenerateRandom_Click;
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(0, 47);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.ScrollBars = ScrollBars.Both;
+            textBox1.Size = new Size(751, 686);
+            textBox1.TabIndex = 4;
             // 
             // DemoAddinPanel
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Green;
-            Controls.Add(btnGenerateRandom);
-            Controls.Add(tbValue);
-            Controls.Add(lblDesc);
+            Controls.Add(textBox1);
+            Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "DemoAddinPanel";
-            Size = new Size(526, 440);
+            Size = new Size(751, 733);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label lblDesc;
-        public TextBox tbValue;
-        private Button btnGenerateRandom;
+        private Button button1;
+        private TextBox textBox1;
     }
 }
