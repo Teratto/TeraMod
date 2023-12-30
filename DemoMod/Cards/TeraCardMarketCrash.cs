@@ -31,7 +31,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.missingBooks,
+                        status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true
                     });
