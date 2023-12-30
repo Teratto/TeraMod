@@ -9,5 +9,7 @@ namespace DemoMod
     public static class TeraModStatuses
     {
         public static Status MissingTera;
+        public static Status EngineStallNextTurn;
+        public static Status EngineLockNextTurn;
     }
 }
