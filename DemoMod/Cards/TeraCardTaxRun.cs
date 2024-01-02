@@ -29,7 +29,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AMove()
                     {
-                        dir = 1,
+                        dir = 2,
                         targetPlayer = true
                         
                     });
@@ -45,15 +45,13 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = false
                     });
-                    list.Add(new AStatus()
+                    list.Add(new AMove()
                     {
-                        status = Status.evade,
-                        statusAmount = 1,
+                        dir = 2,
                         targetPlayer = true
-
                     });
                     list.Add(new AStatus()
                     {
