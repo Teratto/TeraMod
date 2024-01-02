@@ -19,10 +19,11 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new ATaxingAttack()
+                    list.Add(new AAttack()
                     {
-                        Tax = 1,
-                        damage = 0
+                        damage = 0,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     list.Add(new AStatus()
                     {
@@ -45,10 +46,11 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.B:
-                    list.Add(new ATaxingAttack()
+                    list.Add(new AAttack()
                     {
-                        Tax = 1,
-                        damage = 0
+                        damage = 0,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     list.Add(new AStatus()
                     {
@@ -70,10 +72,11 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.A:
-                    list.Add(new ATaxingAttack()
+                    list.Add(new AAttack()
                     {
-                        Tax = 2,
-                        damage = 0
+                        damage = 0,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 2
                     });
                     list.Add(new AStatus()
                     {

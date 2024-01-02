@@ -19,18 +19,20 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new ATaxingAttack() 
+                    list.Add(new AAttack() 
                     { 
-                        Tax = 1,
-                        damage = 1
+                        damage = 1,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new ATaxingAttack()
+                    list.Add(new AAttack()
                     {
-                        Tax = 1,
-                        damage = 2
+                        damage = 2,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     break;
 
@@ -41,10 +43,11 @@ namespace DemoMod.Cards
                         statusAmount = 1,
                         targetPlayer = true
                     });
-                    list.Add(new ATaxingAttack() 
+                    list.Add(new AAttack() 
                     { 
-                        Tax = 1,
-                        damage = 1
+                        damage = 1,
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     break;
             }
