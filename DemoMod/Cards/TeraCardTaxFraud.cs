@@ -40,7 +40,7 @@ namespace DemoMod.Cards
                     statusAmount = -requiredTax,
                     targetPlayer = false
                 });
-                damageToDeal = 3;
+                damageToDeal = upgrade == Upgrade.A ? 4 : 3;
             }
 
             list.Add(new AAttack()
@@ -86,7 +86,6 @@ namespace DemoMod.Cards
             return new CardData()
             {
                 description = desc,
-                unplayable = currentTax < requiredTax,
                 cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
             };

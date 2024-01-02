@@ -30,10 +30,14 @@ list.Add(new AAttack()
 */
 
 //TO DO LIST
-//6. How do conditional cards???
-//7. How do cards related to energy?
-//8. Potential drone that applies tax?
+//1. Implement uncommon x cost card.
+//2. Implement Tenacity.
+//3. Implement "gain one evade every 3 turns"
 
 //Teratto To Do list
-//2. Balance Sales Tax and A taxing escape
-//3. Make Payment a Text Card. 
+//1. Add sprites for all the relics and the two energy statuses
+//2. Fix strength. 
+//3. New common card
+//4. Make taxing escape A flippable
+//5. Add text description for payment
+//6. The first time you exhaust a card each turn, apply one tax?????

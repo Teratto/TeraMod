@@ -76,10 +76,10 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            int cost = 1;
+            int cost = 2;
             if (upgrade == Upgrade.A)
             {
-                cost = 0;
+                cost = 1;
             }
             return new CardData()
 
