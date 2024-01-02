@@ -33,10 +33,13 @@ namespace DemoMod.StatusPatches
             if (taxationStatusAmmount >= 3)
             {
 
+                bool isPlayer = __instance == s.ship;
+
                 c.QueueImmediate(new AHurt()
                 {
                     hurtShieldsFirst = true,
-                    hurtAmount = taxationStatusAmmount / 3
+                    hurtAmount = taxationStatusAmmount / 3,
+                    targetPlayer = isPlayer
                 });
             }
         }
