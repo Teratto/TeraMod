@@ -318,9 +318,9 @@ namespace DemoMod
             teraCardGetaway.AddLocalisation("Frenzied Getaway");
             registry.RegisterCard(teraCardGetaway);
 
-            ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardPanic.AddLocalisation("Panic Flight");
-            registry.RegisterCard(teraCardPanic);
+            //ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            //teraCardPanic.AddLocalisation("Panic Flight");
+            //registry.RegisterCard(teraCardPanic);
 
             ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardTariff.AddLocalisation("Tariff");
@@ -334,8 +334,8 @@ namespace DemoMod
             teraCardMarketCrash.AddLocalisation("Market Crash");
             registry.RegisterCard(teraCardMarketCrash);
 
-            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardRefund.AddLocalisation("Tax Refund");
+            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new string[]{});
+            teraCardRefund.AddLocalisation("Tax Evasion");
             registry.RegisterCard(teraCardRefund);
 
             ExternalCard teraCardTaxRun = new ExternalCard("Teratto.TeraMod.TeraTaxRun", typeof(TeraCardTaxRun), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
