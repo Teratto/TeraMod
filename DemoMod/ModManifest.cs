@@ -365,6 +365,14 @@ namespace DemoMod
             ExternalCard teraCardHefty = new ExternalCard("Teratto.TeraMod.teraHefty", typeof(TeraCardHefty), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardHefty.AddLocalisation("Hefty Tax");
             registry.RegisterCard(teraCardHefty);
+
+            ExternalCard teraCardFraud = new ExternalCard("Teratto.TeraMod.teraFraud", typeof(TeraCardFraud), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardFraud.AddLocalisation("Tax Fraud");
+            registry.RegisterCard(teraCardFraud);
+
+            ExternalCard teraCardWorm = new ExternalCard("Teratto.TeraMod.teraWorm", typeof(TeraCardWorm), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardWorm.AddLocalisation("Gets the Worm");
+            registry.RegisterCard(teraCardWorm);
             //
             // DemoMode code below 
             //
@@ -445,7 +453,7 @@ namespace DemoMod
 
             ExternalSprite conditionalIcon = ExternalSprite.GetRaw((int)Spr.icons_questionMark);
             ExternalGlossary conditionalGlossary = new ExternalGlossary("Teratto.TeraMod.Conditional", "Conditional", false, ExternalGlossary.GlossayType.cardtrait, conditionalIcon);
-            conditionalGlossary.AddLocalisation("en", "Conditional", "I need to make pee pee poo poo oopsie");
+            conditionalGlossary.AddLocalisation("en", "Conditional", "The card can be played only the enemy has enough tax to be spent.");
             registry.RegisterGlossary(conditionalGlossary);
             ConditionalGlossaryKey = conditionalGlossary.Head;
         }
@@ -454,15 +462,21 @@ namespace DemoMod
         {
             {
                 var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
-                var artifact = new ExternalArtifact("EWanderer.DemoMod.PortableBlackHoleArtifact", typeof(Artifacts.PortableBlackHole), spr, new ExternalGlossary[0], null, null);
-                artifact.AddLocalisation("Black Hole Generator 3000", "Bring your own black hole to a fight. Why would you bring it along? It will consume us all!");
+                var artifact = new ExternalArtifact("Teratto.TeraMod.EarlyBird", typeof(Artifacts.TeraArtifactEarlyBird), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("Early Bird", "At the start of combat, gain a <c=card>gets the worm</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
-                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_HealBooster);
-                var artifact = new ExternalArtifact("EWanderer.DemoMod.DemoWingArtifactAA", typeof(Artifacts.DemoWingArtifact), spr, new ExternalGlossary[0], null, new int[] { (int)PType.wing });
-                artifact.AddLocalisation("Solar Wings", "Stylish wings for a stylish commander");
+                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var artifact = new ExternalArtifact("Teratto.TeraMod.Capitalism", typeof(Artifacts.TeraArtifactCapitalism), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("Capitalism", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Start each combat with 3 tax</c>.");
                 registry.RegisterArtifact(artifact);
+            }
+            {
+                //var spr = ExternalSprite.GetRaw((int)Spr.artifacts_HealBooster);
+                //var artifact = new ExternalArtifact("EWanderer.DemoMod.DemoWingArtifactAA", typeof(Artifacts.DemoWingArtifact), spr, new ExternalGlossary[0], null, new int[] { (int)PType.wing });
+                //artifact.AddLocalisation("Solar Wings", "Stylish wings for a stylish commander");
+                //registry.RegisterArtifact(artifact);
             }
         }
 
