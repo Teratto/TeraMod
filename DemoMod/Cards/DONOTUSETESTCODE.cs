@@ -19,6 +19,14 @@ list.Add(new AStatus()
     statusAmount = 1
 });
 
+
+list.Add(new AAttack() 
+{ 
+    damage = 1,
+    status = TeraModStatuses.Taxation,
+    statusAmount = 1
+});
+
 */
 
 //TO DO LIST
