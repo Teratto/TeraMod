@@ -61,7 +61,7 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            int cost = 0;
+            int cost = 1;
             return new CardData()
 
             {
