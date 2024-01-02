@@ -30,7 +30,6 @@ list.Add(new AAttack()
 */
 
 //TO DO LIST
-//5. Make Ataxing attack not red, and also have it display its damage and tax application separately
 //6. How do conditional cards???
 //7. How do cards related to energy?
 //8. Potential drone that applies tax?
