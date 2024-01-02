@@ -38,17 +38,13 @@ namespace DemoMod.Cards
                         targetPlayer = true
 
                     });
-                    list.Add(new AEnergy()
-                    {
-                        changeAmount = 1
-                    });
 
                     break;
 
                 case Upgrade.B:
                     list.Add(new AAttack()
                     {
-                        damage = 0,
+                        damage = 3,
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
                     });
@@ -64,10 +60,6 @@ namespace DemoMod.Cards
                         statusAmount = 1,
                         targetPlayer = true
 
-                    });
-                    list.Add(new AEnergy()
-                    {
-                        changeAmount = 1
                     });
                     break;
 
@@ -90,10 +82,6 @@ namespace DemoMod.Cards
                         statusAmount = 1,
                         targetPlayer = true
 
-                    });
-                    list.Add(new AEnergy()
-                    {
-                        changeAmount = 1
                     });
 
                     break;

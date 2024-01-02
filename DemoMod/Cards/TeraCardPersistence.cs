@@ -70,7 +70,7 @@ namespace DemoMod.Cards
             {
                 cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B
+                exhaust = true
             };
         }
         public override string Name()
