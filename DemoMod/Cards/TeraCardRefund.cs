@@ -62,19 +62,20 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            string desc = "<c=downside>Spend enemy tax once</c> to gain one <c=status>temp shield</c> and one <c=status>evade</c>.";
+            string desc = "<c=downside>Spend one enemy tax</c> to gain one <c=status>temp shield</c> and one <c=status>evade</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "<c=downside>Spend enemy tax once</c> to gain one <c=status>shield</c> and one <c=status>evade</c>.";
+                desc = "<c=downside>Spend one enemy tax</c> to gain one <c=status>shield</c> and one <c=status>evade</c>.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "<c=downside>Spend enemy tax twice</c> to gain two <c=status>temp shield</c> and two <c=status>evade</c>.";
+                desc = "<c=downside>Spend two enemy tax</c> to gain two <c=status>temp shield</c> and two <c=status>evade</c>.";
 
             }
             int requiredTax = GetRequiredTax();
             int currentTax = 0;
+
 
             if (state.route is Combat combat)
             {

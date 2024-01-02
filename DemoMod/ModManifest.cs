@@ -453,7 +453,7 @@ namespace DemoMod
 
             ExternalSprite conditionalIcon = ExternalSprite.GetRaw((int)Spr.icons_questionMark);
             ExternalGlossary conditionalGlossary = new ExternalGlossary("Teratto.TeraMod.Conditional", "Conditional", false, ExternalGlossary.GlossayType.cardtrait, conditionalIcon);
-            conditionalGlossary.AddLocalisation("en", "Conditional", "The card can be played only the enemy has enough tax to be spent.");
+            conditionalGlossary.AddLocalisation("en", "Conditional", "The card can be played only when the enemy has enough tax that can be spent.");
             registry.RegisterGlossary(conditionalGlossary);
             ConditionalGlossaryKey = conditionalGlossary.Head;
         }
