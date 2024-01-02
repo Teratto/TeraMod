@@ -334,7 +334,7 @@ namespace DemoMod
             teraCardMarketCrash.AddLocalisation("Market Crash");
             registry.RegisterCard(teraCardMarketCrash);
 
-            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
             teraCardRefund.AddLocalisation("Tax Refund");
             registry.RegisterCard(teraCardRefund);
 
@@ -430,6 +430,8 @@ namespace DemoMod
             registry.RegisterCharacter(playable_birdnerd_character);
         }
 
+        public static string ConditionalGlossaryKey = "";
+
         public void LoadManifest(IGlossaryRegisty registry)
         {
             var icon = ExternalSprite.GetRaw((int)Spr.icons_ace);
@@ -437,6 +439,12 @@ namespace DemoMod
             glossary.AddLocalisation("en", "EWDemoaction", "Have all the cheesecake in the world!");
             registry.RegisterGlossary(glossary);
             EWandererDemoAction.glossary_item = glossary.Head;
+
+            ExternalSprite conditionalIcon = ExternalSprite.GetRaw((int)Spr.icons_questionMark);
+            ExternalGlossary conditionalGlossary = new ExternalGlossary("Teratto.TeraMod.Conditional", "Conditional", false, ExternalGlossary.GlossayType.cardtrait, conditionalIcon);
+            conditionalGlossary.AddLocalisation("en", "Conditional", "I need to make pee pee poo poo oopsie");
+            registry.RegisterGlossary(conditionalGlossary);
+            ConditionalGlossaryKey = conditionalGlossary.Head;
         }
 
         public void LoadManifest(IArtifactRegistry registry)
