@@ -91,7 +91,7 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                flippable = (upgrade == Upgrade.None ? true : false),
+                flippable = (upgrade == Upgrade.B ? false : true),
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
 

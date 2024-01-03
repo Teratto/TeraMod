@@ -318,9 +318,9 @@ namespace DemoMod
             teraCardGetaway.AddLocalisation("Frenzied Getaway");
             registry.RegisterCard(teraCardGetaway);
 
-            //ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            //teraCardPanic.AddLocalisation("Panic Flight");
-            //registry.RegisterCard(teraCardPanic);
+            ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardPanic.AddLocalisation("Panicked Flight");
+            registry.RegisterCard(teraCardPanic);
 
             ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardTariff.AddLocalisation("Tariff");
@@ -350,7 +350,7 @@ namespace DemoMod
             teraCardDesperation.AddLocalisation("Desperation");
             registry.RegisterCard(teraCardDesperation);
 
-            ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
             teraCardStrength.AddLocalisation("Strength");
             registry.RegisterCard(teraCardStrength);
 
@@ -473,6 +473,12 @@ namespace DemoMod
                 registry.RegisterArtifact(artifact);
             }
             {
+                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var artifact = new ExternalArtifact("Teratto.TeraMod.YearlyPayments", typeof(Artifacts.TeraArtifactYearlyPayments), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("Yearly Payments", "At the start of combat, apply one <c=status>tax</c> to the enemy.");
+                registry.RegisterArtifact(artifact);
+            }
+            {
                 //var spr = ExternalSprite.GetRaw((int)Spr.artifacts_HealBooster);
                 //var artifact = new ExternalArtifact("EWanderer.DemoMod.DemoWingArtifactAA", typeof(Artifacts.DemoWingArtifact), spr, new ExternalGlossary[0], null, new int[] { (int)PType.wing });
                 //artifact.AddLocalisation("Solar Wings", "Stylish wings for a stylish commander");
@@ -495,7 +501,7 @@ namespace DemoMod
 
             ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
             ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
-            missingTeraStatus.AddLocalisation("Missing Tera", "Tera is missing!");
+            missingTeraStatus.AddLocalisation("Missing Tera", "The next x Tera cards you play do nothing.");
             statusRegistry.RegisterStatus(missingTeraStatus);
             TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
             ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");

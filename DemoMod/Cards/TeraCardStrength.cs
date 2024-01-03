@@ -18,11 +18,6 @@ namespace DemoMod.Cards
         {
 
             int requiredTax = 1;
-            if (upgrade == Upgrade.B)
-            {
-                requiredTax = 2;
-
-            }
             return requiredTax;
         }
 
@@ -46,23 +41,30 @@ namespace DemoMod.Cards
                 {
                     changeAmount = 1
                 });
-
             }
+
+            if (enemyTax >= requiredTax && upgrade == Upgrade.A)
+                {
+                list.Add(new ADrawCard()
+                {
+                    count = 1
+                });
+                }
 
             return list;
         }
 
         public override CardData GetData(State state)
         {
-            string desc = "<c=downside>Spend enemy tax once</c> to gain one <c=status>temp shield</c> and one <c=status>evade</c>.";
+            string desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>1 energy</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "<c=downside>Spend enemy tax once</c> to gain one <c=status>shield</c> and one <c=status>evade</c>.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>energy</c> and draw 1 card.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "<c=downside>Spend enemy tax twice</c> to gain two <c=status>temp shield</c> and two <c=status>evade</c>.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>1 energy</c>.";
 
             }
             int requiredTax = GetRequiredTax();
@@ -77,8 +79,9 @@ namespace DemoMod.Cards
             return new CardData()
             {
                 description = desc,
+                retain = upgrade == Upgrade.B ? true : false,
                 unplayable = currentTax < requiredTax,
-                cost = 1,
+                cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
             };
         }

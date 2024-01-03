@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.rare, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardPayment : Card
     {
         private int GetTaxAmnt(State s, Combat c)
@@ -96,14 +96,22 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-                int cost = 1;
-                if (upgrade == Upgrade.B)
-                {
-                     cost = 0;
-                }
+            string desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 0</c>.";
+            if (upgrade == Upgrade.A)
+            {
+                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 1</c>.";
+
+            }
+            else if (upgrade == Upgrade.B)
+            {
+                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 0</c>.";
+
+            }
                 return new CardData()
             {
-                cost = cost,
+                retain = upgrade == Upgrade.B ? true : false,
+                description = desc,
+                cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
             };
         }

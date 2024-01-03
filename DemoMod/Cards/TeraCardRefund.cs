@@ -62,15 +62,15 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            string desc = "<c=downside>Spend one enemy tax</c> to gain one <c=status>temp shield</c> and one <c=status>evade</c>.";
+            string desc = "<c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>temp shield</c> and 1 <c=status>evade</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "<c=downside>Spend one enemy tax</c> to gain one <c=status>shield</c> and one <c=status>evade</c>.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>shield</c> and 1 <c=status>evade</c>.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "<c=downside>Spend two enemy tax</c> to gain two <c=status>temp shield</c> and two <c=status>evade</c>.";
+                desc = "<c=downside>Spend 2 enemy tax</c> to gain 2 <c=status>temp shield</c> and 2 <c=status>evade</c>.";
 
             }
             int requiredTax = GetRequiredTax();
