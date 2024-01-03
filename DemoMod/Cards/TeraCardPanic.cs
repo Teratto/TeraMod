@@ -24,17 +24,12 @@ namespace DemoMod.Cards
                         targetPlayer = true,
                         dir = 1 
                     });
+                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = false });
                     list.Add(new AMove()
                     {
                         isRandom = true,
                         targetPlayer = true,
-                        dir = 1
-                    });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        dir = 2
                     });
                     break;
 
@@ -52,17 +47,12 @@ namespace DemoMod.Cards
                         targetPlayer = true,
                         dir = 1
                     });
+                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = false });
                     list.Add(new AMove()
                     {
                         isRandom = true,
                         targetPlayer = true,
-                        dir = 1
-                    });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        dir = 2
                     });
                     break;
 

@@ -35,9 +35,6 @@ list.Add(new AAttack()
 //3. Implement "gain one evade every 3 turns"
 
 //Teratto To Do list
+//0. Fix the status "Missing Tera Description"
 //1. Add sprites for all the relics and the two energy statuses
-//2. Fix strength. 
-//3. New common card
-//4. Make taxing escape A flippable
-//5. Add text description for payment
 //6. The first time you exhaust a card each turn, apply one tax?????
