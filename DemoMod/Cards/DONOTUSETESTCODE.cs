@@ -30,11 +30,7 @@ list.Add(new AAttack()
 */
 
 //TO DO LIST
-//1. Implement uncommon x cost card.
-//2. Implement Tenacity.
+//1. Implement uncommon x cost card. Apply tax equal to energy. Set energy to 0.
+//2. Implement Tenacity. Add a temporary tenacity to your hand. Discard 2 random cards, then draw 2. 
 //3. Implement "gain one evade every 3 turns"
 
-//Teratto To Do list
-//0. Fix the status "Missing Tera Description"
-//1. Add sprites for all the relics and the two energy statuses
-//6. The first time you exhaust a card each turn, apply one tax?????

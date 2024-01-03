@@ -13,5 +13,6 @@ namespace DemoMod
         public static Status EngineStallNextTurn;
         public static Status EngineLockNextTurn;
         public static Status Interest;
+        public static Status Bailout;
     }
 }

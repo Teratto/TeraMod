@@ -20,12 +20,11 @@ namespace DemoMod.Cards
             {
                 case Upgrade.None:
                     list.Add(new AAttack() { damage = 0, fast = true, stunEnemy= true });
-                    list.Add(new ADrawCard() { count = 1 });
                     break;
                
                 case Upgrade.A:
                     list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new ADrawCard() { count = 2});
+                    list.Add(new ADrawCard() { count = 1});
                     break;
 
                 case Upgrade.B:

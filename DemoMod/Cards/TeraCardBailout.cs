@@ -1,5 +1,6 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
+using DemoMod.StatusPatches;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,37 +10,43 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardMutualBond : Card
+    [CardMeta(deck = Deck.test, rarity = Rarity.rare, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    public class TeraCardBailout : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
-
             switch (this.upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = 1,
-                        targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
+                        status = TeraModStatuses.Bailout,
                         statusAmount = 1,
                         targetPlayer = true
+
                     });
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = true });
-                    list.Add(new ADrawCard() { count = 2 });
+
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 2,
+                        targetPlayer = true
+                    });
+
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack() { damage = 2, fast = true, stunEnemy = true });
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 1,
+                        targetPlayer = true
+                    });
+
                     break;
             }
 
@@ -48,18 +55,22 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            return new CardData()
+            int cost = 1;
+            if (this.upgrade == Upgrade.B)
             {
-                cost = 0,
+                cost = 2;
+            }
+            return new CardData()
+
+            {
+                cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true
-                //exhaust = upgrade == Upgrade.B
+                exhaust = upgrade == Upgrade.B ? false : true
             };
         }
-
         public override string Name()
         {
-            return "TeraCardEgg";
+            return "TeraCardDesperation";
         }
     }
 }
