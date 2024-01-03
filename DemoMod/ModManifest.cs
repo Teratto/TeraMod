@@ -48,6 +48,10 @@ namespace DemoMod
             TaxationStatusPatches.Apply(harmony, Logger);
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
+            BailoutPatches.Apply(harmony, Logger);
+
+
+            Colors.colorDict["tera"] = 0xff266fd8;
         }
 
         /// <summary>
@@ -150,6 +154,11 @@ namespace DemoMod
             LoadSprite(artRegistry, "Teratto.Teramod.MissingTera", "missingTera.png");
 
             LoadSprite(artRegistry, "Teratto.Teramod.Taxes", "taxes.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.StallNext", "Stall Next.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.LockNext", "LockNext.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.BailoutBeta", "BailoutBeta.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.Grant", "Grant.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.FlightTraining", "Grant.png");
 
         }
 
@@ -327,7 +336,7 @@ namespace DemoMod
             registry.RegisterCard(teraCardTariff);
 
             ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.TeraPayment", typeof(TeraCardPayment), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardPayment.AddLocalisation("Payment");
+            teraCardPayment.AddLocalisation("Audit");
             registry.RegisterCard(teraCardPayment);
 
             ExternalCard teraCardMarketCrash = new ExternalCard("Teratto.TeraMod.TeraMarketCrash", typeof(TeraMarketCrash), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
@@ -373,6 +382,14 @@ namespace DemoMod
             ExternalCard teraCardWorm = new ExternalCard("Teratto.TeraMod.teraWorm", typeof(TeraCardWorm), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardWorm.AddLocalisation("Gets the Worm");
             registry.RegisterCard(teraCardWorm);
+
+            ExternalCard teraCardHealthInsurance = new ExternalCard("Teratto.TeraMod.teraHealthInsurance", typeof(TeraCardHealthInsurance), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardHealthInsurance.AddLocalisation("Health Insurance");
+            registry.RegisterCard(teraCardHealthInsurance);
+
+            ExternalCard teraCardBailout = new ExternalCard("Teratto.TeraMod.teraBailout", typeof(TeraCardBailout), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardBailout.AddLocalisation("Bailout");
+            registry.RegisterCard(teraCardBailout);
             //
             // DemoMode code below 
             //
@@ -437,7 +454,7 @@ namespace DemoMod
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
-            playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards use enemy debuffs as a resource for gaining movement and attacks.");
+            playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards debuff enemies, while also debuffing yourself.");
             registry.RegisterCharacter(playable_birdnerd_character);
         }
 
@@ -463,27 +480,36 @@ namespace DemoMod
             {
                 var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
                 var artifact = new ExternalArtifact("Teratto.TeraMod.EarlyBird", typeof(Artifacts.TeraArtifactEarlyBird), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("Early Bird", "At the start of combat, gain a <c=card>gets the worm</c>.");
+                artifact.AddLocalisation("EARLY BIRD", "At the start of combat, gain a <c=card>gets the worm</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
                 var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
                 var artifact = new ExternalArtifact("Teratto.TeraMod.Capitalism", typeof(Artifacts.TeraArtifactCapitalism), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("Capitalism", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Start each combat with 3 tax</c>.");
+                artifact.AddLocalisation("CAPITALISM", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Start each combat with 3 tax</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
                 var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
                 var artifact = new ExternalArtifact("Teratto.TeraMod.YearlyPayments", typeof(Artifacts.TeraArtifactYearlyPayments), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("Yearly Payments", "At the start of combat, apply one <c=status>tax</c> to the enemy.");
+                artifact.AddLocalisation("YEARLY PAYMENTS", "At the start of combat, apply one <c=status>tax</c> to the enemy.");
+                registry.RegisterArtifact(artifact);
+            }
+            { 
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.Grant");
+                var artifact = new ExternalArtifact("Teratto.TeraMod.Grant", typeof(Artifacts.TeraArtifactGovernmentGrants), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("GOVERNMENT GRANT", "At the start of combat, gain 1 <c=status>bailout</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
-                //var spr = ExternalSprite.GetRaw((int)Spr.artifacts_HealBooster);
-                //var artifact = new ExternalArtifact("EWanderer.DemoMod.DemoWingArtifactAA", typeof(Artifacts.DemoWingArtifact), spr, new ExternalGlossary[0], null, new int[] { (int)PType.wing });
-                //artifact.AddLocalisation("Solar Wings", "Stylish wings for a stylish commander");
-                //registry.RegisterArtifact(artifact);
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.FlightTraining");
+                var artifact = new ExternalArtifact("Teratto.TeraMod.FlightTraining", typeof(Artifacts.TeraArtifactFlightTraining), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("FLIGHT TRAINING", "Gain 1 <c=status>evade</c> every 3 turns.");
+                registry.RegisterArtifact(artifact);
             }
+
+
+
         }
 
         public void LoadManifest(IStatusRegistry statusRegistry)
@@ -501,21 +527,21 @@ namespace DemoMod
 
             ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
             ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
-            missingTeraStatus.AddLocalisation("Missing Tera", "The next x Tera cards you play do nothing.");
+            missingTeraStatus.AddLocalisation("Tera is Missing", "The next {0} <c=tera>Tera</c> cards you play do nothing.");
             statusRegistry.RegisterStatus(missingTeraStatus);
             TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
             ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");
             StatusMeta.deckToMissingStatus[(Deck)teraDeck.Id!] = TeraModStatuses.MissingTera;
 
-            ExternalSprite engineStallNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
+            ExternalSprite engineStallNextTurnSprite = sprite_registry!.LookupSprite("Teratto.Teramod.StallNext");
             ExternalStatus engineStallNextTurnStatus = new("Teratto.DemoMod.EngineStallNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineStallNextTurnSprite, affectedByTimestop: false);
-            engineStallNextTurnStatus.AddLocalisation("Engine Stall Next Turn", "Gain one engine stall next turn. Decreases by 1 at end of turn.");
+            engineStallNextTurnStatus.AddLocalisation("Engine Stall Next Turn", "<c=downside>Gain one <c=status>engine stall</c> next turn</c>. Decreases by 1 at end of turn.");
             statusRegistry.RegisterStatus(engineStallNextTurnStatus);
             TeraModStatuses.EngineStallNextTurn = (Status)engineStallNextTurnStatus.Id!;
 
-            ExternalSprite engineLockNextTurnSprite = ExternalSprite.GetRaw((int)Spr.icons_engineStall);
+            ExternalSprite engineLockNextTurnSprite = sprite_registry!.LookupSprite("Teratto.Teramod.LockNext");
             ExternalStatus engineLockNextTurnStatus = new("Teratto.DemoMod.EngineLockNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineLockNextTurnSprite, affectedByTimestop: false);
-            engineLockNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "Gain one engine lock next turn. Decreases by 1 at end of turn.");
+            engineLockNextTurnStatus.AddLocalisation("Engine Lock Next Turn", "<c=downside>Gain one <c=status>engine lock</c> next turn</c>. Decreases by 1 at end of turn.");
             statusRegistry.RegisterStatus(engineLockNextTurnStatus);
             TeraModStatuses.EngineLockNextTurn = (Status)engineLockNextTurnStatus.Id!;
 
@@ -524,6 +550,14 @@ namespace DemoMod
             interestStatus.AddLocalisation("Interest", "Gain one <c=status>tax</c> every turn.");
             statusRegistry.RegisterStatus(interestStatus);
             TeraModStatuses.Interest = (Status)interestStatus.Id!;
+
+            ExternalSprite bailoutSprite = sprite_registry.LookupSprite("Teratto.Teramod.BailoutBeta");
+            ExternalStatus bailoutStatus = new("Teratto.DemoMod.bailout", true, Colors.status.ToSys(), Colors.statusBorderColor.ToSys(), bailoutSprite, affectedByTimestop: false);
+            bailoutStatus.AddLocalisation("Bailout", "The next time you would gain any amount of a <c=status>negative status</c>, instead remove 1 bailout.");
+            statusRegistry.RegisterStatus(bailoutStatus);
+            TeraModStatuses.Bailout = (Status)bailoutStatus.Id!;
+
+
         }
 
         public void LoadManifest(ICustomEventHub eventHub)
@@ -569,7 +603,7 @@ namespace DemoMod
                 return;
             }
 
-            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "The next <c=status>{0}</c> <c=266fd8>Tera</c> card you play does nothing.");
+            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "<c=tera>TERA..?</c>\nTera is missing.");
         }
     }
 }
