@@ -287,6 +287,10 @@ namespace DemoMod
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.coin1")
             });
             registry.RegisterAnimation(coinAnimation);
+            ExternalAnimation deathAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.GameOver", tera_deck, "gameover", false, new ExternalSprite[]
+            {
+                sprite_registry!.LookupSprite("Teratto.Teramod.Tera.GameOver"),
+            });
 
         }
 

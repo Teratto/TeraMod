@@ -39,7 +39,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = -2,
+                        statusAmount = -1,
                         targetPlayer = false
                     });
                     break;
@@ -51,12 +51,6 @@ namespace DemoMod.Cards
                         statusAmount = GetTaxAmnt(s, c),
                         targetPlayer = true,
                         mode = AStatusMode.Add
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = -1,
-                        targetPlayer = false
                     });
                     break;
 
@@ -77,7 +71,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = -3,
+                        statusAmount = -2,
                         targetPlayer = false
                     });
                     break;
@@ -88,15 +82,15 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            string desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove two tax.</c>";
+            string desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
             if(upgrade == Upgrade.A)
             {
-                desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
+                desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>.";
 
             }
             else if(upgrade == Upgrade.B)
             {
-                desc = "Give one <c=status>tax</c>, gain <c=status>shield</c> equal to <c=status>tax</c>, then <c=downside>remove three tax.</c>";
+                desc = "Give one <c=status>tax</c>, gain <c=status>shield</c> equal to <c=status>tax</c>, then <c=downside>remove two tax.</c>";
 
             }
             return new CardData()
