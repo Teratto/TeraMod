@@ -31,6 +31,4 @@ list.Add(new AAttack()
 
 //TO DO LIST
 //1. Implement uncommon x cost card. Apply tax equal to energy. Set energy to 0.
-//2. Implement Tenacity. Add a temporary tenacity to your hand. Discard 2 random cards, then draw 2. 
-//3. Implement "gain one evade every 3 turns"
 
