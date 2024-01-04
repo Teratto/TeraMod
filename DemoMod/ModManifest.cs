@@ -158,7 +158,10 @@ namespace DemoMod
             LoadSprite(artRegistry, "Teratto.Teramod.LockNext", "LockNext.png");
             LoadSprite(artRegistry, "Teratto.Teramod.BailoutBeta", "BailoutBeta.png");
             LoadSprite(artRegistry, "Teratto.Teramod.Grant", "Grant.png");
-            LoadSprite(artRegistry, "Teratto.Teramod.FlightTraining", "Grant.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.FlightTraining", "FlightTraining.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.YearlyPayments", "YearlyPayments.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.Capitalism", "Capitalism.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.EarlyBird", "EarlyBird.png");
 
         }
 
@@ -478,19 +481,19 @@ namespace DemoMod
         public void LoadManifest(IArtifactRegistry registry)
         {
             {
-                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.EarlyBird");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.EarlyBird", typeof(Artifacts.TeraArtifactEarlyBird), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("EARLY BIRD", "At the start of combat, gain a <c=card>gets the worm</c>.");
+                artifact.AddLocalisation("EARLY BIRD", "At the start of combat, gain a <c=card>Gets the Worm</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
-                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.Capitalism");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.Capitalism", typeof(Artifacts.TeraArtifactCapitalism), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
                 artifact.AddLocalisation("CAPITALISM", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Start each combat with 3 tax</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
-                var spr = ExternalSprite.GetRaw((int)Spr.artifacts_AresCannon);
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.YearlyPayments");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.YearlyPayments", typeof(Artifacts.TeraArtifactYearlyPayments), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
                 artifact.AddLocalisation("YEARLY PAYMENTS", "At the start of combat, apply one <c=status>tax</c> to the enemy.");
                 registry.RegisterArtifact(artifact);
