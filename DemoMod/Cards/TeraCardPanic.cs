@@ -18,66 +18,40 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AMove()
+                    list.Add(new ADrawCard()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1 
+                        count = 4
                     });
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = false });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 2
-                    });
-                    break;
-
-                case Upgrade.A:
-
                     list.Add(new AStatus()
                     {
-                        targetPlayer = true,
-                        status = Status.evade,
-                        statusAmount = 1
+                        status = TeraModStatuses.MissingTera,
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
-                    list.Add(new AMove()
+                    break;
+           case Upgrade.A:
+                    list.Add(new ADrawCard()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        count = 6
                     });
-                    list.Add(new AAttack() { damage = 0, fast = true, stunEnemy = false });
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 2
+                        status = TeraModStatuses.MissingTera,
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AMove()
+                    list.Add(new ADrawCard()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        count = 9
                     });
-                    list.Add(new AAttack() { damage = 0, fast = true });
-              
-                    list.Add(new AMove()
+                    list.Add(new AStatus()
                     {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 2
-                    });
-
-                    list.Add(new AAttack() { damage = 0, fast = true });
-                    list.Add(new AMove()
-                    {
-                        isRandom = true,
-                        targetPlayer = true,
-                        dir = 1
+                        status = TeraModStatuses.MissingTera,
+                        statusAmount = 2,
+                        targetPlayer = true
                     });
                     break;
             }
@@ -89,9 +63,9 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                cost = 0,
+                cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
-                //flippable = upgrade == Upgrade.A
+                exhaust = upgrade == Upgrade.B
             };
         }
 

@@ -84,7 +84,6 @@ namespace DemoMod.Cards
                 desc = "Apply <c=status>tax</c> equal to your current energy. <c=downside>Lose 3 energy</c>.";
 
             }
-            s
 
             return new CardData()
             {
