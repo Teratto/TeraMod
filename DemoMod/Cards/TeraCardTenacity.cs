@@ -30,31 +30,41 @@ namespace DemoMod.Cards
                         destination = CardDestination.Hand,
                         amount = 1,
                     });
+                    list.Add(new ADrawCard()
+                    {
+                        count = 2
+                    });
+                    list.Add(new ADiscard()
+                    {
+                        count = 3
+                    });
                     break;
 
                 case Upgrade.A:
-
-                    list.Add(new AStatus()
+                    list.Add(new AAddCard()
                     {
-                        status = TeraModStatuses.Interest,
-                        statusAmount = 1,
-                        targetPlayer = false
+                        card = new TeraCardTenacity()
+                        {
+                            isTemporary = true
+                        },
+                        destination = CardDestination.Hand,
+                        amount = 1,
+                    });
+                    list.Add(new ADiscard()
+                    {
+                        count = 3
+                    });
+                    list.Add(new ADrawCard()
+                    {
+                        count = 2
                     });
 
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AStatus()
+                    list.Add(new ADrawCard()
                     {
-                        status = TeraModStatuses.Interest,
-                        statusAmount = 1,
-                        targetPlayer = false
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = 2,
-                        targetPlayer = false
+                        count = 2
                     });
                     break;
             }
@@ -64,10 +74,10 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            int cost = 3;
-            if (this.upgrade == Upgrade.A)
+            int cost = 0;
+            if (this.upgrade == Upgrade.B)
             {
-                cost = 2;
+                cost = 1;
             }
             return new CardData()
 
@@ -75,7 +85,8 @@ namespace DemoMod.Cards
                 temporary = isTemporary,
                 cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true
+                exhaust = upgrade == Upgrade.B ? false : true,
+                infinite = upgrade == Upgrade.B ? true : false
             };
         }
         public override string Name()

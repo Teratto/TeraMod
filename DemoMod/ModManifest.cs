@@ -146,6 +146,7 @@ namespace DemoMod
             LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Mini1", "bird_mini_0.png");
 
             LoadSprite(artRegistry, "Teratto.TeraMod.Tera.Panel", "panel_tera.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.GameOver", "bird_GameOver_0.png");
 
             LoadSprite(artRegistry, "Teratto.Teramod.Tera.coin", "coin.png");
 
@@ -393,6 +394,14 @@ namespace DemoMod
             ExternalCard teraCardBailout = new ExternalCard("Teratto.TeraMod.teraBailout", typeof(TeraCardBailout), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardBailout.AddLocalisation("Bailout");
             registry.RegisterCard(teraCardBailout);
+
+            ExternalCard teraCardTenacity = new ExternalCard("Teratto.TeraMod.teraTenacity", typeof(TeraCardTenacity), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardTenacity.AddLocalisation("Tenacity");
+            registry.RegisterCard(teraCardTenacity);
+
+            ExternalCard teraCardAllIn = new ExternalCard("Teratto.TeraMod.teraAllIn", typeof(TeraCardAllIn), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardAllIn.AddLocalisation("All-In");
+            registry.RegisterCard(teraCardAllIn);
             //
             // DemoMode code below 
             //
@@ -453,6 +462,7 @@ namespace DemoMod
 
             ExternalAnimation default_animation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.default");
             ExternalAnimation mini_animation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
+        
 
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
