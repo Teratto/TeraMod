@@ -324,7 +324,7 @@ namespace DemoMod
             registry.RegisterCard(teraCardCower);
 
             ExternalCard teraCardCaw = new ExternalCard("Teratto.TeraMod.TeraCaw", typeof(TeraCardCaw), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardCaw.AddLocalisation("Incessant Cawing");
+            teraCardCaw.AddLocalisation("Breakout");
             registry.RegisterCard(teraCardCaw);
 
             ExternalCard teraCardGetaway = new ExternalCard("Teratto.TeraMod.TeraGetaway", typeof(TeraCardGetaway), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
@@ -332,7 +332,7 @@ namespace DemoMod
             registry.RegisterCard(teraCardGetaway);
 
             ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardPanic.AddLocalisation("Panicked Flight");
+            teraCardPanic.AddLocalisation("Number Crunching");
             registry.RegisterCard(teraCardPanic);
 
             ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));

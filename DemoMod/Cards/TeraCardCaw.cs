@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.rare, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardCaw : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
@@ -18,45 +18,38 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack() {damage = 1, fast = true });
-                    list.Add(new AAttack() { damage = 1, fast = true });
-                    list.Add(new AAttack() { damage = 1, fast = true });
+                    list.Add(new AAttack() { damage = 2, fast = true });
                     list.Add(new AStatus()
                     {
 
-                        status = Status.overdrive,
+                        status = TeraModStatuses.Bailout,
                         statusAmount = 1,
-                        targetPlayer = false
-
-                    });
-                    break;
-
-                case Upgrade.A:
-
-                    list.Add(new AAttack() {damage = 1, fast = true });
-                    list.Add(new AAttack() { damage = 1, fast = true, piercing = true});
-                    list.Add(new AAttack() { damage = 1, fast = true, piercing = true});
-
-                    list.Add(new AStatus()
-                    {
-
-                        status = Status.overdrive,
-                        statusAmount = 1,
-                        targetPlayer = false
+                        targetPlayer = true
 
                     });
                     break;
 
                 case Upgrade.B:
-                list.Add(new AAttack() { damage = 1, fast = true });
-                list.Add(new AAttack() { damage = 5, fast = true, stunEnemy = true });
+
+                    list.Add(new AAttack() { damage = 2, fast = true });
                     list.Add(new AStatus()
                     {
 
-                        status = Status.overdrive,
+                        status = TeraModStatuses.Bailout,
                         statusAmount = 2,
-                        targetPlayer = false
+                        targetPlayer = true
 
+                    });
+                    break;
+
+                case Upgrade.A:
+                    list.Add(new AAttack() { damage = 3, fast = true });
+                    list.Add(new AStatus()
+                    {
+
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
                     break;
             }
@@ -68,9 +61,10 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                cost = 1,
+                cost = 2,
                 art = new Spr?(Spr.cards_GoatDrone),
-                //exhaust = upgrade == Upgrade.B
+                exhaust = upgrade == Upgrade.B,
+                 
             };
         }
 

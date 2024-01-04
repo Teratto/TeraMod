@@ -30,10 +30,6 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -51,10 +47,6 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -71,10 +63,6 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -96,15 +84,15 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            string desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 0</c>.";
+            string desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 0</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 1</c>.";
+                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 1</c>.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set tax to 0</c>.";
+                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 0</c>.";
 
             }
                 return new CardData()
