@@ -49,6 +49,7 @@ namespace DemoMod
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
             BailoutPatches.Apply(harmony, Logger);
+            PatchAnyColor.Apply(harmony, Logger);
 
 
             Colors.colorDict["tera"] = 0xff266fd8;
