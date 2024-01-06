@@ -22,7 +22,7 @@ list.Add(new AStatus()
 
 list.Add(new AAttack() 
 { 
-    damage = 1,
+    damage = GetDmg(s, 1),
     status = TeraModStatuses.Taxation,
     statusAmount = 1
 });
