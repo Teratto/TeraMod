@@ -87,7 +87,7 @@ namespace DemoMod.Cards
             {
                 description = desc,
                 unplayable = currentTax < requiredTax,
-                cost = 1,
+                cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
             };
         }
