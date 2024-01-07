@@ -5,9 +5,9 @@ using HarmonyLib;
 using Microsoft.Extensions.Logging;
 
 
-namespace DemoMod
+namespace DemoMod.BaseGamePatches
 {
-    public static class PatchAnyColor
+    public static class PatchDeckEnumeration
     {
         private static ILogger? _logger;
 
@@ -15,7 +15,7 @@ namespace DemoMod
         {
             _logger = logger;
 
-            HarmonyMethod transpiler = new(typeof(PatchAnyColor), nameof(AnyColorTranspiler));
+            HarmonyMethod transpiler = new(typeof(PatchDeckEnumeration), nameof(GetActionsTranspiler));
 
             // Patch the GetAction method of every card class.
             Type cardType = typeof(Card);
@@ -36,7 +36,7 @@ namespace DemoMod
             }
         }
 
-        private static IEnumerable<CodeInstruction> AnyColorTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator, MethodBase original)
+        private static IEnumerable<CodeInstruction> GetActionsTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator, MethodBase original)
         {
             List<CodeInstruction> instructionBuffer = new();
 
@@ -60,9 +60,9 @@ namespace DemoMod
         private static void TryInterceptDeckBug(IEnumerator<CodeInstruction> instructionEnumerator, List<CodeInstruction> instructionBuffer, MethodBase original)
         {
             // Intercept code which looks like the following:
-            // IL_0006: ldtoken      Deck
-            // IL_000b: call         class [System.Runtime]System.Type [System.Runtime]System.Type::GetTypeFromHandle(valuetype [System.Runtime]System.RuntimeTypeHandle)
-            // IL_0010: call         class [System.Runtime]System.Array [System.Runtime]System.Enum::GetValues(class [System.Runtime]System.Type)
+            // ldtoken      Deck
+            // call         class [System.Runtime]System.Type [System.Runtime]System.Type::GetTypeFromHandle(valuetype [System.Runtime]System.RuntimeTypeHandle)
+            // call         class [System.Runtime]System.Array [System.Runtime]System.Enum::GetValues(class [System.Runtime]System.Type)
 
             CodeInstruction currentIns = instructionEnumerator.Current;
 
@@ -118,7 +118,7 @@ namespace DemoMod
 
             // We have a hit! Replace the instruction buffer with our desired instruction to be emit instead.
             instructionBuffer.Clear();
-            instructionBuffer.Add(new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(PatchAnyColor), nameof(PatchedDeckGetValues))));
+            instructionBuffer.Add(new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(PatchDeckEnumeration), nameof(PatchedDeckGetValues))));
 
             _logger?.LogInformation("Patched card {CardName}", original.DeclaringType?.FullName);
         }
