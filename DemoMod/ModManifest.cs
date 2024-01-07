@@ -10,6 +10,7 @@ using HarmonyLib;
 using System.Runtime.Loader;
 using System.Reflection;
 using DemoMod.StatusPatches;
+using DemoMod.BaseGamePatches;
 
 namespace DemoMod
 {
@@ -49,8 +50,8 @@ namespace DemoMod
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
             BailoutPatches.Apply(harmony, Logger);
-            PatchAnyColor.Apply(harmony, Logger);
-
+            PatchDeckEnumeration.Apply(harmony, Logger);
+            PatchWizardMissingStatuses.Apply(harmony, Logger);
 
             Colors.colorDict["tera"] = 0xff266fd8;
         }
