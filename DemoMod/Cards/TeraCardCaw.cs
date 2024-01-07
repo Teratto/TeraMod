@@ -18,7 +18,7 @@ namespace DemoMod.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack() { damage = 2, fast = true });
+                    list.Add(new AAttack() { damage = GetDmg(s, 2), fast = true });
                     list.Add(new AStatus()
                     {
 
@@ -31,7 +31,7 @@ namespace DemoMod.Cards
 
                 case Upgrade.B:
 
-                    list.Add(new AAttack() { damage = 2, fast = true });
+                    list.Add(new AAttack() { damage = GetDmg(s, 2), fast = true });
                     list.Add(new AStatus()
                     {
 
@@ -43,7 +43,7 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AAttack() { damage = 3, fast = true });
+                    list.Add(new AAttack() { damage = GetDmg(s, 3), fast = true });
                     list.Add(new AStatus()
                     {
 

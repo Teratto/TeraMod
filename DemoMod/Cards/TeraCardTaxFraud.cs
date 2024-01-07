@@ -45,7 +45,7 @@ namespace DemoMod.Cards
 
             list.Add(new AAttack()
             {
-                damage = damageToDeal
+                damage = GetDmg(s,damageToDeal),
             });
 
             if (enemyTax >= requiredTax && upgrade == Upgrade.B)

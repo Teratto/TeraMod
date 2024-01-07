@@ -21,7 +21,7 @@ namespace DemoMod.Cards
                 case Upgrade.None:
                     list.Add(new AAttack() 
                     { 
-                        damage = 1,
+                        damage = GetDmg(s,1),
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
                     });
@@ -30,9 +30,9 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AAttack()
                     {
-                        damage = 2,
+                        damage = GetDmg(s,2),
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 1
+                        statusAmount = 2
                     });
                     break;
 
@@ -45,7 +45,7 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AAttack() 
                     { 
-                        damage = 1,
+                        damage = GetDmg(s,1),
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
                     });
@@ -57,15 +57,15 @@ namespace DemoMod.Cards
 
         public override CardData GetData(State state)
         {
-            //int cost = 1;
-          //  if (upgrade == Upgrade.B)
-            //{
-           //     cost = 0;
-           // }
+            int cost = 1;
+          if (upgrade == Upgrade.B)
+            {
+                cost = 2;
+            }
 
             return new CardData()
             {
-                cost = 1,
+                cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
 
             };

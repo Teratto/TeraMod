@@ -471,7 +471,7 @@ namespace DemoMod
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
-            playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards debuff enemies, while also debuffing yourself.");
+            playable_birdnerd_character.AddDescLocalisation("A tax collector. His cards <c=status>debuff</c> enemies, while also <c=downside>debuffing</c> yourself.");
             registry.RegisterCharacter(playable_birdnerd_character);
         }
 
