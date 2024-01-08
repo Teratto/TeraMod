@@ -52,6 +52,7 @@ namespace DemoMod
             BailoutPatches.Apply(harmony, Logger);
             PatchDeckEnumeration.Apply(harmony, Logger);
             PatchWizardMissingStatuses.Apply(harmony, Logger);
+            TeraModCardInterfacePatch.Apply(harmony, Logger);
 
             Colors.colorDict["tera"] = 0xff266fd8;
         }
