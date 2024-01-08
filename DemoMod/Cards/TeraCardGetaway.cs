@@ -10,7 +10,7 @@ namespace DemoMod.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
-    public class TeraCardGetaway : Card
+    public class TeraCardGetaway : Card, ITeraModCard
     {
         public override List<CardAction> GetActions(State s, Combat c)
         {
@@ -77,6 +77,22 @@ namespace DemoMod.Cards
                 art = new Spr?(Spr.cards_GoatDrone),
                 //exhaust = upgrade == Upgrade.B
             };
+        }
+
+        public List<Tooltip> GetExtraTooltips(State s)
+        {
+            List<Tooltip> tooltips = new();
+
+            if (upgrade == Upgrade.None || upgrade == Upgrade.A)
+            {
+                tooltips.Add(new TTGlossary($"status.{Status.engineStall.Key()}", 1));
+            }
+            else
+            {
+                tooltips.Add(new TTGlossary($"status.{Status.lockdown.Key()}", 1));
+            }
+
+            return tooltips;
         }
 
         public override string Name()
