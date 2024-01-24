@@ -157,7 +157,7 @@ namespace DemoMod
 
                 say.who = item.Who.ToLower() == "tera" ? "Teratto.TeraMod.Tera" : item.Who;
                 say.hash = GetHash(item.What);
-                say.loopTag = item.LoopTag;
+                say.loopTag = string.IsNullOrEmpty(item.LoopTag) ? null : item.LoopTag;
             }
         }
 
