@@ -3,7 +3,15 @@ using CobaltCoreModding.Definitions.ExternalItems;
 using CobaltCoreModding.Definitions.ModContactPoints;
 using CobaltCoreModding.Definitions.ModManifests;
 using DemoMod.StoryStuff;
+using FMOD;
+using HarmonyLib;
 using Microsoft.Extensions.Logging;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace DemoMod
 {
@@ -14,9 +22,193 @@ namespace DemoMod
         public DirectoryInfo? GameRootFolder { get; set; }
         public ILogger? Logger { get; set; }
         public DirectoryInfo? ModRootFolder { get; set; }
-        public string Name => "EWanderer.Demomod.DemoStoryManifest";
+        public string Name => "Teratto.Teramod.StoryManifest";
+
+
+        public class InjectedItem
+        {
+            [JsonPropertyName("event_name")]
+            public string EventName;
+
+            [JsonPropertyName("indices")]
+            public int[] Indices = Array.Empty<int>();
+
+            [JsonPropertyName("who")]
+            public string Who;
+
+            [JsonPropertyName("what")]
+            public string What;
+
+            [JsonPropertyName("loop_tag")]
+            public string LoopTag;
+        }
+
+        public class InjectedItemContainer
+        {
+            [JsonPropertyName("items")]
+            public InjectedItem[] Items;
+        }
+
+        public class InstructionListWrapper
+        {
+            private List<Instruction>? _instructions = new();
+            private List<Say>? _says;
+
+            public void Set(List<Instruction> instructions)
+            {
+                _instructions = instructions;
+                _says = null;
+            }
+
+            public void Set(List<Say> says)
+            {
+                _instructions = null;
+                _says = says;
+            }
+
+            public void Add(Say say)
+            {
+                if (_instructions != null)
+                {
+                    _instructions.Add(say);
+                }
+                else
+                {
+                    _says!.Add(say);
+                }
+            }
+
+            public Instruction this[int i]
+            {
+                get
+                {
+                    if (_instructions != null)
+                    {
+                        return _instructions[i];
+                    }
+                    else
+                    {
+                        return _says![i];
+                    }
+                }
+            }
+
+            public int Count
+            {
+                get
+                {
+                    if (_instructions != null)
+                    {
+                        return _instructions.Count;
+                    }
+                    return _says!.Count;
+                }
+            }
+        }
+
+        private static DemoStoryManifest _instance;
+        private InjectedItemContainer _container;
+
+        private static Queue<ValueTuple<string, Action>> MakeInitQueue_Postfix(Queue<ValueTuple<string, Action>> __result)
+        {
+            // we apply any patches to story item.
+            __result.Enqueue(new("patching story for tera", () => { _instance.PatchStory(); }));
+            return __result;
+        }
+
+        public void PatchStory()
+        {
+            foreach (InjectedItem item in _container.Items)
+            {
+                if (!DB.story.all.TryGetValue(item.EventName, out StoryNode? node))
+                {
+                    node = new StoryNode();
+                    DB.story.all[item.EventName] = node;
+                }
+
+                InstructionListWrapper instructions = new();
+                instructions.Set(node.lines);
+                Instruction? targetInstruction = null;
+
+                foreach (int index in item.Indices)
+                {
+                    while (index >= instructions.Count)
+                    {
+                        instructions.Add(new Say());
+                    }
+
+                    targetInstruction = instructions[index];
+
+                    if (targetInstruction is SaySwitch saySwitch)
+                    {
+                        instructions.Set(saySwitch.lines);
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                if (targetInstruction is not Say say)
+                {
+                    Console.WriteLine($"Failed to inject a line into story {item.EventName} at index {string.Join(',',item.Indices)} with what = '{item.What}'!!");
+                    continue;
+                }
+
+                say.who = item.Who.ToLower() == "tera" ? "Teratto.TeraMod.Tera" : item.Who;
+                say.hash = GetHash(item.What);
+                say.loopTag = item.LoopTag;
+            }
+        }
+
+
+        private static string GetHash(string input)
+        {
+            var inputBytes = Encoding.UTF8.GetBytes(input);
+            var inputHash = SHA256.HashData(inputBytes);
+            return Convert.ToHexString(inputHash); //.Substring(0, 8);
+        }
+
+        private static void LoadStringsForLocale_PostFix(string locale, ref Dictionary<string, string> __result)
+        {
+            if (locale != "en")
+            {
+                // Sorry, not localized ;-;
+                return;
+            }
+
+            foreach (InjectedItem item in _instance._container.Items)
+            {
+                string hash = GetHash(item.What);
+                string key = $"{item.EventName}:{hash}";
+                __result[key] = item.What;
+            }
+        }
 
         public void LoadManifest(IStoryRegistry storyRegistry)
+        {
+            _instance = this;
+
+            using FileStream stream = File.OpenRead(Path.Join(_instance.ModRootFolder!.FullName, "story.json"));
+            _container = JsonSerializer.Deserialize<InjectedItemContainer>(stream, new JsonSerializerOptions()
+            {
+                IncludeFields = true
+            })!;
+
+
+            Harmony harmony = new Harmony(Name);
+
+            harmony.Patch(
+                original: AccessTools.DeclaredMethod(typeof(DB), nameof(DB.MakeInitQueue)),
+                postfix: new HarmonyMethod(AccessTools.DeclaredMethod(GetType(), nameof(MakeInitQueue_Postfix)))
+            );
+            harmony.Patch(
+                original: AccessTools.DeclaredMethod(typeof(DB), nameof(DB.LoadStringsForLocale)),
+                postfix: new HarmonyMethod(AccessTools.DeclaredMethod(GetType(), nameof(LoadStringsForLocale_PostFix)))
+            );
+        }
+
+        public void LoadManifestExample(IStoryRegistry storyRegistry)
         {
             // A combat shout
             var exampleShout = new ExternalStory("EWanderer.Demomod.DemoStory.CombatShout",

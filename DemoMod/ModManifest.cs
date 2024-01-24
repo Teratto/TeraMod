@@ -512,7 +512,7 @@ namespace DemoMod
             {
                 var spr = sprite_registry!.LookupSprite("Teratto.Teramod.YearlyPayments");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.YearlyPayments", typeof(Artifacts.TeraArtifactYearlyPayments), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("YEARLY PAYMENTS", "At the start of combat, apply one <c=status>tax</c> to the enemy.");
+                artifact.AddLocalisation("YEARLY PAYMENTS", "At the start of combat, apply two <c=status>tax</c> to the enemy.");
                 registry.RegisterArtifact(artifact);
             }
             { 
