@@ -28,7 +28,7 @@ namespace DemoMod.Cards
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack() {damage = GetDmg(s, 0), fast = true, stunEnemy = true });
+                    list.Add(new AAttack() {damage = GetDmg(s, 2), fast = true, stunEnemy = true });
                     break;
             }
 

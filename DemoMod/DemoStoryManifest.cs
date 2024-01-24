@@ -243,11 +243,11 @@ namespace DemoMod
                         What = "Example shout !",
                         LoopTag = "squint" // the specific animation that should play during the shout. "neutral" is default
                     },
-                    new Say() // same as above, but native
-                    {
-                        who = "peri",
-                        hash = "0" // a string that must be unique to your story, used to fetch localisation 
-                    },
+                    //new Say() // same as above, but native
+                   // {
+                    //    who = "peri",
+                   //     hash = "0" // a string that must be unique to your story, used to fetch localisation 
+                  //  },
                     new ExternalStory.ExternalSaySwitch( new List<ExternalStory.ExternalSay>() // this is used to randomly pick a valid options among the listed Says.
                     {
                         new ExternalStory.ExternalSay()
@@ -272,7 +272,7 @@ namespace DemoMod
                                      
                 }
             );
-            exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
+           // exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
 
             storyRegistry.RegisterStory(exampleShout);
 
