@@ -27,9 +27,9 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
 
-                        status = Status.overdrive,
+                        status = Status.energyLessNextTurn,
                         statusAmount = 1,
-                        targetPlayer = false
+                        targetPlayer = true
 
                     });
                     break;
@@ -39,15 +39,22 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 4,
+                        statusAmount = 3,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
 
-                        status = Status.overdrive,
+                        status = Status.energyLessNextTurn,
                         statusAmount = 1,
-                        targetPlayer = false
+                        targetPlayer = true
+
+                    });
+                    list.Add(new AStatus()
+                    {
+                        status = Status.tempShield,
+                        statusAmount = 2,
+                        targetPlayer = true
 
                     });
                     break;
@@ -61,17 +68,10 @@ namespace DemoMod.Cards
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.tempShield,
-                        statusAmount = 4,
+
+                        status = Status.drawLessNextTurn,
+                        statusAmount = 1,
                         targetPlayer = true
-
-                    });
-                    list.Add(new AStatus()
-                    {
-
-                        status = Status.overdrive,
-                        statusAmount = 2,
-                        targetPlayer = false
 
                     });
                     break;
@@ -84,7 +84,7 @@ namespace DemoMod.Cards
         {
             return new CardData()
             {
-                cost = 0,
+                cost = 1,
                 art = new Spr?(Spr.cards_GoatDrone),
                 //exhaust = upgrade == Upgrade.B
             };
