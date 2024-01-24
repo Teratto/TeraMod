@@ -32,24 +32,9 @@
     <Content Include="Sprites\**\*.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Actions\ATaxingDamage.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Actions\NewFile1.txt" />
-    <None Remove="NewFile1.txt" />
-    <None Remove="Sprites\BailoutBeta.png" />
-    <None Remove="Sprites\Capitalism.png" />
-    <None Remove="Sprites\coin.png" />
-    <None Remove="Sprites\EarlyBird.png" />
-    <None Remove="Sprites\FlightTraining.png" />
-    <None Remove="Sprites\Grant.png" />
-    <None Remove="Sprites\LockNext.png" />
-    <None Remove="Sprites\Stall Next.png" />
-    <None Remove="Sprites\YearlyPayments.png" />
+    <Content Include="story.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

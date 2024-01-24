@@ -1,0 +1,579 @@
+{
+    "items": [
+        {
+            "event_name": "AbandonedShipyard_Repaired",
+            "indices": [
+                1,
+                6
+            ],
+            "who": "tera",
+            "what": "I'm glad no one showed up. We might have been done for.",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "ArtifactAresCannon_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "This ship is too tiny - it dodges taxes too easily.",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "ArtifactArmoredBay_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Wonder if armor can be used as a tax write-off...",
+            "loop_tag": "taxneutral"
+        },
+        {
+            "event_name": "ArtifactBrokenGlasses_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Not my fault the shopkeep didn't pay their taxes last year. ",
+            "loop_tag": "happytax"
+        },
+        {
+            "event_name": "ArtifactCockpitTargetIsNotRelevant_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "What kind of ship doesn't have a cockpit?!",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "ArtifactCockpitTargetIsRelevant_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "We can hit that cockpit! I think!",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "ArtifactCrosslink_Multi_2",
+            "indices": [
+                1,
+                3
+            ],
+            "who": "tera",
+            "what": "Money, probably.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "ArtifactDirtyEngines_Multi_1",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "I don't think they're very safe...",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "ArtifactGeminiCore_Multi_4",
+            "indices": [
+                1,
+                6
+            ],
+            "who": "tera",
+            "what": "Blue all the way!",
+            "loop_tag": "happy"
+        },
+        {
+            "event_name": "ArtifactHardmode_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I got a bad feeling about this loop...",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "ArtifactNanofiberHull1_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Everything is fine! The nanofibers SHOULD handle this one.",
+            "loop_tag": "lookaway"
+        },
+        {
+            "event_name": "ArtifactNanofiberHull2_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I don't think the nanofibers can handle that much!",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "ArtifactRecalibrator_Multi_10",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "We meant to miss! I think!",
+            "loop_tag": "happy"
+        },
+        {
+            "event_name": "ArtifactShieldPrepIsGone_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Wait, where did warp prep go? You can't do taxes without preparation!",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "ArtifactTiderunner_Multi_11",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Does being on this ship mean I'm the captain's parrot?",
+            "loop_tag": "blush"
+        },
+        {
+            "event_name": "ArtifactTiderunner_Multi_12",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Squawk! Tera wants a cracker!",
+            "loop_tag": "happy"
+        },
+        {
+            "event_name": "ArtifcactTridimencionalCockpit_Multi_9",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "This cockpit change seems cowardly.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "ArtifcactTridimencionalCockpit_Multi_9",
+            "indices": [
+                1
+            ],
+            "who": "hacker",
+            "what": "Fight smarter, not harder.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "ArtifcactTridimencionalCockpit_Multi_9",
+            "indices": [
+                2
+            ],
+            "who": "tera",
+            "what": "Personally, I think it is VERY valid to be cowardly.",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "BanditThreats_Multi_0",
+            "indices": [
+                1,
+                9
+            ],
+            "who": "tera",
+            "what": "Those missles better not come with sales tax.",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "BlockedALotOfAttacksWithArmor_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I am SO glad we have armor right now.",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "BlockedAnEnemyAttackWithArmor_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "We should armor the whole ship next time!",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "BooksWentMissing_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Books?",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "CatWentMissing_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "W-wait, how do we operate a ship without a computer?",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "ChoiceCardRewardOfYourColorChoice_tera",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Did- Did someone just read my mind?",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "ChoiceCardRewardOfYourColorChoice_tera",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "I don't want people in my head!",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "ChoiceCardRewardOfYourColorChoice_tera",
+            "indices": [
+                2
+            ],
+            "who": "comp",
+            "what": "Energy readings are back to normal.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "CrabFacts1_Multi_0",
+            "indices": [
+                1,
+                8
+            ],
+            "who": "tera",
+            "what": "Wait, I thought crabs were like, government drones?",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "CrabFacts2_Multi_0",
+            "indices": [
+                1,
+                8
+            ],
+            "who": "tera",
+            "what": "I'm not prepared for this burden of knowledge!",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "CrabFactsAreOverNow_Multi_0",
+            "indices": [
+                1,
+                8
+            ],
+            "who": "tera",
+            "what": "Thank goodness, my bird brain can't handle more facts.",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "CrystallizedFriendEvent",
+            "indices": [
+                3,
+                7
+            ],
+            "who": "tera",
+            "what": "If it helps the team... then... okay.",
+            "loop_tag": "closed"
+        },
+        {
+            "event_name": "CrystallizedFriendEvent_tera",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "Wait wait, I was having a good dream!",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "DizzyWentMissing_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "D-Dizzy?",
+            "loop_tag": "scared"
+        },
+        {
+            "event_name": "DrakeWentMissing_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "So long, space pirate!",
+            "loop_tag": "happy"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_42",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I don't wanna die! ",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_42",
+            "indices": [
+                1
+            ],
+            "who": "riggs",
+            "what": "Yeah, me neither. ",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_43",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Is this where we reset?",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_43",
+            "indices": [
+                1
+            ],
+            "who": "dizzy",
+            "what": "Probably.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_44",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Are we gonna explode?!",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_44",
+            "indices": [
+                1
+            ],
+            "who": "peri",
+            "what": "Tera, breathe.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_45",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Please don't tell me we reset here...",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_45",
+            "indices": [
+                1
+            ],
+            "who": "comp",
+            "what": "Alright, I won't.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_46",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I don't wanna die!",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_46",
+            "indices": [
+                1
+            ],
+            "who": "goat",
+            "what": "You get used to it.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_47",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "If I die, Drake's going down with me!",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_47",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "We're ALL going down, bird brain. ",
+            "loop_tag": "mad"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_48",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Can't you like, hack their ship?",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_48",
+            "indices": [
+                1
+            ],
+            "who": "hacker",
+            "what": "That's illegal.",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_49",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "We're gonna explode!",
+            "loop_tag": "sad"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_49",
+            "indices": [
+                1
+            ],
+            "who": "shard",
+            "what": "No! We can do it! ",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_50",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "About time to loop again.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_50",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "B-but I don't wanna loop yet!",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_51",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "This run is scuffed.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_51",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "Maybe it wouldn't be if you paid your taxes.",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_52",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Welp.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_52",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "Darn.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_53",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Tera! Tax us outta here!",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_53",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "I... What?",
+            "loop_tag": "squint"
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_54",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "It's over man.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_54",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "Yeah, I can feel it.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_55",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "It's time to reset.",
+            "loop_tag": ""
+        },
+        {
+            "event_name": "Duo_AboutToDieAndLoop_Multi_55",
+            "indices": [
+                1
+            ],
+            "who": "tera",
+            "what": "CAT? Don't scare me like this!",
+            "loop_tag": "nervous"
+        },
+        {
+            "event_name": "EmptyHandWithEnergy_Multi_13",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Wait, what do we do now?",
+            "loop_tag": ""
+        }
+    ]
+}
