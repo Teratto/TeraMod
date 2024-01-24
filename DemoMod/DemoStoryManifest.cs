@@ -80,7 +80,71 @@ namespace DemoMod
                                      
                 }
             );
-            exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
+
+            {
+                // A combat shout
+                var teraThatsALotOfDamageToUs = new ExternalStory("Teratto.TeraMod.Tera.StoryThatsALotOfDamageToUs",
+                    new StoryNode() // Native CobaltCore class, containing numerous options regarding the shout's trigger. Listed are only the most common, but feel free to explore
+                    {
+                        type = NodeType.combat, // Mark the story as a combat shout
+                        priority = false, // Forces this story to be selected before other valid ones when the database is queried, useful for debugging.
+
+                        once = false,
+                        oncePerCombat = true,
+                        oncePerRun = false, // Self explanatory
+
+                        lookup = new HashSet<string>() // This is a list of tags that queries look for in various situations, very useful for triggering shouts in specific situations !
+                        {
+                        "demoCardShout" // We'll feed this string to a CardAction's dialogueSelector field in EWandererDemoCard, so that this shout triggers when we play the upgrade B of the card
+                        },
+
+                        allPresent = new HashSet<string>() // this checks for the presence of a list of characters.
+                        {
+                        "riggs"
+                        }
+                    },
+                    new List<object>() /* this is the actual dialogue. You can feed this list :
+                                    * classes inheriting from Instruction (natively Command, Say, or Sayswitch)
+                                    * ExternalStory.ExternalSay, which act as a native Say, but automating the more tedious parts,
+                                    * such as localizing and hashing*/
+                    {
+                    new ExternalStory.ExternalSay()
+                    {
+                        Who = "tera", /* the character that talks. For modded characters, use CharacterDeck.GlobalName
+                                        * attempting to make an absent character speak in combat will interrupt the shout !*/
+                        What = "I don't wanna die!",
+                        LoopTag = "scared" // the specific animation that should play during the shout. "neutral" is default
+                    },
+                    new Say() // same as above, but native
+                    {
+                        who = "peri",
+                        hash = "0" // a string that must be unique to your story, used to fetch localisation 
+                    },
+                    new ExternalStory.ExternalSaySwitch( new List<ExternalStory.ExternalSay>() // this is used to randomly pick a valid options among the listed Says.
+                    {
+                        new ExternalStory.ExternalSay()
+                        {
+                            Who = "dizzy",
+                            What = "A !",
+                            LoopTag = "squint"
+                        },
+                        new ExternalStory.ExternalSay()
+                        {
+                            Who = "eunice",
+                            What = "B !",
+                            LoopTag = "squint"
+                        },
+                        new ExternalStory.ExternalSay()
+                        {
+                            Who = "goat",
+                            What = "C !",
+                            LoopTag = "squint"
+                        },
+                    })
+
+                    }
+                );
+                exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
 
             storyRegistry.RegisterStory(exampleShout);
 
