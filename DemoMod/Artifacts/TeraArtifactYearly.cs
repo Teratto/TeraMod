@@ -14,8 +14,7 @@ namespace DemoMod.Artifacts
             {
                 status = TeraModStatuses.Taxation,
                 targetPlayer = false,
-                statusAmount = 1
-
+                statusAmount = 2
             });
         }
     }
