@@ -4,7 +4,8 @@ using CobaltCoreModding.Definitions.ModContactPoints;
 using CobaltCoreModding.Definitions.ModManifests;
 using DemoMod.StoryStuff;
 using Microsoft.Extensions.Logging;
-
+//NOTES: Use crew to have a crew member randomly respond to what you say or as a fallback option (for mods?)
+//1. How to make Tera to respond to other characters, 2. Make characters repsond to Tera, 3. Event nodes, 4. Make Tera have unique dialogue, 5. Load custom sprites that are not a part of the native game
 namespace DemoMod
 {
     internal class DemoStoryManifest : IStoryManifest
@@ -51,11 +52,11 @@ namespace DemoMod
                         What = "Example shout !",
                         LoopTag = "squint" // the specific animation that should play during the shout. "neutral" is default
                     },
-                    new Say() // same as above, but native
-                    {
-                        who = "peri",
-                        hash = "0" // a string that must be unique to your story, used to fetch localisation 
-                    },
+                    //new Say() // same as above, but native
+                   // {
+                    //    who = "peri",
+                   //     hash = "0" // a string that must be unique to your story, used to fetch localisation 
+                  //  },
                     new ExternalStory.ExternalSaySwitch( new List<ExternalStory.ExternalSay>() // this is used to randomly pick a valid options among the listed Says.
                     {
                         new ExternalStory.ExternalSay()
@@ -80,7 +81,7 @@ namespace DemoMod
                                      
                 }
             );
-            exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
+           // exampleShout.AddLocalisation("0", "Example native shout !"); // setting the localisation for peri's shout using the native way
 
             storyRegistry.RegisterStory(exampleShout);
 

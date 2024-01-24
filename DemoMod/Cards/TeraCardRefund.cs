@@ -86,7 +86,6 @@ namespace DemoMod.Cards
             return new CardData()
             {
                 description = desc,
-                unplayable = currentTax < requiredTax,
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
             };
