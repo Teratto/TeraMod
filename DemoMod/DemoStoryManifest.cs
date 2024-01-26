@@ -25,6 +25,44 @@ namespace DemoMod
         public string Name => "Teratto.Teramod.StoryManifest";
 
 
+        private class NodeTypeConverter : JsonConverter<NodeType>
+        {
+            public override NodeType Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                string? val = reader.GetString();
+                return val switch
+                {
+                    "combat" => NodeType.combat,
+                    "event" => NodeType.@event,
+                    "voidShout" => NodeType.voidShout,
+                    _ => throw new InvalidOperationException(),
+                };
+            }
+
+            public override void Write(Utf8JsonWriter writer, NodeType value, JsonSerializerOptions options)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        private class GenericEnumConverter<T> : JsonConverter<T> where T : struct
+        {
+            public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                string? val = reader.GetString();
+                if (!Enum.TryParse<T>(val, out T result))
+                {
+                    throw new InvalidOperationException();
+                }
+                return result;
+            }
+
+            public override void Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public class InjectedItem
         {
             [JsonPropertyName("event_name")]
@@ -108,6 +146,7 @@ namespace DemoMod
 
         private static DemoStoryManifest _instance;
         private InjectedItemContainer _container;
+        private Dictionary<string, StoryNode> _nodesToInject;
 
         private static Queue<ValueTuple<string, Action>> MakeInitQueue_Postfix(Queue<ValueTuple<string, Action>> __result)
         {
@@ -122,7 +161,12 @@ namespace DemoMod
             {
                 if (!DB.story.all.TryGetValue(item.EventName, out StoryNode? node))
                 {
-                    node = new StoryNode();
+                    if (!_nodesToInject.TryGetValue(item.EventName, out node))
+                    {
+                        Console.WriteLine("TeraMod: Cannot find StoryNode named {item.EventName} in either stock DB or mod StoryNodes. Is one of the files out of date?");
+                        continue;
+                    }
+
                     DB.story.all[item.EventName] = node;
                 }
 
@@ -189,13 +233,24 @@ namespace DemoMod
         {
             _instance = this;
 
-            using FileStream stream = File.OpenRead(Path.Join(_instance.ModRootFolder!.FullName, "story.json"));
-            _container = JsonSerializer.Deserialize<InjectedItemContainer>(stream, new JsonSerializerOptions()
+            using (FileStream stream = File.OpenRead(Path.Join(_instance.ModRootFolder!.FullName, "story.json")))
             {
-                IncludeFields = true
-            })!;
+                _container = JsonSerializer.Deserialize<InjectedItemContainer>(stream, new JsonSerializerOptions()
+                {
+                    IncludeFields = true
+                })!;
+            }
 
+            using (FileStream stream = File.OpenRead(Path.Join(_instance.ModRootFolder!.FullName, "story_nodes.json")))
+            {
+                JsonSerializerOptions options = new() { IncludeFields = true };
+                options.Converters.Add(new NodeTypeConverter());
+                options.Converters.Add(new GenericEnumConverter<Status>());
+                options.Converters.Add(new GenericEnumConverter<Deck>());
 
+                _nodesToInject = JsonSerializer.Deserialize<Dictionary<string, StoryNode>>(stream, options)!;
+            }
+                
             Harmony harmony = new Harmony(Name);
 
             harmony.Patch(
