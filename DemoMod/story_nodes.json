@@ -1,0 +1,879 @@
+{
+    "ArtifactAresCannon_Multi_6": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "AresCannon"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "AresCannon"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactArmoredBay_Multi_4": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "ArmoredBae"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "hasArtifacts": [
+            "ArmoredBay"
+        ],
+        "minDamageBlockedByPlayerArmorThisTurn": 1
+    },
+    "ArtifactBrokenGlasses_Multi_5": {
+        "type": "combat",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "BrokenGlasses"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactCockpitTargetIsNotRelevant_Multi_4": {
+        "type": "combat",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "CockpitTarget"
+        ],
+        "enemyDoesNotHavePart": "cockpit",
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactCockpitTargetIsRelevant_Multi_6": {
+        "type": "combat",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "CockpitTarget"
+        ],
+        "enemyHasPart": "cockpit",
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactEnergyRefund_Multi_4": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "EnergyRefund"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "minCostOfCardJustPlayed": 3,
+        "hasArtifacts": [
+            "EnergyRefund"
+        ]
+    },
+    "ArtifactGeminiCore_Multi_5": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "GeminiCore"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "GeminiCore"
+        ]
+    },
+    "ArtifactHardmode_Multi_3": {
+        "type": "combat",
+        "once": true,
+        "oncePerRunTags": [
+            "HARDMODE"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "hasArtifacts": [
+            "HARDMODE"
+        ]
+    },
+    "ArtifactNanofiberHull1_Multi_5": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "NanofiberHull"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "NanofiberHull"
+        ],
+        "minDamageDealtToPlayerThisTurn": 1,
+        "maxDamageDealtToPlayerThisTurn": 1
+    },
+    "ArtifactNanofiberHull2_Multi_4": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "NanofiberHull2"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "NanofiberHull"
+        ],
+        "minDamageDealtToPlayerThisTurn": 2
+    },
+    "ArtifactRecalibrator_Multi_10": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustMissed": true,
+        "hasArtifacts": [
+            "Recalibrator"
+        ]
+    },
+    "ArtifactShieldPrepIsGone_Multi_4": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "ShieldPrepIsGoneYouFool"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "doesNotHaveArtifacts": [
+            "ShieldPrep",
+            "WarpMastery"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactTiderunner_Multi_11": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TideRunner"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TideRunner"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactTiderunner_Multi_12": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TideRunner"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TideRunner"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "ArtifactTridimensionalCockpit_Multi_9": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TridimensionalCockpit"
+        ],
+        "allPresent": [
+            "eunice",
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TridimensionalCockpit"
+        ],
+        "maxTurnsThisCombat": 1,
+        "turnStart": true
+    },
+    "BlockedALotOfAttacksWithArmor_Multi_5": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "YowzaThatWasALOTofArmorBlock"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageBlockedByPlayerArmorThisTurn": 3
+    },
+    "BlockedAnEnemyAttackWithArmor_Multi_7": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "WowArmorISPrettyCoolHuh"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageBlockedByPlayerArmorThisTurn": 1
+    },
+    "BooksWentMissing_Multi_6": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "booksWentMissing"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "lastTurnPlayerStatuses": [
+            "missingBooks"
+        ]
+    },
+    "CatWentMissing_Multi_6": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "CatWentMissing"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "lastTurnPlayerStatuses": [
+            "missingCat"
+        ]
+    },
+    "ChoiceCardRewardOfYourColorChoice_tera": {
+        "type": "event",
+        "bg": "BGBootSequence",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ]
+    },
+    "CrystallizedFriendEvent_tera": {
+        "type": "event",
+        "bg": "BGCrystalizedFriend",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ]
+    },
+    "DizzyWentMissing_Multi_5": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "dizzyWentMissing"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "lastTurnPlayerStatuses": [
+            "missingDizzy"
+        ]
+    },
+    "DrakeWentMissing_Multi_5": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "drakeWentMissing"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "lastTurnPlayerStatuses": [
+            "missingDrake"
+        ]
+    },
+    "Duo_AboutToDieAndLoop_Multi_42": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "riggs"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_43": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "dizzy"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_44": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_45": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "comp"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_46": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "goat"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_47": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_48": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "hacker"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_49": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "shard"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_50": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_51": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_52": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_53": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_54": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "Duo_AboutToDieAndLoop_Multi_55": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true
+    },
+    "EmptyHandWithEnergy_Multi_13": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "handEmpty": true,
+        "minEnergy": 1
+    },
+    "EnemyArmorHit_Multi_7": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageBlockedByEnemyArmorThisTurn": 1
+    },
+    "EnemyHasBrittle_Multi_7": {
+        "type": "combat",
+        "oncePerRunTags": [
+            "yelledAboutBrittle"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyHasBrittlePart": true
+    },
+    "HandOnlyHasTrashCards_Multi_6": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "handOnlyHasTrashCards"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "handFullOfTrash": true
+    },
+    "JustHitGeneric_Multi_40": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "f"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustHitGeneric_Multi_41": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustHitGeneric_Multi_42": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustHitGeneric_Multi_43": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustHitGeneric_Multi_44": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustHitGeneric_Multi_45": {
+        "type": "combat",
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "JustPlayedASogginsCard_Multi_3": {
+        "type": "combat",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "whoDidThat": "soggins"
+    },
+    "LookOutMissile_Multi_4": {
+        "type": "combat",
+        "once": true,
+        "oncePerRunTags": [
+            "goodMissileAdvice"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "priority": true,
+        "anyDronesHostile": [
+            "missile_normal",
+            "missile_heavy",
+            "missile_corrode",
+            "missile_seeker",
+            "missile_breacher"
+        ]
+    },
+    "LoseCharacterCard_tera": {
+        "type": "event",
+        "bg": "BGSupernova",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ]
+    },
+    "ManyTurns_Multi_12": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "manyTurns"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "minTurnsThisCombat": 9,
+        "turnStart": true
+    },
+    "OneHitPointThisIsFine_Multi_14": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 1,
+        "enemyShotJustHit": true
+    },
+    "OneHitPointThisIsFine_Multi_15": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutToDie"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 1,
+        "enemyShotJustHit": true
+    },
+    "OverheatDrakesFault_Multi_10": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "OverheatDrakesFault"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "whoDidThat": "eunice",
+        "goingToOverheat": true
+    },
+    "OverheatDrakesFault_Multi_11": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "OverheatDrakesFault"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "whoDidThat": "eunice",
+        "goingToOverheat": true
+    },
+    "OverheatGeneric_Multi_10": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "OverheatGeneric"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "goingToOverheat": true
+    },
+    "PeriJustHit_Multi_7": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "PeriHitEmYo"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "peri",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "PeriWentMissing_Multi_5": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "periWentMissing"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "priority": true,
+        "lastTurnPlayerStatuses": [
+            "missingPeri"
+        ]
+    },
+    "ThatsALotOfDamageToThem_Multi_7": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisTurn": 10
+    },
+    "ThatsALotOfDamageToUs_Multi_13": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageDealtToPlayerThisTurn": 3
+    },
+    "ThatsALotOfDamageToUs_Multi_14": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageDealtToPlayerThisTurn": 3
+    },
+    "ThatsALotOfDamageToUs_Multi_15": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageDealtToPlayerThisTurn": 3
+    },
+    "TheyHaveAutoDodgeLeft_Multi_8": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutAutododge"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lastTurnEnemyStatuses": [
+            "autododgeLeft"
+        ]
+    },
+    "TheyHaveAutoDodgeRight_Multi_8": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "aboutAutododge"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lastTurnEnemyStatuses": [
+            "autododgeRight"
+        ]
+    },
+    "TookZeroDamageAtLowHealth_Multi_4": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "maxHull": 2,
+        "enemyShotJustHit": true,
+        "maxDamageDealtToPlayerThisTurn": 0
+    },
+    "VeryManyTurns_Multi_17": {
+        "type": "combat",
+        "oncePerRun": true,
+        "oncePerCombatTags": [
+            "veryManyTurns"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "minTurnsThisCombat": 20,
+        "turnStart": true
+    },
+    "WeAreCorroded_Multi_9": {
+        "type": "combat",
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lastTurnPlayerStatuses": [
+            "corrode"
+        ]
+    },
+    "WeDidOverFiveDamage_Multi_8": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 6
+    },
+    "WeDidOverThreeDamage_Multi_9": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "minDamageDealtToEnemyThisAction": 4
+    },
+    "WeGotHurtButNotTooBad_Multi_8": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "minDamageDealtToPlayerThisTurn": 1,
+        "maxDamageDealtToPlayerThisTurn": 1
+    },
+    "WeGotShotButTookNoDamage_Multi_6": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "enemyShotJustHit": true,
+        "maxDamageDealtToPlayerThisTurn": 0
+    },
+    "WeMissedOopsie_Multi_26": {
+        "type": "combat",
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustMissed": true,
+        "doesNotHaveArtifacts": [
+            "Recalibrator",
+            "GrazerBeam"
+        ]
+    },
+    "WeMissedOopsie_Multi_27": {
+        "type": "combat",
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustMissed": true,
+        "doesNotHaveArtifacts": [
+            "Recalibrator",
+            "GrazerBeam"
+        ]
+    },
+    "WeMissedOopsie_Multi_28": {
+        "type": "combat",
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustMissed": true,
+        "doesNotHaveArtifacts": [
+            "Recalibrator",
+            "GrazerBeam"
+        ]
+    },
+    "WeMissedOopsie_Multi_29": {
+        "type": "combat",
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustMissed": true,
+        "doesNotHaveArtifacts": [
+            "Recalibrator",
+            "GrazerBeam"
+        ]
+    }
+}
