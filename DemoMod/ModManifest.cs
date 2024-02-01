@@ -29,11 +29,21 @@ namespace DemoMod
 
         private Harmony harmony;
 
-        public IEnumerable<DependencyEntry> Dependencies => new DependencyEntry[0];
+        public IEnumerable<DependencyEntry> Dependencies { get; }
         public DirectoryInfo? GameRootFolder { get; set; }
         public ILogger? Logger { get; set; }
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.TeraMod.MainManifest";
+
+
+
+        // Constructor!! :D
+        public ModManifest()
+        {
+            Dependencies = new DependencyEntry[] {
+                new DependencyEntry<Shockah.Kokoro.ModEntry>("Kokoro", ignoreIfMissing: true) // TODO: MAKE THIS *NOT* IGNORE IF MISSING!!
+            };
+        }
 
         public void BootMod(IModLoaderContact contact)
         {
