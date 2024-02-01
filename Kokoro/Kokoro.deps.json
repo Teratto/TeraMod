@@ -1,0 +1,142 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Kokoro/1.3.1": {
+        "dependencies": {
+          "EnumByNameSourceGenerator": "1.1.1",
+          "ImGui.NET": "1.89.5",
+          "Newtonsoft.Json": "13.0.3",
+          "Pintail": "2.4.2",
+          "Shockah.CobaltCoreModBuildConfig": "2.0.0",
+          "Shrike": "3.0.0",
+          "Shrike.Harmony": "3.0.0"
+        },
+        "runtime": {
+          "Kokoro.dll": {}
+        }
+      },
+      "EnumByNameSourceGenerator/1.1.1": {},
+      "ImGui.NET/1.89.5": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {},
+      "Pintail/2.4.2": {
+        "runtime": {
+          "lib/net5.0/Pintail.dll": {
+            "assemblyVersion": "2.4.2.0",
+            "fileVersion": "2.4.2.0"
+          }
+        }
+      },
+      "Shockah.CobaltCoreModBuildConfig/2.0.0": {},
+      "Shrike/3.0.0": {
+        "runtime": {
+          "lib/net5.0/Shrike.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Shrike.Harmony/3.0.0": {
+        "dependencies": {
+          "Shrike": "3.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Shrike.Harmony.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "System.Buffers/4.4.0": {},
+      "System.Numerics.Vectors/4.4.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {}
+    }
+  },
+  "libraries": {
+    "Kokoro/1.3.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EnumByNameSourceGenerator/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+npADZlBuz2eHS93TxTTZU4G+xmZNovl71FqmeBaIh8i6NxE+YQON9M4BY9vo0WHLYL+oPMccTa+aVXEDjeAXQ==",
+      "path": "enumbynamesourcegenerator/1.1.1",
+      "hashPath": "enumbynamesourcegenerator.1.1.1.nupkg.sha512"
+    },
+    "ImGui.NET/1.89.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HEFKtJv+Tu2bmFnFGHrzfbrX5XN7gdVQAS6REEMgF1qS0n3aTxiuLUGCRXDk1mW5iRCP4X+teqkyGGFoDR10zQ==",
+      "path": "imgui.net/1.89.5",
+      "hashPath": "imgui.net.1.89.5.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Pintail/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6TnuqpN++RuaveEIfKc+Sx5ZbGUbHd/rBZzuY7OqLEEN2FALQ6FkFeOLUeLcB6P6iC7JGf/fuhG2p0XR40EuEw==",
+      "path": "pintail/2.4.2",
+      "hashPath": "pintail.2.4.2.nupkg.sha512"
+    },
+    "Shockah.CobaltCoreModBuildConfig/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WHHqw1jiSlreaMNpEG9MAaykv/hARHqzPJ3bgVDFTuLBRYZtatzrUA+IrXNA+PiTibDvDP3cYw63bdlczup8DQ==",
+      "path": "shockah.cobaltcoremodbuildconfig/2.0.0",
+      "hashPath": "shockah.cobaltcoremodbuildconfig.2.0.0.nupkg.sha512"
+    },
+    "Shrike/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ptXxJ5FpX/JHSFMu3sG1ZljhxIAtF5Hs9reua3tQWE9Cb1bvC0LgQd0uJ+ENO4wkOUxQh6Qvf650sGX5ON6eow==",
+      "path": "shrike/3.0.0",
+      "hashPath": "shrike.3.0.0.nupkg.sha512"
+    },
+    "Shrike.Harmony/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WdvnolyVPWlZhn76DHTR22RER8FP3axOOI+xfd166htkkodqTl7bGB+JpuqmajM8awwb9MgY28M4UBc0gIHFIg==",
+      "path": "shrike.harmony/3.0.0",
+      "hashPath": "shrike.harmony.3.0.0.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+    }
+  }
+}
