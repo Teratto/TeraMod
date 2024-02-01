@@ -54,7 +54,8 @@ namespace DemoMod.Cards
                     {
                         status = Status.tempShield,
                         statusAmount = 2,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
 
                     });
                     break;

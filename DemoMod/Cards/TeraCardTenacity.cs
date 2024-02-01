@@ -29,6 +29,7 @@ namespace DemoMod.Cards
                         },
                         destination = CardDestination.Hand,
                         amount = 1,
+                        dialogueSelector = "teraTenacitySpeak"
                     });
                     list.Add(new ADrawCard()
                     {
@@ -49,6 +50,7 @@ namespace DemoMod.Cards
                         },
                         destination = CardDestination.Hand,
                         amount = 1,
+                        dialogueSelector = "teraTenacitySpeak"
                     });
                     list.Add(new ADiscard()
                     {
@@ -64,7 +66,8 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new ADrawCard()
                     {
-                        count = 2
+                        count = 2,
+                        dialogueSelector = "teraTenacitySpeak"
                     });
                     break;
             }

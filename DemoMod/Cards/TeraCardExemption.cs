@@ -57,13 +57,7 @@ namespace DemoMod.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = 1,
-                        targetPlayer = false
-                    });
-                   list.Add(new AStatus()
-                    {
-                        status = Status.shield,
+                        status = Status.tempShield,
                         statusAmount = GetTaxAmnt(s, c),
                         targetPlayer = true,
                         mode = AStatusMode.Add
@@ -71,7 +65,7 @@ namespace DemoMod.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = -2,
+                        statusAmount = -1,
                         targetPlayer = false
                     });
                     break;
@@ -90,7 +84,7 @@ namespace DemoMod.Cards
             }
             else if(upgrade == Upgrade.B)
             {
-                desc = "Give one <c=status>tax</c>, gain <c=status>shield</c> equal to <c=status>tax</c>, then <c=downside>remove two tax.</c>";
+                desc = "Gain <c=status>temp shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
 
             }
             return new CardData()

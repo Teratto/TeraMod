@@ -15,8 +15,8 @@ namespace DemoMod.Artifacts
             {
                 status = TeraModStatuses.Taxation,
                 statusAmount = 3,
-                targetPlayer = true
-            });
+                targetPlayer = true,
+            });;
         }
 
         public override void OnReceiveArtifact(State state)
