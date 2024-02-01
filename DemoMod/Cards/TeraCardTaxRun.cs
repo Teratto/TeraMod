@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace DemoMod.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardTaxRun : Card
     {
        
@@ -69,16 +69,15 @@ namespace DemoMod.Cards
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
                     });
-                    list.Add(new AStatus()
+                    list.Add(new AMove()
                     {
-                        status = Status.evade,
-                        statusAmount = 2,
+                        dir = 4,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     break;
@@ -94,7 +93,8 @@ namespace DemoMod.Cards
                 flippable = (upgrade == Upgrade.A ? true : false),
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
-
+                retain = (upgrade == Upgrade.B ? true : false),
+                exhaust = (upgrade == Upgrade.B ? true : false),
             };
         }
         public override string Name()

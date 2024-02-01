@@ -371,7 +371,7 @@ namespace DemoMod
             registry.RegisterCard(teraCardDesperation);
 
             ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
-            teraCardStrength.AddLocalisation("Strength");
+            teraCardStrength.AddLocalisation("Government Pardon");
             registry.RegisterCard(teraCardStrength);
 
             ExternalCard teraCardSalesTax = new ExternalCard("Teratto.TeraMod.TeraSalesTax", typeof(TeraCardSalesTax), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
