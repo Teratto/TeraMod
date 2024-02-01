@@ -1,6 +1,7 @@
 ﻿using CobaltCoreModding.Definitions.ExternalItems;
 using DemoMod.Actions;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,19 +17,42 @@ namespace DemoMod.Cards
         {
             var list = new List<CardAction>();
 
+
+            bool useSpecialDialogue = s.rngScript.Next() < .01;  // 1 / 100 chance
+            const string SpecialSelector = "TeraPlayedASpecialEgg";
+            
+
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack() { damage = GetDmg(s, 0), fast = true , stunEnemy = true});
+                    list.Add(new AAttack() 
+                    { 
+                        damage = GetDmg(s, 0),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                    });
                     break;
                
                 case Upgrade.A:
-                    list.Add(new AAttack() { damage = GetDmg(s, 0), fast = true, stunEnemy = true });
+                    list.Add(new AAttack() 
+                    { 
+                        damage = GetDmg(s, 0),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector =  useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                    });
                     list.Add(new ADrawCard() { count = 1});
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack() {damage = GetDmg(s, 2), fast = true, stunEnemy = true });
+                    list.Add(new AAttack() 
+                    {
+                        damage = GetDmg(s, 2),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAHardboiledEgg"
+                    });
                     break;
             }
 

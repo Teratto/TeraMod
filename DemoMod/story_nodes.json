@@ -875,5 +875,997 @@
             "Recalibrator",
             "GrazerBeam"
         ]
+    },
+    "TeraJustHit_Multi_0": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustHit_Multi_1": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustHit_Multi_2": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustHit_Multi_3": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustHit_Multi_4": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustHitAndDidBigDamage_Multi_0": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TeraJustHitAndDidBigDamage_Multi_1": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TeraJustHitAndDidBigDamage_Multi_2": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TeraJustHitAndDidBigDamage_Multi_3": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "shard"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TeraJustHitAndDidBigDamage_Multi_4": {
+        "type": "combat",
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TeraJustHitAndDidBigDamage_Multi_5": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "BooksShotThatGuy"
+        ],
+        "allPresent": [
+            "shard"
+        ],
+        "playerShotJustHit": true,
+        "whoDidThat": "shard",
+        "minDamageDealtToEnemyThisAction": 1
+    },
+    "TeraJustPlayedAnEgg_Multi_0": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_1": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "peri",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_2": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "riggs",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_3": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_4": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_5": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_6": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_7": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAnEgg_Multi_8": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAnEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_0": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_1": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "peri",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_2": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_3": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "riggs",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_4": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_5": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_6": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_7": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAHardBoiledEgg_Multi_8": {
+        "oncePerCombatTags": [
+            "EggGaming"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPlayedAHardBoiledEgg"
+        ]
+    },
+    "TeraJustPlayedAnEggAndGotLucky_Multi_0": {
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "SpecialEgg"
+        ]
+    },
+    "TeraJustPlayedAnEggAndGotLucky_Multi_1": {
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "SpecialEgg"
+        ]
+    },
+    "TeraJustPlayedAnEggAndGotLucky_Multi_2": {
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "SpecialEgg"
+        ]
+    },
+    "TeraJustGotCapitalism_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactCapitalism"
+        ]
+    },
+    "TeraJustGotCapitalism_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactCapitalism"
+        ]
+    },
+    "TeraJustGotCapitalism_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactCapitalism"
+        ]
+    },
+    "TeraJustGotCapitalism_Multi_3": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactCapitalism"
+        ]
+    },
+    "TeraJustGotYearlyPayments_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactYearlyPayments"
+        ]
+    },
+    "TeraJustGotYearlyPayments_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactYearlyPayments"
+        ]
+    },
+    "TeraJustGotYearlyPayments_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactYearlyPayments"
+        ]
+    },
+    "TeraJustGovernmentGrants_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactGovernmentGrants"
+        ]
+    },
+    "TeraJustGovernmentGrants_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactGovernmentGrants"
+        ]
+    },
+    "TeraJustGovernmentGrants_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactGovernmentGrants"
+        ]
+    },
+    "TeraGotAWorm_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactEarlyBird"
+        ]
+    },
+    "TeraGotAWorm_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactEarlyBird"
+        ]
+    },
+    "TeraGotAWorm_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactEarlyBird"
+        ]
+    },
+    "TeraGotAWorm_Multi_3": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactEarlyBird"
+        ]
+    },
+    "TeraJustGotFlightTraining_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactFlightTraining"
+        ]
+    },
+    "TeraJustGotFlightTraining_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactFlightTraining"
+        ]
+    },
+    "TeraJustGotFlightTraining_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "hasArtifacts": [
+            "TeraArtifactFlightTraining"
+        ]
+    },
+    "TeraPlayedStrength_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraStrengthSpeak"
+        ]
+    },
+    "TeraPlayedStrength_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraStrengthSpeak"
+        ]
+    },
+    "TeraPlayedStrength_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraStrengthSpeak"
+        ]
+    },
+    "TeraPlayedDesperation_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraDesperationSpeak"
+        ]
+    },
+    "TeraPlayedDesperation_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraDesperationSpeak"
+        ]
+    },
+    "TeraPlayedDesperation_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraDesperationSpeak"
+        ]
+    },
+    "TeraPlayedBreakout_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBreakoutSpeak"
+        ]
+    },
+    "TeraPlayedBreakout_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBreakoutSpeak"
+        ]
+    },
+    "TeraPlayedBreakout_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBreakoutSpeak"
+        ]
+    },
+    "TeraPlayedTenacity_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTenacitySpeak"
+        ]
+    },
+    "TeraPlayedTenacity_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTenacitySpeak"
+        ]
+    },
+    "TeraPlayedTenacity_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTenacitySpeak"
+        ]
+    },
+    "TeraPlayedPersistence_Multi_0": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPersistenceSpeak"
+        ]
+    },
+    "TeraPlayedPersistence_Multi_1": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPersistenceSpeak"
+        ]
+    },
+    "TeraPlayedPersistence_Multi_2": {
+        "oncePerRun": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraPersistenceSpeak"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_0": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_1": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_2": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_3": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "dizzy"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_4": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "shard"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_5": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "peri"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_6": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "goat"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_7": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "hacker"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_8": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "comp"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_9": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "riggs"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_10": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_11": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_12": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_13": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_14": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_15": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_16": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_17": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_18": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_19": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_20": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_21": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_22": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_23": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_24": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_25": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_26": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_27": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_28": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_29": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_30": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_31": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_32": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_33": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_34": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_35": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_36": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_37": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TeraPlayedTaunt_Multi_38": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
     }
 }

@@ -26,6 +26,10 @@
       <HintPath>..\CobaltCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Kokoro">
+      <HintPath>..\Kokoro\Kokoro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
