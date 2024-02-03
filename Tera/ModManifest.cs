@@ -19,7 +19,7 @@ namespace Tera
         public static ExternalStatus? demo_status;
         internal static ICustomEventHub? EventHub;
         internal static int x = 0;
-        private static ExternalDeck? tera_deck;
+        public static ExternalDeck? tera_deck;
 
         private ISpriteRegistry? sprite_registry;
         private IAnimationRegistry? animation_registry;
@@ -34,6 +34,7 @@ namespace Tera
         public ILogger? Logger { get; set; }
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.TeraMod.MainManifest";
+
 
 
 
