@@ -100,7 +100,7 @@ namespace Tera
             {
                 string? val = reader.GetString();
 
-                if (val == "tera" && ModManifest.tera_deck.Id.HasValue)
+                if (val == "tera" && ModManifest.tera_deck!.Id.HasValue)
                 {
                     return (Deck)ModManifest.tera_deck!.Id.Value;
                 }
@@ -185,6 +185,16 @@ namespace Tera
                 _says = says;
             }
 
+            public void Add(SaySwitch saySwitch)
+            {
+                if (_instructions == null)
+                {
+                    // TODO: Log instead!
+                    throw new InvalidOperationException();
+                }
+                _instructions.Add(saySwitch);
+            }
+
             public void Add(Say say)
             {
                 if (_instructions != null)
@@ -255,11 +265,23 @@ namespace Tera
                 instructions.Set(node.lines);
                 Instruction? targetInstruction = null;
 
-                foreach (int index in item.Indices)
+                for (int level = 0; level < item.Indices.Length; ++level)
                 {
+                    int index = item.Indices[level];
+
                     while (index >= instructions.Count)
                     {
-                        instructions.Add(new Say());
+                        if (level + 1 < item.Indices.Length)
+                        {
+                            instructions.Add(new SaySwitch()
+                            {
+                                lines = new List<Say>()
+                            }); ;
+                        }
+                        else
+                        {
+                            instructions.Add(new Say());
+                        }
                     }
 
                     targetInstruction = instructions[index];
