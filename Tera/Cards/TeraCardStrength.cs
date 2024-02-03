@@ -35,11 +35,12 @@ namespace Tera.Cards
                     status = TeraModStatuses.Taxation,
                     mode = AStatusMode.Add,
                     statusAmount = -requiredTax,
-                    targetPlayer = false
+                    targetPlayer = false,
+                    dialogueSelector = "TeraStrengthSpeak"
                 });
                 list.Add(new AEnergy()
                 {
-                    changeAmount = 1
+                    changeAmount = 2
                 });
             }
 
@@ -56,15 +57,15 @@ namespace Tera.Cards
 
         public override CardData GetData(State state)
         {
-            string desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>1 energy</c>.";
+            string desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>2 energy</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "<c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>energy</c> and draw 1 card.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain 2 <c=status>energy</c> and draw 1 card.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>1 energy</c>.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>2 energy</c>.";
 
             }
             int requiredTax = GetRequiredTax();

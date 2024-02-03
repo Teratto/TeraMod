@@ -54,7 +54,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()

@@ -36,12 +36,10 @@ namespace Tera.Cards
                         statusAmount = 1,
                         targetPlayer = false
                     });
-                    list.Add(new AStatus()
+                    list.Add(new ADrawCard()
                     {
 
-                        status = Status.tempShield,
-                        statusAmount = 1,
-                        targetPlayer = true
+                       count = 1
 
                     });
                     break;
@@ -62,6 +60,10 @@ namespace Tera.Cards
         public override CardData GetData(State state)
         {
             int cost = 1;
+            if (upgrade == Upgrade.B)
+            {
+                cost = 0;
+            }
             return new CardData()
 
             {

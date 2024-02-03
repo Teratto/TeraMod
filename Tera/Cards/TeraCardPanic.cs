@@ -50,7 +50,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     break;
