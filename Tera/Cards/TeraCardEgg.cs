@@ -1,0 +1,78 @@
+﻿using CobaltCoreModding.Definitions.ExternalItems;
+using Tera.Actions;
+using System;
+using System.CodeDom;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tera.Cards
+{
+    
+    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
+    public class TeraCardEgg : Card
+    {
+        public override List<CardAction> GetActions(State s, Combat c)
+        {
+            var list = new List<CardAction>();
+
+
+            bool useSpecialDialogue = s.rngScript.Next() < .01;  // 1 / 100 chance
+            const string SpecialSelector = "TeraPlayedASpecialEgg";
+            
+
+            switch (this.upgrade)
+            {
+                case Upgrade.None:
+                    list.Add(new AAttack() 
+                    { 
+                        damage = GetDmg(s, 0),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                    });
+                    break;
+               
+                case Upgrade.A:
+                    list.Add(new AAttack() 
+                    { 
+                        damage = GetDmg(s, 0),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector =  useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                    });
+                    list.Add(new ADrawCard() { count = 1});
+                    break;
+
+                case Upgrade.B:
+                    list.Add(new AAttack() 
+                    {
+                        damage = GetDmg(s, 2),
+                        fast = true,
+                        stunEnemy = true,
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAHardboiledEgg"
+                    });
+                    break;
+            }
+
+            return list;
+        }
+
+        public override CardData GetData(State state)
+        {
+            return new CardData()
+            {
+                cost = 0,
+                art = new Spr?(Spr.cards_GoatDrone),
+                exhaust = true 
+                //exhaust = upgrade == Upgrade.B
+            };
+        }
+
+        public override string Name()
+        {
+            return "TeraCardEgg";
+        }
+    }
+}
