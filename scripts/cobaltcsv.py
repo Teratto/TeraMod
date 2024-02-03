@@ -7,7 +7,7 @@ story_json_path = r'C:\Program Files (x86)\Steam\steamapps\common\Cobalt Core\Da
 
 who_allow_list = {'hacker', 'eunice', 'dizzy', 'goat', 'riggs', 'shard', 'peri', 'comp'}
 
-output_dir = os.path.normpath(os.path.join(__file__, '..', '..', 'DemoMod'))
+output_dir = os.path.normpath(os.path.join(__file__, '..', '..', 'Tera'))
 
 
 def append_line_rows(indices: List[str], rows, event_name: str, line_data) -> bool:
