@@ -121,7 +121,7 @@ namespace Tera.Cards
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "Gain 2 <c=status>temp shield</c>. <c=downside>Spend 1 enemy tax</c> to gain 2 <c=status>evade</c>.";
+                desc = "Gain 2 <c=status>temp shield</c>. <c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>evade</c>.";
 
             }
             int requiredTax = GetRequiredTax();
