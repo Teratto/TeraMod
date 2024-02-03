@@ -518,7 +518,7 @@ namespace Tera
             { 
                 var spr = sprite_registry!.LookupSprite("Teratto.Teramod.Grant");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.Grant", typeof(Artifacts.TeraArtifactGovernmentGrants), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("GOVERNMENT GRANT", "At the start of combat, gain 1 <c=status>bailout</c>.");
+                artifact.AddLocalisation("GOVERNMENT GRANT", "At the start of combat, gain 2 <c=status>bailout</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {
