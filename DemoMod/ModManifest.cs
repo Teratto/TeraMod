@@ -516,7 +516,7 @@ namespace DemoMod
             {
                 var spr = sprite_registry!.LookupSprite("Teratto.Teramod.Capitalism");
                 var artifact = new ExternalArtifact("Teratto.TeraMod.Capitalism", typeof(Artifacts.TeraArtifactCapitalism), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
-                artifact.AddLocalisation("CAPITALISM", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Start each combat with 3 tax</c>.");
+                artifact.AddLocalisation("CAPITALISM", "At the start of combat, gain <c=energy>1 energy</c>. <c=downside>Gain one tax a turn (caps at 3).</c>.");
                 registry.RegisterArtifact(artifact);
             }
             {

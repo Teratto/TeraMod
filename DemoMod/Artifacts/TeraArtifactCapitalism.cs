@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,16 +10,21 @@ namespace DemoMod.Artifacts
     [ArtifactMeta(pools = new ArtifactPool[] { ArtifactPool.Boss })]
     public class TeraArtifactCapitalism : Artifact
     {
-        public override void OnCombatStart(State state, Combat combat)
+        public override void OnTurnStart(State state, Combat combat)
         {
-            combat.QueueImmediate(new AStatus()
-            {
-                status = TeraModStatuses.Taxation,
-                statusAmount = 3,
-                targetPlayer = true,
-            });;
-        }
+            int playerTax = state.ship.Get(TeraModStatuses.Taxation);
 
+            if (playerTax < 3)
+            {
+                combat.QueueImmediate(new AStatus()
+                {
+                    status = TeraModStatuses.Taxation,
+                    statusAmount = 1,
+                    targetPlayer = true,
+                });
+            }
+
+        }
         public override void OnReceiveArtifact(State state)
         {
             state.ship.baseEnergy++;
