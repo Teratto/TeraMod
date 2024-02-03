@@ -9,18 +9,26 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Runtime.CompilerServices;
+using System.Reflection;
 
 namespace Tera
 {
-    internal class DemoStoryManifest : IStoryManifest
+    internal class TeraStoryManifest : IStoryManifest
     {
         public static ExternalPartType? DemoPartType { get; private set; }
         public IEnumerable<DependencyEntry> Dependencies => new DependencyEntry[0];
         public DirectoryInfo? GameRootFolder { get; set; }
-        public ILogger? Logger { get; set; }
+        public ILogger Logger { get; set; }
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.Teramod.StoryManifest";
 
+        private const string TERA_DECK_ID = "Teratto.TeraMod.Tera";
+
+        public TeraStoryManifest()
+        {
+            Logger = null!;
+        }
 
         private class NodeTypeConverter : JsonConverter<NodeType>
         {
@@ -42,14 +50,90 @@ namespace Tera
             }
         }
 
+        private class StatusConverter : JsonConverter<Status>
+        {
+            private readonly ILogger _logger;
+
+            private Dictionary<string, Status> _teraStatuses;
+
+            public StatusConverter(ILogger logger)
+            {
+                _logger = logger;
+
+                _teraStatuses = typeof(TeraModStatuses).GetFields(BindingFlags.Static | BindingFlags.Public)
+                    .Where(f => f.FieldType == typeof(Status))
+                    .ToDictionary(f => f.Name, f => (Status)(f.GetValue(null) ?? 0));
+            }
+
+            public override Status Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                string? val = reader.GetString();
+
+                if (_teraStatuses.TryGetValue(val ?? "", out Status status))
+                {
+                    return status;
+                }
+
+                if (!Enum.TryParse<Status>(val, out Status result))
+                {
+                    _logger.LogError("Cannot parse \"{Val}\" to enum {EnumName}", val, typeof(Deck).FullName);
+                }
+                return result;
+            }
+
+            public override void Write(Utf8JsonWriter writer, Status value, JsonSerializerOptions options)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        private class DeckConverter : JsonConverter<Deck>
+        {
+            private readonly ILogger _logger;
+
+            public DeckConverter(ILogger logger)
+            {
+                _logger = logger;
+            }
+
+            public override Deck Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                string? val = reader.GetString();
+
+                if (val == "tera" && ModManifest.tera_deck.Id.HasValue)
+                {
+                    return (Deck)ModManifest.tera_deck!.Id.Value;
+                }
+
+                if (!Enum.TryParse<Deck>(val, out Deck result))
+                {
+                    _logger.LogError("Cannot parse \"{Val}\" to enum {EnumName}", val, typeof(Deck).FullName);
+                }
+                return result;
+            }
+
+            public override void Write(Utf8JsonWriter writer, Deck value, JsonSerializerOptions options)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+
         private class GenericEnumConverter<T> : JsonConverter<T> where T : struct
         {
+            private readonly ILogger _logger;
+
+            public GenericEnumConverter(ILogger logger)
+            {
+                _logger = logger;
+            }
+
             public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             {
                 string? val = reader.GetString();
                 if (!Enum.TryParse<T>(val, out T result))
                 {
-                    throw new InvalidOperationException();
+                    _logger.LogError("Cannot parse \"{Val}\" to enum {EnumName}", val, typeof(T).FullName);
                 }
                 return result;
             }
@@ -141,9 +225,9 @@ namespace Tera
             }
         }
 
-        private static DemoStoryManifest _instance;
-        private InjectedItemContainer _container;
-        private Dictionary<string, StoryNode> _nodesToInject;
+        private static TeraStoryManifest _instance = null!;
+        private InjectedItemContainer _container = null!;
+        private Dictionary<string, StoryNode> _nodesToInject = null!;
 
         private static Queue<ValueTuple<string, Action>> MakeInitQueue_Postfix(Queue<ValueTuple<string, Action>> __result)
         {
@@ -242,8 +326,8 @@ namespace Tera
             {
                 JsonSerializerOptions options = new() { IncludeFields = true };
                 options.Converters.Add(new NodeTypeConverter());
-                options.Converters.Add(new GenericEnumConverter<Status>());
-                options.Converters.Add(new GenericEnumConverter<Deck>());
+                options.Converters.Add(new StatusConverter(Logger));
+                options.Converters.Add(new DeckConverter(Logger));
 
                 _nodesToInject = JsonSerializer.Deserialize<Dictionary<string, StoryNode>>(stream, options)!;
             }
