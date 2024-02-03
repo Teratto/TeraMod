@@ -24,13 +24,19 @@ namespace Tera.Cards
 
                         status = TeraModStatuses.Bailout,
                         statusAmount = 1,
-                        targetPlayer = true
-
+                        targetPlayer = true,
+                        dialogueSelector = "TeraBreakoutSpeak"
                     });
                     break;
 
                 case Upgrade.B:
-
+                    list.Add(new AStatus()
+                    {
+                        status = Status.energyLessNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true,
+                        dialogueSelector = "TeraBreakoutSpeak"
+                    });
                     list.Add(new AAttack() { damage = GetDmg(s, 2), fast = true });
                     list.Add(new AStatus()
                     {
@@ -40,6 +46,7 @@ namespace Tera.Cards
                         targetPlayer = true
 
                     });
+                  
                     break;
 
                 case Upgrade.A:
@@ -49,7 +56,8 @@ namespace Tera.Cards
 
                         status = TeraModStatuses.Bailout,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = "TeraBreakoutSpeak"
                     });
                     break;
             }
@@ -63,7 +71,6 @@ namespace Tera.Cards
             {
                 cost = 2,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B,
                  
             };
         }

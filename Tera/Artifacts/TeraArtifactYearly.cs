@@ -14,7 +14,7 @@ namespace Tera.Artifacts
             {
                 status = TeraModStatuses.Taxation,
                 targetPlayer = false,
-                statusAmount = 2
+                statusAmount = 2,
             });
         }
     }
