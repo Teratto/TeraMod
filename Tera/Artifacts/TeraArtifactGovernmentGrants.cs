@@ -14,7 +14,7 @@ namespace Tera.Artifacts
             {
                 status = TeraModStatuses.Bailout,
                 targetPlayer = true,
-                statusAmount = 1
+                statusAmount = 2
 
             });
         }
