@@ -21,17 +21,18 @@ namespace Tera.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack()
-                    {
-                        damage = GetDmg(s, 0),
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = 1
-                    });
+                   
                     list.Add(new AMove()
                     {
                         dir = 2,
                         targetPlayer = true
                         
+                    });
+                    list.Add(new AAttack()
+                    {
+                        damage = GetDmg(s, 0),
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 1
                     });
                     list.Add(new AStatus()
                     {
@@ -42,16 +43,17 @@ namespace Tera.Cards
                     break;
 
                 case Upgrade.A:
+                  
+                    list.Add(new AMove()
+                    {
+                        dir = 2,
+                        targetPlayer = true
+                    });
                     list.Add(new AAttack()
                     {
                         damage = GetDmg(s, 0),
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
-                    });
-                    list.Add(new AMove()
-                    {
-                        dir = 2,
-                        targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
@@ -71,8 +73,9 @@ namespace Tera.Cards
                     });
                     list.Add(new AMove()
                     {
-                        dir = 4,
+                        dir = 2,
                         targetPlayer = true
+
                     });
                     list.Add(new AStatus()
                     {
@@ -93,8 +96,6 @@ namespace Tera.Cards
                 flippable = (upgrade == Upgrade.A ? true : false),
                 cost = 0,
                 art = new Spr?(Spr.cards_GoatDrone),
-                retain = (upgrade == Upgrade.B ? true : false),
-                exhaust = (upgrade == Upgrade.B ? true : false),
             };
         }
         public override string Name()
