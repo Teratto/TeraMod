@@ -675,7 +675,7 @@
                 0
             ],
             "who": "tera",
-            "what": "We're gonna live!",
+            "what": "We got this!",
             "loop_tag": "happy"
         },
         {
@@ -685,7 +685,7 @@
             ],
             "who": "tera",
             "what": "Bird up!",
-            "loop_tag": ""
+            "loop_tag": "happy"
         },
         {
             "event_name": "JustHitGeneric_Multi_44",
@@ -824,7 +824,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Oh no no no no no no.",
+            "what": "I don't think I can handle another reset.",
             "loop_tag": "nervous"
         },
         {
@@ -904,7 +904,7 @@
         {
             "event_name": "PeriJustHit_Multi_7",
             "indices": [
-                0
+                1
             ],
             "who": "peri",
             "what": "No problem.",
@@ -1038,7 +1038,7 @@
         {
             "event_name": "ThatsALotOfDamageToUs_Multi_15",
             "indices": [
-                0
+                1
             ],
             "who": "eunice",
             "what": "...What?",
@@ -1122,7 +1122,7 @@
                 0
             ],
             "who": "tera",
-            "what": "...We're safe? We're safe!",
+            "what": "We're safe!",
             "loop_tag": "happy"
         },
         {
@@ -1367,7 +1367,7 @@
             ],
             "who": "tera",
             "what": "Carry the one... and bam!",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraJustTaxed_Multi_6",
@@ -1376,7 +1376,7 @@
             ],
             "who": "tera",
             "what": "Accrue that debt...",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraJustTaxed_Multi_7",
@@ -1385,7 +1385,7 @@
             ],
             "who": "tera",
             "what": "Just a little more tax...",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraJustTaxed_Multi_8",
@@ -1907,7 +1907,7 @@
             ],
             "who": "tera",
             "what": "The perfect egg throw...",
-            "loop_tag": "egg"
+            "loop_tag": "eggie"
         },
         {
             "event_name": "TeraJustPlayedAnEggAndGotLucky_Multi_1",
@@ -1916,7 +1916,7 @@
             ],
             "who": "tera",
             "what": "This is the best egg I have ever seen...",
-            "loop_tag": "egg"
+            "loop_tag": "eggie"
         },
         {
             "event_name": "TeraJustPlayedAnEggAndGotLucky_Multi_2",
@@ -1925,7 +1925,7 @@
             ],
             "who": "tera",
             "what": "Thank you, my eggy friend.",
-            "loop_tag": "egg"
+            "loop_tag": "eggie"
         },
         {
             "event_name": "TeraJustGovernmentGrants_Multi_0",
@@ -2122,7 +2122,7 @@
             ],
             "who": "tera",
             "what": "Let's take a break, capitalism has given me more work to do.",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraJustGotCapitalism_Multi_3",
@@ -2131,7 +2131,7 @@
             ],
             "who": "tera",
             "what": "It's time to charge those credit cards!",
-            "loop_tag": "neutral tax"
+            "loop_tag": "happy"
         },
         {
             "event_name": "TeraJustBailedUsOut_Multi_0",
@@ -2167,7 +2167,7 @@
             ],
             "who": "tera",
             "what": "Hopefully losing that bailout won't financially cripple me.",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraJustBailedUsOut_Multi_4",
@@ -2381,7 +2381,7 @@
                 0
             ],
             "who": "tera",
-            "what": "C'mon Tera, I know you're stronger than you look.",
+            "what": "You've been pardoned.",
             "loop_tag": "closed"
         },
         {
@@ -2463,7 +2463,7 @@
             ],
             "who": "tera",
             "what": "Just let me think here...",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraPlayedTenacity_Multi_1",
@@ -2472,7 +2472,7 @@
             ],
             "who": "tera",
             "what": "My bird brain will come up with something, just gimme a sec.",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraPlayedTenacity_Multi_2",
@@ -2481,7 +2481,7 @@
             ],
             "who": "tera",
             "what": "I think I got some extra ideas.",
-            "loop_tag": "neutraltax"
+            "loop_tag": "taxneutral"
         },
         {
             "event_name": "TeraPlayedPersistence_Multi_0",
@@ -2655,7 +2655,7 @@
             "loop_tag": "grumpy"
         },
         {
-            "event_name": "TeraPlayedTaunt_Multi_8",
+            "event_name": "TeraPlayedTaunt_Multi_39",
             "indices": [
                 0
             ],
@@ -2664,13 +2664,13 @@
             "loop_tag": ""
         },
         {
-            "event_name": "TeraPlayedTaunt_Multi_8",
+            "event_name": "TeraPlayedTaunt_Multi_39",
             "indices": [
                 1
             ],
             "who": "riggs",
             "what": "What addiction?",
-            "loop_tag": "bobaslurp"
+            "loop_tag": "bobaSlurp"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_9",
@@ -2726,7 +2726,7 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": ""
+            "loop_tag": "squint"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_13",
@@ -2969,7 +2969,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Your ship reminds me of ads on online videos. Annoying.",
+            "what": "Your ship reminds me of mobile game ads. Ew.",
             "loop_tag": "squint"
         },
         {
@@ -3044,7 +3044,7 @@
             ],
             "who": "peri",
             "what": "Tera! Language!",
-            "loop_tag": ""
+            "loop_tag": "mad"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_34",
@@ -3054,7 +3054,7 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": ""
+            "loop_tag": "squint"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_35",
@@ -3110,7 +3110,7 @@
             ],
             "who": "peri",
             "what": "Tera! Language!",
-            "loop_tag": ""
+            "loop_tag": "mad"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_37",
@@ -3120,7 +3120,7 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": ""
+            "loop_tag": "squint"
         },
         {
             "event_name": "TeraPlayedTaunt_Multi_38",
