@@ -13,9 +13,13 @@ namespace Tera.BaseGamePatches
                 prefix: new HarmonyMethod(AccessTools.Method(typeof(PatchWizardMissingStatuses), nameof(Wizard_GetAssignableStatuses_Prefix)))
             );
         }
-
-        public static bool Wizard_GetAssignableStatuses_Prefix(State s, ref List<Status> __result)
+        
+        public static bool Wizard_GetAssignableStatuses_Prefix(State s, ref List<Status>? __result)
         {
+            // Wizard's GetAssignableStatuses method doesn't regard the deckToMissingStatus dictionary and instead
+            // has it's own Deck to Status lookup. As a result, the stock version of Wizard.GetAssignableStatuses will
+            // never return a list containing the missing statuses for mod characters.
+            
             if (__result == null)
             {
                 __result = new List<Status>();

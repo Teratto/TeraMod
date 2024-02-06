@@ -254,7 +254,7 @@ namespace Tera
                 {
                     if (!_nodesToInject.TryGetValue(item.EventName, out node))
                     {
-                        Console.WriteLine("TeraMod: Cannot find StoryNode named {item.EventName} in either stock DB or mod StoryNodes. Is one of the files out of date?");
+                        Console.WriteLine($"TeraMod: Cannot find StoryNode named {item.EventName} in either stock DB or mod StoryNodes. Is one of the files out of date?");
                         continue;
                     }
 
