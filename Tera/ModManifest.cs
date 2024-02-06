@@ -2,19 +2,17 @@
 using CobaltCoreModding.Definitions.ExternalItems;
 using CobaltCoreModding.Definitions.ModContactPoints;
 using CobaltCoreModding.Definitions.ModManifests;
-using CobaltCoreModding.Definitions.OverwriteItems;
 using Tera.Actions;
 using Tera.Cards;
 using Microsoft.Extensions.Logging;
 using HarmonyLib;
 using System.Runtime.Loader;
-using System.Reflection;
 using Tera.StatusPatches;
 using Tera.BaseGamePatches;
 
 namespace Tera
 {
-    public class ModManifest : IModManifest, IPrelaunchManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest, IAddinManifest
+    public class ModManifest : IModManifest, IPrelaunchManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest
     {
         public static ExternalStatus? demo_status;
         internal static ICustomEventHub? EventHub;
@@ -31,13 +29,11 @@ namespace Tera
 
         public IEnumerable<DependencyEntry> Dependencies { get; }
         public DirectoryInfo? GameRootFolder { get; set; }
-        public ILogger? Logger { get; set; }
+        public ILogger? Logger { get; set; } = null!;
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.TeraMod.MainManifest";
 
-
-
-
+        
         // Constructor!! :D
         public ModManifest()
         {
@@ -61,7 +57,7 @@ namespace Tera
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
             BailoutPatches.Apply(harmony, Logger);
-            PatchDeckEnumeration.Apply(harmony, Logger);
+            // PatchDeckEnumeration.Apply(harmony, Logger);  // This is fixed by Kokoro or Harmony
             PatchWizardMissingStatuses.Apply(harmony, Logger);
             TeraModCardInterfacePatch.Apply(harmony, Logger);
 
@@ -591,24 +587,7 @@ namespace Tera
             //eventHub.ConnectToEvent<Combat>("EWanderer.DemoMod.TestEvent", (c) => { c.QueueImmediate(new ACardOffering() { amount = 10, battleType = BattleType.Elite, inCombat = true }); });
             //ModManifest.EventHub = eventHub;
         }
-
-        private DemoAddinPanel? addin;
-
-        public void ModifyLauncher(object? launcherUI)
-        {
-            if (launcherUI is Form)
-            {
-                var parent = launcherUI.GetType().GetField("MainTabControl")?.GetValue(launcherUI) as TabControl;
-                if (parent == null)
-                    return;
-                var page = new TabPage("Tera Tools :D");
-                addin = new DemoAddinPanel();
-                page.Controls.Add(addin);
-                addin.Dock = DockStyle.Fill;
-                parent.TabPages.Add(page);
-            }
-        }
-
+        
         public void FinalizePreperations(IPrelaunchContactPoint prelaunchManifest)
         {
             harmony.Patch(
