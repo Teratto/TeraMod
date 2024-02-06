@@ -177,6 +177,7 @@ namespace Tera
             LoadSprite(artRegistry, "Teratto.Teramod.YearlyPayments", "YearlyPayments.png");
             LoadSprite(artRegistry, "Teratto.Teramod.Capitalism", "Capitalism.png");
             LoadSprite(artRegistry, "Teratto.Teramod.EarlyBird", "EarlyBird.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.TeraEgg", "teraegg.png");
 
         }
 
@@ -306,6 +307,12 @@ namespace Tera
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.GameOver"),
             });
             registry.RegisterAnimation(deathAnimation);
+
+            ExternalAnimation eggAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.TeraEgg", tera_deck, "eggie", false, new ExternalSprite[]
+            {
+                sprite_registry!.LookupSprite("Teratto.Teramod.TeraEgg"),
+            });
+            registry.RegisterAnimation(eggAnimation); 
         }
 
         /// <summary>
@@ -382,7 +389,7 @@ namespace Tera
             registry.RegisterCard(teraCardDesperation);
 
             ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
-            teraCardStrength.AddLocalisation("Government Pardon");
+            teraCardStrength.AddLocalisation("Forgiveness");
             registry.RegisterCard(teraCardStrength);
 
             ExternalCard teraCardSalesTax = new ExternalCard("Teratto.TeraMod.TeraSalesTax", typeof(TeraCardSalesTax), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));

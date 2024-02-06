@@ -29,7 +29,8 @@ namespace Tera.Cards
 
                         status = Status.energyLessNextTurn,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
 
                     });
                     break;
@@ -72,7 +73,8 @@ namespace Tera.Cards
 
                         status = Status.drawLessNextTurn,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
 
                     });
                     break;

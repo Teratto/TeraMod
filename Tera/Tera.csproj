@@ -36,6 +36,7 @@
     <Content Include="Sprites\**\*.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Remove="Sprites\teraegg.png" />
     <Content Include="story.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
