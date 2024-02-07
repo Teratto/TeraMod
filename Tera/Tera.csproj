@@ -43,5 +43,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  
+  <ItemGroup>
+    <!-- These files should show up in the Solution Explorer, but are not part of any build. -->
+    <TeraScriptFile Include="../scripts/**/*.py" />
+  </ItemGroup>
 
 </Project>

@@ -11,6 +11,9 @@ echo =====================================================
 echo = IMPORTING STORY NODES                             =
 echo =====================================================
 python process_nodes.py --pull
+if errorlevel 1 (
+	goto fail
+)
 
 echo =====================================================
 echo = IMPORT SUCCESSFUL!! YAY!!                         =
