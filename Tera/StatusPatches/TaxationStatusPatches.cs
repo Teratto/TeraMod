@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using System.Reflection.Emit;
 using System.Reflection;
 using Tera.Actions;
+using Tera.Artifacts;
 
 namespace Tera.StatusPatches
 {
@@ -29,8 +30,16 @@ namespace Tera.StatusPatches
 
         private static void Ship_OnAfterTurn_Postfix(Ship __instance, State s, Combat c)
         {
+            bool inflationGet = s.artifacts.Find(a => a.GetType() == typeof(TeraArtifactInflation)) != null;  
             int taxationStatusAmmount = __instance.Get(TeraModStatuses.Taxation);
-            if (taxationStatusAmmount >= 3)
+            int bigTaxTime = 3;
+           
+            if (inflationGet == true)
+            {
+                bigTaxTime = 2;
+            }
+
+            if (taxationStatusAmmount >= bigTaxTime)
             {
 
                 bool isPlayer = __instance == s.ship;
@@ -38,7 +47,7 @@ namespace Tera.StatusPatches
                 c.QueueImmediate(new AHurt()
                 {
                     hurtShieldsFirst = true,
-                    hurtAmount = taxationStatusAmmount / 3,
+                    hurtAmount = taxationStatusAmmount / bigTaxTime,
                     targetPlayer = isPlayer
                 });
             }

@@ -38,7 +38,8 @@ namespace Tera.Cards
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
 
@@ -59,18 +60,14 @@ namespace Tera.Cards
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
 
                     break;
 
                 case Upgrade.B:
-                   
-                    list.Add(new AMove()
-                    {
-                        dir = 4,
-                        targetPlayer = true
-                    });
+                  
                     list.Add(new AAttack()
                     {
                         damage = GetDmg(s, 0),
@@ -87,7 +84,8 @@ namespace Tera.Cards
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
             }

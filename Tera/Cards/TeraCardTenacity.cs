@@ -46,6 +46,7 @@ namespace Tera.Cards
                     {
                         card = new TeraCardTenacity()
                         {
+                            upgrade = Upgrade.A,
                             isTemporary = true
                         },
                         destination = CardDestination.Hand,

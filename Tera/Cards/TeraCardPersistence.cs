@@ -45,15 +45,9 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Interest,
-                        statusAmount = 1,
+                        statusAmount = 2,
                         targetPlayer = false,
                         dialogueSelector = "TeraPersistenceSpeak"
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = 2,
-                        targetPlayer = false
                     });
                     break;
             }
@@ -67,6 +61,10 @@ namespace Tera.Cards
             if(this.upgrade == Upgrade.A)
             {
                 cost = 2;
+            }
+            if(this.upgrade == Upgrade.B)
+            {
+                cost = 4;
             }
             return new CardData()
 

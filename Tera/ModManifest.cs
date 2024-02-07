@@ -174,7 +174,9 @@ namespace Tera
             LoadSprite(artRegistry, "Teratto.Teramod.Capitalism", "Capitalism.png");
             LoadSprite(artRegistry, "Teratto.Teramod.EarlyBird", "EarlyBird.png");
             LoadSprite(artRegistry, "Teratto.Teramod.TeraEgg", "teraegg.png");
+            LoadSprite(artRegistry, "Teratto.Teramod.TeraInflation", "ArtifactInflation.png");
 
+            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi1", "CargBgs\\CardEgg.png");
         }
 
         /// <summary>
@@ -308,7 +310,7 @@ namespace Tera
             {
                 sprite_registry!.LookupSprite("Teratto.Teramod.TeraEgg"),
             });
-            registry.RegisterAnimation(eggAnimation); 
+            registry.RegisterAnimation(eggAnimation);
         }
 
         /// <summary>
@@ -360,15 +362,15 @@ namespace Tera
             teraCardTariff.AddLocalisation("Tariff");
             registry.RegisterCard(teraCardTariff);
 
-            ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.TeraPayment", typeof(TeraCardPayment), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardPayment.AddLocalisation("Audit");
-            registry.RegisterCard(teraCardPayment);
+            ExternalCard teraCardAudit = new ExternalCard("Teratto.TeraMod.TeraAudit", typeof(TeraCardAudit), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardAudit.AddLocalisation("Audit");
+            registry.RegisterCard(teraCardAudit);
 
             ExternalCard teraCardMarketCrash = new ExternalCard("Teratto.TeraMod.TeraMarketCrash", typeof(TeraMarketCrash), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardMarketCrash.AddLocalisation("Market Crash");
             registry.RegisterCard(teraCardMarketCrash);
 
-            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
+            ExternalCard teraCardRefund = new ExternalCard("Teratto.TeraMod.TeraRefund", typeof(TeraCardRefund), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardRefund.AddLocalisation("Tax Evasion");
             registry.RegisterCard(teraCardRefund);
 
@@ -423,6 +425,14 @@ namespace Tera
             ExternalCard teraCardAllIn = new ExternalCard("Teratto.TeraMod.teraAllIn", typeof(TeraCardAllIn), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardAllIn.AddLocalisation("All-In");
             registry.RegisterCard(teraCardAllIn);
+
+            ExternalCard teraCardEggShells = new ExternalCard("Teratto.TeraMod.teraEggShells", typeof(TeraCardEggShells), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardEggShells.AddLocalisation("Egg Shells");
+            registry.RegisterCard(teraCardEggShells);
+
+            ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.teraPayment", typeof(TeraCardPayment), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            teraCardPayment.AddLocalisation("Payment");
+            registry.RegisterCard(teraCardPayment);
         }
 
         /// <summary>
@@ -486,11 +496,6 @@ namespace Tera
 
         public void LoadManifest(IGlossaryRegisty registry)
         {
-            var icon = ExternalSprite.GetRaw((int)Spr.icons_ace);
-            var glossary = new ExternalGlossary("Ewanderer.DemoMod.DemoCard.Glossary", "ewandererdemocard", false, ExternalGlossary.GlossayType.action, icon);
-            glossary.AddLocalisation("en", "EWDemoaction", "Have all the cheesecake in the world!");
-            registry.RegisterGlossary(glossary);
-            EWandererDemoAction.glossary_item = glossary.Head;
 
             ExternalSprite conditionalIcon = ExternalSprite.GetRaw((int)Spr.icons_questionMark);
             ExternalGlossary conditionalGlossary = new ExternalGlossary("Teratto.TeraMod.Conditional", "Conditional", false, ExternalGlossary.GlossayType.cardtrait, conditionalIcon);
@@ -531,6 +536,12 @@ namespace Tera
                 artifact.AddLocalisation("FLIGHT TRAINING", "Gain 1 <c=status>evade</c> every 3 turns.");
                 registry.RegisterArtifact(artifact);
             }
+            {
+                var spr = sprite_registry!.LookupSprite("Teratto.Teramod.TeraInflation");
+                var artifact = new ExternalArtifact("Teratto.TeraMod.TeraInflation", typeof(Artifacts.TeraArtifactInflation), spr, new ExternalGlossary[0], deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), null);
+                artifact.AddLocalisation("INFLATION", "Tax now does <c=damage>1</c> damage for every <c=keyword>2</c> tax a ship has.");
+                registry.RegisterArtifact(artifact);
+            }
 
 
 
@@ -544,7 +555,7 @@ namespace Tera
             ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.coin");
 
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
-            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
+            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</c> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
             statusRegistry.RegisterStatus(taxationStatus);
 
             TeraModStatuses.Taxation = (Status)taxationStatus.Id!;

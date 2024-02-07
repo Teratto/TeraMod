@@ -26,7 +26,8 @@ namespace Tera.Cards
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
            case Upgrade.A:
@@ -38,7 +39,8 @@ namespace Tera.Cards
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
 
@@ -50,8 +52,9 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
-                        statusAmount = 1,
-                        targetPlayer = true
+                        statusAmount = 2,
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
             }

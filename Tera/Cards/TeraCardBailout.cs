@@ -42,6 +42,12 @@ namespace Tera.Cards
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
+                        status = Status.energyLessNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true,
+                    });
+                    list.Add(new AStatus()
+                    {
                         status = TeraModStatuses.Bailout,
                         statusAmount = 1,
                         targetPlayer = true
@@ -58,7 +64,7 @@ namespace Tera.Cards
             int cost = 1;
             if (this.upgrade == Upgrade.B)
             {
-                cost = 2;
+                cost = 1;
             }
             return new CardData()
 
