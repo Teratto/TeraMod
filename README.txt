@@ -1,4 +1,4 @@
-Tera, the Tax Collector [0.8.1]
+Tera, the Tax Collector [0.9.0]
 
 Get ready to collect some payments as your wimpy tax collector charges everyone around him. Play with a new status effect: TAX! For every 3 tax a ship has, they
 take one damage, and it does not decrease at the end of the turn! Play defensively to stack lots of tax, or spend tax to play more offensively!
