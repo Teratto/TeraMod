@@ -13,7 +13,6 @@ argparser = argparse.ArgumentParser()
 argparser.add_argument('--pull', action='store_true')
 argparser.add_argument('--pull-url', default='https://docs.google.com/spreadsheets/d/e/2PACX-1vRBgeaQaPwCPWXNX0ZM_WmPOT82MhSwNAOcGUf5YKGhbLn6IsrmcnGvk-ucwW_IOg/pub?gid=795863446&single=true&output=csv')
 
-
 had_error = False
 
 
@@ -59,16 +58,18 @@ def main():
             values = {fields[i]: val for i, val in enumerate(line)}
             node = {}
 
-            event_name = values['name'].strip()
+            node_name = values['name'].strip()
 
-            if not event_name or event_name.startswith('//'):
+            if not node_name or node_name.startswith('//'):
                 continue
 
-            if event_name in all:
+            if node_name in all:
                 # Exists in stock game. Ignore.
                 continue
 
-            print(f'Found new node {event_name}')
+            print(f'Found new node {node_name}')
+            
+            node_name = cobaltcsv.NODE_PREFIX + node_name
 
             for field_name, val in values.items():
                 if field_name == 'name':
@@ -104,7 +105,7 @@ def main():
 
                 node[field_name] = val
 
-            nodes[event_name] = node
+            nodes[node_name] = node
 
     with open(os.path.join(cobaltcsv.output_dir, 'story_nodes.json'), 'w') as f:
         json.dump(nodes, f, indent=4)

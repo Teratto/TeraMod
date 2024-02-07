@@ -31,13 +31,13 @@ def main():
         seen_header = False
 
         for line in csv_reader:
-            event_name, line_index, who, what, loop_tag = line[:5]
+            node_name, line_index, who, what, loop_tag = line[:5]
 
             if not seen_header:
                 seen_header = True
                 continue
 
-            if not event_name or event_name.lower().startswith('note'):
+            if not node_name or node_name.lower().startswith('note'):
                 continue
 
             indices = line_index.split(',')
@@ -46,7 +46,7 @@ def main():
             # Is this a new item?
             is_new = False
 
-            stock_event = all.get(event_name)
+            stock_event = all.get(node_name)
             if stock_event:
                 lines = stock_event['lines']
                 for index in parsed_indices:
@@ -70,7 +70,7 @@ def main():
             # This is new!
             print('Found new line: ' + ', '.join(line))
             payload = {
-                'event_name': event_name,
+                'event_name': cobaltcsv.NODE_PREFIX + node_name,
                 'indices': parsed_indices,
                 'who': who,
                 'what': what,

@@ -9,6 +9,9 @@ who_allow_list = {'hacker', 'eunice', 'dizzy', 'goat', 'riggs', 'shard', 'peri',
 
 output_dir = os.path.normpath(os.path.join(__file__, '..', '..', 'Tera'))
 
+# A prefix to prepend to each story node name, to make sure story node names don't conflict with other mods.
+NODE_PREFIX = "TERAMOD_"
+
 
 def append_line_rows(indices: List[str], rows, event_name: str, line_data) -> bool:
     did_append = False

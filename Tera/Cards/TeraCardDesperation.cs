@@ -24,7 +24,7 @@ namespace Tera.Cards
                        status = Status.powerdrive,
                        statusAmount = 1,
                        targetPlayer = true,
-                       dialogueSelector = "TeraDesperationSpeak"
+                       dialogueSelector = ".TeraDesperationSpeak"
                     });
                     list.Add(new AStatus()
                     {
@@ -43,7 +43,7 @@ namespace Tera.Cards
                         status = Status.powerdrive,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = "TeraDesperationSpeak"
+                        dialogueSelector = ".TeraDesperationSpeak"
                     });
                     list.Add(new AStatus()
                     {
@@ -61,7 +61,7 @@ namespace Tera.Cards
                         status = Status.powerdrive,
                         statusAmount = 2,
                         targetPlayer = true,
-                        dialogueSelector = "TeraDesperationSpeak"
+                        dialogueSelector = ".TeraDesperationSpeak"
                     });
                     list.Add(new AStatus()
                     {
