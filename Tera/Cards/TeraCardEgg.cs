@@ -31,7 +31,7 @@ namespace Tera.Cards
                         damage = GetDmg(s, 0),
                         fast = true,
                         stunEnemy = true,
-                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : ".TeraPlayedAnEgg"
                     });
                     break;
                
@@ -41,7 +41,7 @@ namespace Tera.Cards
                         damage = GetDmg(s, 0),
                         fast = true,
                         stunEnemy = true,
-                        dialogueSelector =  useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
+                        dialogueSelector =  useSpecialDialogue ? SpecialSelector : ".TeraPlayedAnEgg"
                     });
                     break;
 
@@ -51,7 +51,7 @@ namespace Tera.Cards
                         damage = GetDmg(s, 2),
                         fast = true,
                         stunEnemy = true,
-                        dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAHardboiledEgg"
+                        dialogueSelector = useSpecialDialogue ? SpecialSelector : ".TeraPlayedAHardboiledEgg"
                     });
                     list.Add(new AAddCard()
                     {

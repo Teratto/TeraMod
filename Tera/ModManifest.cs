@@ -33,6 +33,7 @@ namespace Tera
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.TeraMod.MainManifest";
 
+        private static ModManifest _instance = null!; 
         
         // Constructor!! :D
         public ModManifest()
@@ -44,6 +45,8 @@ namespace Tera
 
         public void BootMod(IModLoaderContact contact)
         {
+            _instance = this;
+            
             // Setup stuff for Harmony
             AssemblyLoadContext currentAssemblyLoadContext = AssemblyLoadContext.GetLoadContext(typeof(ModManifest).Assembly) ?? AssemblyLoadContext.CurrentContextualReflectionContext ?? AssemblyLoadContext.Default;
             //currentAssemblyLoadContext.LoadFromAssemblyPath(Path.Combine(ModRootFolder!.FullName, "Shrike.dll"));
@@ -625,6 +628,12 @@ namespace Tera
             }
 
             __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "<c=tera>TERA..?</c>\nTera is missing.");
+        }
+
+
+        public static Spr GetSprite(string globalName)
+        {
+            return (Spr)(_instance.sprite_registry!.LookupSprite(globalName).Id ?? 0);
         }
     }
 }

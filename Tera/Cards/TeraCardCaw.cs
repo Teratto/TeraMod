@@ -25,7 +25,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Bailout,
                         statusAmount = 2,
                         targetPlayer = true,
-                        dialogueSelector = "TeraBreakoutSpeak"
+                        dialogueSelector = ".TeraBreakoutSpeak"
                     });
                     break;
 
@@ -50,7 +50,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Bailout,
                         statusAmount = 2,
                         targetPlayer = true,
-                        dialogueSelector = "TeraBreakoutSpeak"
+                        dialogueSelector = ".TeraBreakoutSpeak"
                     });
                     break;
             }
