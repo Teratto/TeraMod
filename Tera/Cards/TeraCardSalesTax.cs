@@ -26,6 +26,7 @@ namespace Tera.Cards
                         targetPlayer = false
 
                     });
+                  
                     break;
 
                 case Upgrade.A:
@@ -38,9 +39,7 @@ namespace Tera.Cards
                     });
                     list.Add(new ADrawCard()
                     {
-
-                       count = 1
-
+                        count = 1
                     });
                     break;
 
@@ -48,8 +47,17 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = false
+                    });
+                    list.Add(new AAddCard()
+                    {
+                        card = new TeraCardPayment()
+                        {
+                            temporaryOverride = true,
+                        },
+                        destination = CardDestination.Deck,
+                        amount = 1,
                     });
                     break;
             }
@@ -62,14 +70,14 @@ namespace Tera.Cards
             int cost = 1;
             if (upgrade == Upgrade.B)
             {
-                cost = 0;
+                cost = 1;
             }
             return new CardData()
 
             {
                 cost = cost,
                 art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B
+                exhaust = upgrade == Upgrade.B ? true : false,
             };
         }
         public override string Name()

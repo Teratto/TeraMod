@@ -22,19 +22,22 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 2
+                        statusAmount = 2,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
                         statusAmount = 2,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
-                        targetPlayer = true
+                        targetPlayer = true,
+                        dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
 

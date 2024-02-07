@@ -11,7 +11,7 @@ namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { }, dontOffer = true)]
-    public class TeraCardPayment : Card
+    public class TeraCardEggShells : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
         {
@@ -20,11 +20,11 @@ namespace Tera.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AStatus()
+                    list.Add(new AAttack()
                     {
-                      status = TeraModStatuses.Bailout,
-                      statusAmount = 1,
-                      targetPlayer = true,
+                        damage = GetDmg(s, 0),
+                        fast = true,
+                        stunEnemy = true,
                     });
                     break;
             }
@@ -45,7 +45,7 @@ namespace Tera.Cards
 
         public override string Name()
         {
-            return "TeraCardPayment";
+            return "TeraCardEggShells";
         }
     }
 }

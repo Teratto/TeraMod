@@ -13,6 +13,7 @@ namespace Tera.Cards
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardEgg : Card
     {
+        public bool isTemporary;
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
@@ -42,7 +43,6 @@ namespace Tera.Cards
                         stunEnemy = true,
                         dialogueSelector =  useSpecialDialogue ? SpecialSelector : "TeraPlayedAnEgg"
                     });
-                    list.Add(new ADrawCard() { count = 1});
                     break;
 
                 case Upgrade.B:
@@ -52,6 +52,15 @@ namespace Tera.Cards
                         fast = true,
                         stunEnemy = true,
                         dialogueSelector = useSpecialDialogue ? SpecialSelector : "TeraPlayedAHardboiledEgg"
+                    });
+                    list.Add(new AAddCard()
+                    {
+                        card = new TeraCardEggShells()
+                        {
+                          temporaryOverride = true,
+                        },
+                        destination = CardDestination.Discard,
+                        amount = 1,
                     });
                     break;
             }
@@ -64,8 +73,9 @@ namespace Tera.Cards
             return new CardData()
             {
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = true 
+                art = new Spr?(Spr.cards_Fleetfoot),
+                exhaust = true,
+                retain = upgrade == Upgrade.A ? true : false,
                 //exhaust = upgrade == Upgrade.B
             };
         }

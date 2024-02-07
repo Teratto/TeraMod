@@ -22,7 +22,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 3,
+                        statusAmount = 4,
                         targetPlayer = false
 
                     });
@@ -33,7 +33,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 3,
+                        statusAmount = 4,
                         targetPlayer = false
                     });
                     break;
@@ -42,7 +42,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 6,
+                        statusAmount = 7,
                         targetPlayer = false
                     });
                     break;
