@@ -25,7 +25,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Bailout,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = "TeraBreakoutSpeak"
+                        dialogueSelector = ".TeraBreakoutSpeak"
                     });
                     break;
 
@@ -35,7 +35,7 @@ namespace Tera.Cards
                         status = Status.energyLessNextTurn,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = "TeraBreakoutSpeak"
+                        dialogueSelector = ".TeraBreakoutSpeak"
                     });
                     list.Add(new AAttack() { damage = GetDmg(s, 2), fast = true });
                     list.Add(new AStatus()
@@ -57,7 +57,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Bailout,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = "TeraBreakoutSpeak"
+                        dialogueSelector = ".TeraBreakoutSpeak"
                     });
                     break;
             }

@@ -36,7 +36,7 @@ namespace Tera.Cards
                     mode = AStatusMode.Add,
                     statusAmount = -requiredTax,
                     targetPlayer = false,
-                    dialogueSelector = "TeraStrengthSpeak"
+                    dialogueSelector = ".TeraStrengthSpeak"
                 });
                 list.Add(new AEnergy()
                 {
@@ -45,12 +45,12 @@ namespace Tera.Cards
             }
 
             if (enemyTax >= requiredTax && upgrade == Upgrade.A)
-                {
+            {
                 list.Add(new ADrawCard()
                 {
                     count = 1
                 });
-                }
+            }
 
             return list;
         }
