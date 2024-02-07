@@ -24,7 +24,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Interest,
                         statusAmount = 1,
                         targetPlayer = false,
-                        dialogueSelector = "TeraPersistenceSpeak"
+                        dialogueSelector = ".TeraPersistenceSpeak"
 
                     });
                     break;
@@ -36,7 +36,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Interest,
                         statusAmount = 1,
                         targetPlayer = false,
-                        dialogueSelector = "TeraPersistenceSpeak"
+                        dialogueSelector = ".TeraPersistenceSpeak"
                     });
 
                     break;
@@ -47,7 +47,7 @@ namespace Tera.Cards
                         status = TeraModStatuses.Interest,
                         statusAmount = 1,
                         targetPlayer = false,
-                        dialogueSelector = "TeraPersistenceSpeak"
+                        dialogueSelector = ".TeraPersistenceSpeak"
                     });
                     list.Add(new AStatus()
                     {

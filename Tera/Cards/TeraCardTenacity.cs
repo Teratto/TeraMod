@@ -29,7 +29,7 @@ namespace Tera.Cards
                         },
                         destination = CardDestination.Hand,
                         amount = 1,
-                        dialogueSelector = "teraTenacitySpeak"
+                        dialogueSelector = ".teraTenacitySpeak"
                     });
                     list.Add(new ADrawCard()
                     {
@@ -50,7 +50,7 @@ namespace Tera.Cards
                         },
                         destination = CardDestination.Hand,
                         amount = 1,
-                        dialogueSelector = "teraTenacitySpeak"
+                        dialogueSelector = ".teraTenacitySpeak"
                     });
                     list.Add(new ADiscard()
                     {
@@ -67,7 +67,7 @@ namespace Tera.Cards
                     list.Add(new ADrawCard()
                     {
                         count = 2,
-                        dialogueSelector = "teraTenacitySpeak"
+                        dialogueSelector = ".teraTenacitySpeak"
                     });
                     break;
             }
