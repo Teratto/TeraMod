@@ -46,7 +46,7 @@ namespace Tera.Cards
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     if (enemyTax >= requiredTax)
@@ -57,6 +57,12 @@ namespace Tera.Cards
                             statusAmount = 1,
                             targetPlayer = true
 
+                        });
+                        list.Add(new AStatus()
+                        {
+                            status = Status.tempShield,
+                            statusAmount = 1,
+                            targetPlayer = true
                         });
 
                     }
@@ -121,7 +127,7 @@ namespace Tera.Cards
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "Gain 2 <c=status>temp shield</c>. <c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>evade</c>.";
+                desc = "Gain 1 <c=status>temp shield</c>. <c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>evade</c> and 1 <c=status>temp shield</c>.";
 
             }
             int requiredTax = GetRequiredTax();

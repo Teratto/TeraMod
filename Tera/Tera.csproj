@@ -73,4 +73,8 @@
     <Warning Text="NICKEL_MOD_LIBRARY was not set, built files were not copied to your Nickel mod library folder." />
   </Target>
 
+  <ItemGroup>
+    <Folder Include="StoryStuff\" />
+  </ItemGroup>
+
 </Project>

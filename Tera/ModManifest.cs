@@ -179,7 +179,7 @@ namespace Tera
             LoadSprite(artRegistry, "Teratto.Teramod.TeraEgg", "teraegg.png");
             LoadSprite(artRegistry, "Teratto.Teramod.TeraInflation", "ArtifactInflation.png");
 
-            LoadSprite(artRegistry, "Teratto.TeraMod.Tera.TaxBoi1", "CargBgs\\CardEgg.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardEgg", "CargBgs\\CardEgg.png");
         }
 
         /// <summary>
