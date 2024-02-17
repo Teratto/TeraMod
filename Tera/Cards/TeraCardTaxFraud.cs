@@ -1,14 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using FMOD;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 { 
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -81,13 +71,12 @@ namespace Tera.Cards
             {
                 currentTax = combat.otherShip.Get(TeraModStatuses.Taxation);
             }
-
-
+            
             return new CardData()
             {
                 description = desc,
                 cost = 1,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
             };
         }
 

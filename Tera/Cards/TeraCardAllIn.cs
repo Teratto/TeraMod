@@ -1,21 +1,8 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using FMOD;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
-
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardAllIn : Card
     {
-       
-
         public override List<CardAction> GetActions(State s, Combat c)
         {
             int playerenergy = c.energy;
@@ -88,9 +75,9 @@ namespace Tera.Cards
             return new CardData()
             {
                 description = desc,
-                recycle = upgrade == Upgrade.A ? true : false,
+                recycle = upgrade == Upgrade.A,
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
             };
         }
 

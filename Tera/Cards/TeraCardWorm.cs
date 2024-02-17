@@ -1,13 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] {}, dontOffer = true)]
@@ -31,16 +22,13 @@ namespace Tera.Cards
 
         public override CardData GetData(State state)
         {
-           
             return new CardData()
-
             {
                 temporary = true,
                 exhaust = true,
                 retain = true,
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
-  
+                art = Spr.cards_GoatDrone,
             };
         }
         public override string Name()

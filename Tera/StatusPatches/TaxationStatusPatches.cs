@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HarmonyLib;
+﻿using HarmonyLib;
 using Microsoft.Extensions.Logging;
-using System.Reflection.Emit;
-using System.Reflection;
-using Tera.Actions;
 using Tera.Artifacts;
 
 namespace Tera.StatusPatches

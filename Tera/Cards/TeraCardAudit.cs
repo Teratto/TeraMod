@@ -1,13 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -95,12 +86,12 @@ namespace Tera.Cards
                 desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 3</c>.";
 
             }
-                return new CardData()
+            return new CardData()
             {
-                exhaust = upgrade == Upgrade.B ? true : false,
+                exhaust = upgrade == Upgrade.B,
                 description = desc,
                 cost = 1,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
             };
         }
 

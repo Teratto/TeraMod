@@ -1,15 +1,5 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
-
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardExemption : Card
     {
@@ -26,7 +16,7 @@ namespace Tera.Cards
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
-            switch (this.upgrade)
+            switch (upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AStatus()
@@ -91,7 +81,7 @@ namespace Tera.Cards
             {
                 description = desc,
                 cost = 1,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
                 //exhaust = upgrade == Upgrade.B
             };
         }

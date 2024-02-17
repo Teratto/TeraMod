@@ -1,13 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -97,9 +88,9 @@ namespace Tera.Cards
         {
             return new CardData()
             {
-                flippable = (upgrade == Upgrade.A ? true : false),
+                flippable = upgrade == Upgrade.A,
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
             };
         }
         public override string Name()

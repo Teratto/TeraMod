@@ -1,15 +1,5 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
-
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardBailout : Card
     {
@@ -62,16 +52,15 @@ namespace Tera.Cards
         public override CardData GetData(State state)
         {
             int cost = 1;
-            if (this.upgrade == Upgrade.B)
+            if (upgrade == Upgrade.B)
             {
                 cost = 1;
             }
             return new CardData()
-
             {
                 cost = cost,
-                art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B ? false : true
+                art = Spr.cards_GoatDrone,
+                exhaust = upgrade != Upgrade.B
             };
         }
         public override string Name()

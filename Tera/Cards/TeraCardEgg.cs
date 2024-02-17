@@ -1,13 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
     
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -17,13 +8,11 @@ namespace Tera.Cards
         public override List<CardAction> GetActions(State s, Combat c)
         {
             var list = new List<CardAction>();
-
-
+            
             bool useSpecialDialogue = s.rngScript.Next() < .01;  // 1 / 100 chance
             const string SpecialSelector = "TeraPlayedASpecialEgg";
             
-
-            switch (this.upgrade)
+            switch (upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AAttack() 
@@ -73,9 +62,9 @@ namespace Tera.Cards
             return new CardData()
             {
                 cost = 0,
-                art = new Spr?(Spr.cards_Fleetfoot),
+                art = Spr.cards_Fleetfoot,
                 exhaust = true,
-                retain = upgrade == Upgrade.A ? true : false,
+                retain = upgrade == Upgrade.A,
                 //exhaust = upgrade == Upgrade.B
             };
         }

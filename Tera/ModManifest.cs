@@ -2,28 +2,23 @@
 using CobaltCoreModding.Definitions.ExternalItems;
 using CobaltCoreModding.Definitions.ModContactPoints;
 using CobaltCoreModding.Definitions.ModManifests;
-using Tera.Actions;
 using Tera.Cards;
 using Microsoft.Extensions.Logging;
 using HarmonyLib;
 using System.Runtime.Loader;
 using Tera.StatusPatches;
-using Tera.BaseGamePatches;
 
 namespace Tera
 {
     public class ModManifest : IModManifest, IPrelaunchManifest, ISpriteManifest, IAnimationManifest, IDeckManifest, ICardManifest, ICardOverwriteManifest, ICharacterManifest, IGlossaryManifest, IArtifactManifest, IStatusManifest, ICustomEventManifest
     {
         public static ExternalStatus? demo_status;
-        internal static ICustomEventHub? EventHub;
         internal static int x = 0;
-        public static ExternalDeck? tera_deck;
+        public static ExternalDeck? TeraDeck;
 
         private ISpriteRegistry? sprite_registry;
         private IAnimationRegistry? animation_registry;
         private IDeckRegistry? deck_registry;
-
-        public static ExternalSprite? TaxesSprite;
 
         private Harmony harmony;
 
@@ -46,13 +41,6 @@ namespace Tera
         public void BootMod(IModLoaderContact contact)
         {
             _instance = this;
-            
-            // Setup stuff for Harmony
-            AssemblyLoadContext currentAssemblyLoadContext = AssemblyLoadContext.GetLoadContext(typeof(ModManifest).Assembly) ?? AssemblyLoadContext.CurrentContextualReflectionContext ?? AssemblyLoadContext.Default;
-            //currentAssemblyLoadContext.LoadFromAssemblyPath(Path.Combine(ModRootFolder!.FullName, "Shrike.dll"));
-            //currentAssemblyLoadContext.LoadFromAssemblyPath(Path.Combine(ModRootFolder!.FullName, "Shrike.Harmony.dll"));
-            //var perModModLoaderContactType = AccessTools.TypeByName("CobaltCoreModding.Components.Services.PerModModLoaderContact, CobaltCoreModding.Components");
-            //var proxyManagerField = AccessTools.DeclaredField(perModModLoaderContactType, "proxyManager");
 
             harmony = new Harmony(Name);
 
@@ -60,8 +48,6 @@ namespace Tera
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
             BailoutPatches.Apply(harmony, Logger);
-            // PatchDeckEnumeration.Apply(harmony, Logger);  // This is fixed by Kokoro or Harmony
-            PatchWizardMissingStatuses.Apply(harmony, Logger);
             TeraModCardInterfacePatch.Apply(harmony, Logger);
 
             Colors.colorDict["tera"] = 0xff266fd8;
@@ -163,7 +149,7 @@ namespace Tera
 
             LoadSprite(artRegistry, "Teratto.Teramod.Tera.coin", "coin.png");
 
-            TaxesSprite = LoadSprite(artRegistry, "Teratto.TeraMod.coin", "coin.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.coin", "coin.png");
 
             LoadSprite(artRegistry, "Teratto.Teramod.MissingTera", "missingTera.png");
 
@@ -190,7 +176,7 @@ namespace Tera
             animation_registry = registry;
 
             //VVVV Animation registry
-            ExternalAnimation blushAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.blush", tera_deck, "blush", false, new ExternalSprite[] {
+            ExternalAnimation blushAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.blush", TeraDeck, "blush", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Blush3"),
@@ -199,7 +185,7 @@ namespace Tera
             });
             registry.RegisterAnimation(blushAnimation);
 
-            ExternalAnimation closedAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.closed", tera_deck, "closed", false, new ExternalSprite[] {
+            ExternalAnimation closedAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.closed", TeraDeck, "closed", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Closed3"),
@@ -208,7 +194,7 @@ namespace Tera
             });
             registry.RegisterAnimation(closedAnimation);
 
-            ExternalAnimation happyAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happy", tera_deck, "happy", false, new ExternalSprite[] {
+            ExternalAnimation happyAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happy", TeraDeck, "happy", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Happy3"),
@@ -217,7 +203,7 @@ namespace Tera
             });
             registry.RegisterAnimation(happyAnimation);
 
-            ExternalAnimation lookawayAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.lookaway", tera_deck, "lookaway", false, new ExternalSprite[] {
+            ExternalAnimation lookawayAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.lookaway", TeraDeck, "lookaway", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.LookAway3"),
@@ -226,7 +212,7 @@ namespace Tera
             });
             registry.RegisterAnimation(lookawayAnimation);
 
-            ExternalAnimation nervousAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.nervous", tera_deck, "nervous", false, new ExternalSprite[] {
+            ExternalAnimation nervousAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.nervous", TeraDeck, "nervous", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Nervous3"),
@@ -235,7 +221,7 @@ namespace Tera
             });
             registry.RegisterAnimation(nervousAnimation);
 
-            ExternalAnimation neutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.neutral", tera_deck, "neutral", false, new ExternalSprite[] {
+            ExternalAnimation neutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.neutral", TeraDeck, "neutral", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral3"),
@@ -244,7 +230,7 @@ namespace Tera
             });
             registry.RegisterAnimation(neutralAnimation);
 
-            ExternalAnimation sadAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.sad", tera_deck, "sad", false, new ExternalSprite[] {
+            ExternalAnimation sadAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.sad", TeraDeck, "sad", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Sad3"),
@@ -253,7 +239,7 @@ namespace Tera
             });
             registry.RegisterAnimation(sadAnimation);
 
-            ExternalAnimation scaredAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.scared", tera_deck, "scared", false, new ExternalSprite[] {
+            ExternalAnimation scaredAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.scared", TeraDeck, "scared", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Scared3"),
@@ -262,7 +248,7 @@ namespace Tera
             });
             registry.RegisterAnimation(scaredAnimation);
 
-            ExternalAnimation squintAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.squint", tera_deck, "squint", false, new ExternalSprite[] {
+            ExternalAnimation squintAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.squint", TeraDeck, "squint", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Squint3"),
@@ -271,7 +257,7 @@ namespace Tera
             });
             registry.RegisterAnimation(squintAnimation);
 
-            ExternalAnimation happytaxAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happytax", tera_deck, "happytax", false, new ExternalSprite[] {
+            ExternalAnimation happytaxAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.happytax", TeraDeck, "happytax", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.HappyTaxBoi3"),
@@ -280,7 +266,7 @@ namespace Tera
             });
             registry.RegisterAnimation(happytaxAnimation);
 
-            ExternalAnimation taxneutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.taxneutral", tera_deck, "taxneutral", false, new ExternalSprite[] {
+            ExternalAnimation taxneutralAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.taxneutral", TeraDeck, "taxneutral", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi1"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi2"),
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.TaxBoi3"),
@@ -289,27 +275,27 @@ namespace Tera
             });
             registry.RegisterAnimation(taxneutralAnimation);
 
-            ExternalAnimation defaultAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.default", tera_deck, "neutral", false, new ExternalSprite[] {
+            ExternalAnimation defaultAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.default", TeraDeck, "neutral", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral1")
             });
             registry.RegisterAnimation(defaultAnimation);
 
-            ExternalAnimation miniAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.mini", tera_deck, "mini", false, new ExternalSprite[] {
+            ExternalAnimation miniAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.mini", TeraDeck, "mini", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Mini1")
             });
             registry.RegisterAnimation(miniAnimation);
 
-            ExternalAnimation coinAnimation = new ExternalAnimation("Teratto.Teramod.Tera.coin", tera_deck, "coin", false, new ExternalSprite[] {
+            ExternalAnimation coinAnimation = new ExternalAnimation("Teratto.Teramod.Tera.coin", TeraDeck, "coin", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.Teramod.Tera.coin")
             });
             registry.RegisterAnimation(coinAnimation);
-            ExternalAnimation deathAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.GameOver", tera_deck, "gameover", false, new ExternalSprite[]
+            ExternalAnimation deathAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.GameOver", TeraDeck, "gameover", false, new ExternalSprite[]
             {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.GameOver"),
             });
             registry.RegisterAnimation(deathAnimation);
 
-            ExternalAnimation eggAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.TeraEgg", tera_deck, "eggie", false, new ExternalSprite[]
+            ExternalAnimation eggAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.TeraEgg", TeraDeck, "eggie", false, new ExternalSprite[]
             {
                 sprite_registry!.LookupSprite("Teratto.Teramod.TeraEgg"),
             });
@@ -326,11 +312,11 @@ namespace Tera
             ExternalSprite art = ExternalSprite.GetRaw((int)Spr.cards_colorless);
             ExternalSprite border = sprite_registry.LookupSprite("Teratto.TeraMod.TeraBorder");
 
-            tera_deck = new ExternalDeck("Teratto.TeraMod.Tera", System.Drawing.Color.FromArgb(0x26, 0x6f, 0xd8), System.Drawing.Color.Black, art, border, null);
-        
-
-            if (!registry.RegisterDeck(tera_deck))
-                return;
+            TeraDeck = new ExternalDeck("Teratto.TeraMod.Tera", System.Drawing.Color.FromArgb(0x26, 0x6f, 0xd8), System.Drawing.Color.Black, art, border, null);
+            
+            if (!registry.RegisterDeck(TeraDeck)) {
+                Logger?.LogError("Failed to register Tera deck!");
+            }
         }
 
         /// <summary>
@@ -443,41 +429,6 @@ namespace Tera
         /// </summary>
         public void LoadManifest(ICardOverwriteRegistry registry)
         {
-            // --------------------------------
-            // DemoMod code commented out below
-            // --------------------------------
-
-            //var new_meta = new CardMetaOverwrite("EWanderer.DemoMod.Meta")
-            //{
-            //    Deck = ExternalDeck.GetRaw((int)Deck.dracula),
-            //    DontLoc = false,
-            //    DontOffer = false,
-            //    ExtraGlossary = new string[] { "Help", "Why" },
-            //    Rarity = (int)Rarity.rare,
-            //    Unreleased = false,
-            //    UpgradesTo = new int[] { (int)Upgrade.A, (int)Upgrade.B },
-            //    WeirdCard = false
-            //};
-
-            //registry.RegisterCardMetaOverwrite(new_meta, typeof(CannonColorless).Name);
-
-            //var better_dodge = new PartialCardStatOverwrite("ewanderer.demomod.betterdodge", typeof(DodgeColorless)) { Cost = 0, Buoyant = true, Retain = true };
-
-            //registry.RegisterCardStatOverwrite(better_dodge);
-
-            ///*
-            //dbRegistry.RegisterCardMetaOverwrite(new_meta, typeof(CannonColorless).Name);
-            //var all_normal_cards = Assembly.GetAssembly(typeof(Card))?.GetTypes().Where(e => !e.IsAbstract && e.IsClass && e.IsSubclassOf(typeof(Card)));
-            //if (all_normal_cards != null)
-            //{
-            //    foreach (var card_type in all_normal_cards)
-            //    {
-            //        var zero_cost_overwrite = new PartialCardStatOverwrite("ewanderer.demomod.partialoverwrite." + card_type.Name, card_type);
-            //        zero_cost_overwrite.Cost = -1;
-            //        registry.RegisterCardStatOverwrite(zero_cost_overwrite);
-            //    }
-            //}
-            //*/
         }
 
         public void LoadManifest(ICharacterRegistry registry)
@@ -489,7 +440,7 @@ namespace Tera
         
 
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
-            var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", tera_deck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
+            var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", TeraDeck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
             playable_birdnerd_character.AddDescLocalisation("<c=tera>TERA</c>\nA tax collector. His cards <c=status>debuff</c> enemies, while also <c=downside>debuffing</c> yourself.");
             registry.RegisterCharacter(playable_birdnerd_character);
@@ -552,24 +503,24 @@ namespace Tera
 
         public void LoadManifest(IStatusRegistry statusRegistry)
         {
-            //demo_status = new ExternalStatus("EWanderer.DemoMod.DoomStatus", false, System.Drawing.Color.Red, null, demo_status_sprite ?? throw new Exception("missing sprite"), false);
-            //statusRegistry.RegisterStatus(demo_status);
-            //demo_status.AddLocalisation("Radio", "We got a signal. Exciting!");
             ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.coin");
-
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
             taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</c> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
             statusRegistry.RegisterStatus(taxationStatus);
 
             TeraModStatuses.Taxation = (Status)taxationStatus.Id!;
 
-            ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
-            ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
-            missingTeraStatus.AddLocalisation("Tera is Missing", "The next {0} <c=tera>Tera</c> cards you play do nothing.");
-            statusRegistry.RegisterStatus(missingTeraStatus);
-            TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
-            ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");
-            StatusMeta.deckToMissingStatus[(Deck)teraDeck.Id!] = TeraModStatuses.MissingTera;
+            //
+            // Note: No longer registering our own missing status, as Nickel will make one for us.
+            //
+            
+            // ExternalSprite missingTeraSprite = sprite_registry!.LookupSprite("Teratto.Teramod.MissingTera");
+            // ExternalStatus missingTeraStatus = new("Teratto.DemoMod.MissingTera", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, missingTeraSprite, affectedByTimestop: false);
+            // missingTeraStatus.AddLocalisation("Tera is Missing", "The next {0} <c=tera>Tera</c> cards you play do nothing.");
+            // statusRegistry.RegisterStatus(missingTeraStatus);
+            // TeraModStatuses.MissingTera = (Status)missingTeraStatus.Id!;
+            // ExternalDeck teraDeck = deck_registry!.LookupDeck("Teratto.TeraMod.Tera");
+            // StatusMeta.deckToMissingStatus[(Deck)teraDeck.Id!] = TeraModStatuses.MissingTera;
 
             ExternalSprite engineStallNextTurnSprite = sprite_registry!.LookupSprite("Teratto.Teramod.StallNext");
             ExternalStatus engineStallNextTurnStatus = new("Teratto.DemoMod.EngineStallNextTurn", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, engineStallNextTurnSprite, affectedByTimestop: false);
@@ -597,16 +548,10 @@ namespace Tera
 
 
         }
-
+        
         public void LoadManifest(ICustomEventHub eventHub)
         {
-            //
-            // DemoMod code commented out below
-            //
-
-            //eventHub.MakeEvent<Combat>("EWanderer.DemoMod.TestEvent");
-            //eventHub.ConnectToEvent<Combat>("EWanderer.DemoMod.TestEvent", (c) => { c.QueueImmediate(new ACardOffering() { amount = 10, battleType = BattleType.Elite, inCombat = true }); });
-            //ModManifest.EventHub = eventHub;
+            eventHub.ConnectToEvent<Func<IManifest, IPrelaunchContactPoint>>("Nickel::OnAfterDbInitPhaseFinished", HandleAfterDbInitPhaseFinished);
         }
         
         public void FinalizePreperations(IPrelaunchContactPoint prelaunchManifest)
@@ -616,21 +561,31 @@ namespace Tera
                 postfix: new HarmonyMethod(typeof(ModManifest), nameof(LoadStringsForLocale_Postfix))
             );
         }
-
+        
         private static void LoadStringsForLocale_Postfix(string locale, ref Dictionary<string, string> __result)
         {
             Console.WriteLine("Patching Localization for TeraMod...");
-
+            
             if (locale != "en")
             {
                 // We aren't localized ;-;
                 return;
             }
-
-            __result.TryAdd($"char.{tera_deck.Id}.desc.missing", "<c=tera>TERA..?</c>\nTera is missing.");
+            
+            __result.TryAdd($"char.{TeraDeck.Id}.desc.missing", "<c=tera>TERA..?</c>\nTera is missing.");
         }
-
-
+        
+        private void HandleAfterDbInitPhaseFinished(Func<IManifest, IPrelaunchContactPoint> getPcp)
+        {
+            // Find the missing status that Nickel injected for our character.
+            Deck? deck = (Deck?)TeraDeck?.Id;
+            if (deck.HasValue) {
+                StatusMeta.deckToMissingStatus.TryGetValue(deck.Value, out TeraModStatuses.MissingTera);
+            } else {
+                Logger?.LogError("TeraDeck does not have a value, cannot find Tera's missing status. This will break things!");
+            }
+        }
+        
         public static Spr GetSprite(string globalName)
         {
             return (Spr)(_instance.sprite_registry!.LookupSprite(globalName).Id ?? 0);

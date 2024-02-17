@@ -100,9 +100,9 @@ namespace Tera
             {
                 string? val = reader.GetString();
 
-                if (val == "tera" && ModManifest.tera_deck!.Id.HasValue)
+                if (val == "tera" && ModManifest.TeraDeck!.Id.HasValue)
                 {
-                    return (Deck)ModManifest.tera_deck!.Id.Value;
+                    return (Deck)ModManifest.TeraDeck!.Id.Value;
                 }
 
                 if (!Enum.TryParse<Deck>(val, out Deck result))

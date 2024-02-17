@@ -1,13 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { }, dontOffer = true)]
@@ -17,7 +8,7 @@ namespace Tera.Cards
         {
             var list = new List<CardAction>();
 
-            switch (this.upgrade)
+            switch (upgrade)
             {
                 case Upgrade.None:
                     list.Add(new AAttack()
@@ -37,7 +28,7 @@ namespace Tera.Cards
             return new CardData()
             {
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
                 exhaust = true,
                 temporary = true,
             };

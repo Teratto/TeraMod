@@ -1,15 +1,6 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using Tera.StatusPatches;
-using FMOD;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
-{ //STRENGTH SHOULD GIVE 1 ENERGY AND REMOVE 1 TAX. UPGRADE A DRAWS 1 CARD, WHILE UPGRADE B GIVES TWO ENERGY AND REMOVES 2 TAX.
+﻿namespace Tera.Cards
+{ 
+    //STRENGTH SHOULD GIVE 1 ENERGY AND REMOVE 1 TAX. UPGRADE A DRAWS 1 CARD, WHILE UPGRADE B GIVES TWO ENERGY AND REMOVES 2 TAX.
 
     [CardMeta(deck = Deck.test, rarity = Rarity.rare, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
     public class TeraCardStrength : Card
@@ -75,15 +66,14 @@ namespace Tera.Cards
             {
                 currentTax = combat.otherShip.Get(TeraModStatuses.Taxation);
             }
-
-
+            
             return new CardData()
             {
                 description = desc,
-                retain = upgrade == Upgrade.B ? true : false,
+                retain = upgrade == Upgrade.B,
                 unplayable = currentTax < requiredTax,
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
+                art = Spr.cards_GoatDrone,
             };
         }
 

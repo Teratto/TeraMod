@@ -1,12 +1,4 @@
-﻿using CobaltCoreModding.Definitions.ExternalItems;
-using Tera.Actions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tera.Cards
+﻿namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -57,8 +49,8 @@ namespace Tera.Cards
 
         public override CardData GetData(State state)
         {
-            int cost = 1;
-          if (upgrade == Upgrade.B)
+            int cost = 1; 
+            if (upgrade == Upgrade.B)
             {
                 cost = 2;
             }
@@ -66,8 +58,7 @@ namespace Tera.Cards
             return new CardData()
             {
                 cost = cost,
-                art = new Spr?(Spr.cards_GoatDrone),
-
+                art = Spr.cards_GoatDrone,
             };
         }
 
