@@ -13,11 +13,6 @@ namespace Tera.StatusPatches
                 original: AccessTools.DeclaredMethod(typeof(Ship), nameof(Ship.OnAfterTurn)),
                 postfix: new HarmonyMethod(typeof(TaxationStatusPatches), nameof(Ship_OnAfterTurn_Postfix))
             );
-
-            //harmony.Patch(
-            //    original: AccessTools.DeclaredMethod(typeof(AAttack), nameof(AAttack.Begin)),
-            //    transpiler: new HarmonyMethod(typeof(TaxationStatusPatches), nameof(AAttack_Begin_Transpiler))
-            //);
         }
 
         private static void Ship_OnAfterTurn_Postfix(Ship __instance, State s, Combat c)

@@ -8,7 +8,8 @@
             ],
             "who": "tera",
             "what": "Frankly, I'm glad no one showed up.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_ArtifactAresCannon_Multi_6",
@@ -17,7 +18,8 @@
             ],
             "who": "tera",
             "what": "This ship is too tiny. It dodges taxes too easily.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactArmoredBay_Multi_4",
@@ -26,7 +28,8 @@
             ],
             "who": "tera",
             "what": "Wonder if armor can be used as a tax write-off...",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactBrokenGlasses_Multi_5",
@@ -35,7 +38,8 @@
             ],
             "who": "tera",
             "what": "Not my fault the shopkeep didn't pay their taxes last year. ",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactCockpitTargetIsNotRelevant_Multi_4",
@@ -44,7 +48,8 @@
             ],
             "who": "tera",
             "what": "What kind of ship doesn't have a cockpit?!",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactCockpitTargetIsRelevant_Multi_6",
@@ -53,7 +58,8 @@
             ],
             "who": "tera",
             "what": "We can hit that cockpit! I think!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactCrosslink_Multi_2",
@@ -63,7 +69,8 @@
             ],
             "who": "tera",
             "what": "Money, probably.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_ArtifactDirtyEngines_Multi_1",
@@ -73,7 +80,8 @@
             ],
             "who": "tera",
             "what": "I don't think they're very safe...",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactEnergyRefund_Multi_4",
@@ -82,7 +90,8 @@
             ],
             "who": "tera",
             "what": "Is this energy refund like a tax refund?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactGeminiCore_Multi_5",
@@ -91,7 +100,8 @@
             ],
             "who": "tera",
             "what": "This ship makes no sense, it confuses me.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactGeminiCore_Multi_4",
@@ -101,7 +111,8 @@
             ],
             "who": "tera",
             "what": "Blue all the way!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_ArtifactHardmode_Multi_3",
@@ -110,7 +121,8 @@
             ],
             "who": "tera",
             "what": "I got a bad feeling about this loop...",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactNanofiberHull1_Multi_5",
@@ -119,7 +131,8 @@
             ],
             "who": "tera",
             "what": "Everything is fine! The nanofibers SHOULD handle this one.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactNanofiberHull2_Multi_4",
@@ -128,7 +141,8 @@
             ],
             "who": "tera",
             "what": "I don't think the nanofibers can handle that much!",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactRecalibrator_Multi_10",
@@ -137,7 +151,8 @@
             ],
             "who": "tera",
             "what": "We meant to miss! I think!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactShieldPrepIsGone_Multi_4",
@@ -146,7 +161,8 @@
             ],
             "who": "tera",
             "what": "Wait, where did warp prep go? You can't do taxes without preparation!",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTiderunner_Multi_11",
@@ -155,7 +171,8 @@
             ],
             "who": "tera",
             "what": "Does being on this ship mean I'm the captain's parrot?",
-            "loop_tag": "blush"
+            "loop_tag": "blush",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTiderunner_Multi_11",
@@ -165,7 +182,8 @@
             ],
             "who": "drake",
             "what": "It means you're a dweeb.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTiderunner_Multi_12",
@@ -174,7 +192,8 @@
             ],
             "who": "tera",
             "what": "Squawk! Tera wants a cracker!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTiderunner_Multi_12",
@@ -184,7 +203,8 @@
             ],
             "who": "drake",
             "what": "How about a knuckle sandwich?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
@@ -193,7 +213,8 @@
             ],
             "who": "eunice",
             "what": "This cockpit change seems cowardly.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
@@ -202,7 +223,8 @@
             ],
             "who": "hacker",
             "what": "Fight smarter, not harder.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
@@ -211,7 +233,8 @@
             ],
             "who": "tera",
             "what": "Personally, I think it is VERY valid to be cowardly.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_BanditThreats_Multi_0",
@@ -221,7 +244,8 @@
             ],
             "who": "tera",
             "what": "Those missles better not come with sales tax.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_BlockedALotOfAttacksWithArmor_Multi_5",
@@ -230,7 +254,8 @@
             ],
             "who": "tera",
             "what": "I am SO glad we have armor right now.",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_BlockedAnEnemyAttackWithArmor_Multi_7",
@@ -239,7 +264,8 @@
             ],
             "who": "tera",
             "what": "I think we can file armor as a tax write-off!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_BooksWentMissing_Multi_6",
@@ -248,7 +274,8 @@
             ],
             "who": "tera",
             "what": "Books?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_CatWentMissing_Multi_6",
@@ -257,7 +284,8 @@
             ],
             "who": "tera",
             "what": "W-wait, how do we operate a ship without a computer?",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ChoiceCardRewardOfYourColorChoice_tera",
@@ -266,7 +294,8 @@
             ],
             "who": "tera",
             "what": "Did- Did someone just read my mind?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ChoiceCardRewardOfYourColorChoice_tera",
@@ -275,7 +304,8 @@
             ],
             "who": "tera",
             "what": "I don't want people in my head!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ChoiceCardRewardOfYourColorChoice_tera",
@@ -284,7 +314,8 @@
             ],
             "who": "comp",
             "what": "Energy readings are back to normal.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_CrabFacts1_Multi_0",
@@ -294,7 +325,8 @@
             ],
             "who": "tera",
             "what": "Wait, I thought crabs were like, government drones?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_CrabFacts2_Multi_0",
@@ -304,7 +336,8 @@
             ],
             "who": "tera",
             "what": "Are you sure these facts aren't government cover-ups?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_CrabFactsAreOverNow_Multi_0",
@@ -314,7 +347,8 @@
             ],
             "who": "tera",
             "what": "I'm watching you, government crab drone.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_CrystallizedFriendEvent",
@@ -324,16 +358,18 @@
             ],
             "who": "tera",
             "what": "If it helps the team... then... okay.",
-            "loop_tag": "closed"
+            "loop_tag": "closed",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_CrystallizedFriendEvent_tera",
             "indices": [
-                1
+                0
             ],
             "who": "tera",
             "what": "Wait wait, I was having a good dream!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_DizzyWentMissing_Multi_5",
@@ -342,7 +378,8 @@
             ],
             "who": "tera",
             "what": "D-Dizzy?",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_DrakeWentMissing_Multi_5",
@@ -351,7 +388,8 @@
             ],
             "who": "tera",
             "what": "So long, space pirate!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_42",
@@ -360,7 +398,8 @@
             ],
             "who": "tera",
             "what": "I don't wanna die! ",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_42",
@@ -369,7 +408,8 @@
             ],
             "who": "riggs",
             "what": "Yeah, me neither. ",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_43",
@@ -378,7 +418,8 @@
             ],
             "who": "tera",
             "what": "Is this where we reset?",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_43",
@@ -387,7 +428,8 @@
             ],
             "who": "dizzy",
             "what": "Probably.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_44",
@@ -396,7 +438,8 @@
             ],
             "who": "tera",
             "what": "Are we gonna explode?!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_44",
@@ -405,7 +448,8 @@
             ],
             "who": "peri",
             "what": "Tera, breathe.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_45",
@@ -414,7 +458,8 @@
             ],
             "who": "tera",
             "what": "Please don't tell me we reset here...",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_45",
@@ -423,7 +468,8 @@
             ],
             "who": "comp",
             "what": "Alright, I won't.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_46",
@@ -432,7 +478,8 @@
             ],
             "who": "tera",
             "what": "I don't wanna die!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_46",
@@ -441,7 +488,8 @@
             ],
             "who": "goat",
             "what": "You get used to it.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_47",
@@ -450,7 +498,8 @@
             ],
             "who": "tera",
             "what": "If I die, Drake's going down with me!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_47",
@@ -459,7 +508,8 @@
             ],
             "who": "eunice",
             "what": "We're ALL going down, bird brain. ",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_48",
@@ -468,7 +518,8 @@
             ],
             "who": "tera",
             "what": "Hurry, hack their ship before we go kaboom!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_48",
@@ -477,7 +528,8 @@
             ],
             "who": "hacker",
             "what": "That's illegal.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_49",
@@ -486,7 +538,8 @@
             ],
             "who": "tera",
             "what": "We're gonna explode!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_49",
@@ -495,7 +548,8 @@
             ],
             "who": "shard",
             "what": "No! We can do it! ",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_50",
@@ -504,7 +558,8 @@
             ],
             "who": "goat",
             "what": "About time to loop again.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_50",
@@ -513,7 +568,8 @@
             ],
             "who": "tera",
             "what": "B-but I don't wanna loop yet!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_51",
@@ -522,7 +578,8 @@
             ],
             "who": "eunice",
             "what": "This run is scuffed.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_51",
@@ -531,7 +588,8 @@
             ],
             "who": "tera",
             "what": "Maybe it wouldn't be if you paid your taxes.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_52",
@@ -540,7 +598,8 @@
             ],
             "who": "dizzy",
             "what": "Welp.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_52",
@@ -549,7 +608,8 @@
             ],
             "who": "tera",
             "what": "Darn.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_53",
@@ -558,7 +618,8 @@
             ],
             "who": "shard",
             "what": "Tera! Tax us outta here!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_53",
@@ -567,7 +628,8 @@
             ],
             "who": "tera",
             "what": "I... What?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_54",
@@ -576,7 +638,8 @@
             ],
             "who": "hacker",
             "what": "It's over man.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_54",
@@ -585,7 +648,8 @@
             ],
             "who": "tera",
             "what": "Yeah, I can feel it.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_55",
@@ -594,7 +658,8 @@
             ],
             "who": "comp",
             "what": "It's time to reset.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_55",
@@ -603,7 +668,8 @@
             ],
             "who": "tera",
             "what": "CAT? Don't scare me like this!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_EmptyHandWithEnergy_Multi_13",
@@ -612,7 +678,8 @@
             ],
             "who": "tera",
             "what": "Wait, what do we do now?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_EnemyArmorHit_Multi_7",
@@ -621,7 +688,8 @@
             ],
             "who": "tera",
             "what": "Let's try not to hit the armor next time.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_EnemyHasBrittle_Multi_7",
@@ -630,7 +698,8 @@
             ],
             "who": "tera",
             "what": "Yeah yeah! Hit that brittle point!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_GrandmaShop",
@@ -640,7 +709,8 @@
             ],
             "who": "tera",
             "what": "Chocolate-free cookies!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_HandOnlyHasTrashCards_Multi_6",
@@ -649,7 +719,8 @@
             ],
             "who": "tera",
             "what": "Don't we pay taxes to like, have people get RID of trash?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_40",
@@ -658,7 +729,8 @@
             ],
             "who": "tera",
             "what": "Woa, we're doing it!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_41",
@@ -667,7 +739,8 @@
             ],
             "who": "tera",
             "what": "Heck yeah!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_42",
@@ -676,7 +749,8 @@
             ],
             "who": "tera",
             "what": "We got this!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_43",
@@ -685,7 +759,8 @@
             ],
             "who": "tera",
             "what": "Bird up!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_44",
@@ -694,7 +769,8 @@
             ],
             "who": "tera",
             "what": "Nice one!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_44",
@@ -703,7 +779,8 @@
             ],
             "who": "eunice",
             "what": "Nicer than you.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_45",
@@ -712,7 +789,8 @@
             ],
             "who": "eunice",
             "what": "Too easy.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustHitGeneric_Multi_45",
@@ -721,7 +799,8 @@
             ],
             "who": "tera",
             "what": "Would be easier if you paid your darn bills.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_JustPlayedASogginsCard_Multi_3",
@@ -730,7 +809,8 @@
             ],
             "who": "tera",
             "what": "Can't believe we're trusting someone who's more of a wimp than I am.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_LookOutMissile_Multi_4",
@@ -739,7 +819,8 @@
             ],
             "who": "tera",
             "what": "I-I can't tax a missile. ",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_LookOutMissile_Multi_4",
@@ -748,7 +829,8 @@
             ],
             "who": "peri",
             "what": "Just shoot it down!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_LoseCharacterCard_tera",
@@ -757,7 +839,8 @@
             ],
             "who": "tera",
             "what": "B-but I wanted that...",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -766,7 +849,8 @@
             ],
             "who": "tera",
             "what": "If we keep fighting, I might get airsickness...",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -776,7 +860,8 @@
             ],
             "who": "peri",
             "what": "Tera, take a break.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -786,7 +871,8 @@
             ],
             "who": "riggs",
             "what": "I'll get the puke bag!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -796,7 +882,8 @@
             ],
             "who": "dizzy",
             "what": "Do birds get sick from flying?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -806,7 +893,8 @@
             ],
             "who": "eunice",
             "what": "But... you're a bird?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ManyTurns_Multi_12",
@@ -816,7 +904,8 @@
             ],
             "who": "goat",
             "what": "Birds... hate... flying...",
-            "loop_tag": "writing"
+            "loop_tag": "writing",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OneHitPointThisIsFine_Multi_14",
@@ -825,7 +914,8 @@
             ],
             "who": "tera",
             "what": "I don't think I can handle another reset.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OneHitPointThisIsFine_Multi_15",
@@ -834,7 +924,8 @@
             ],
             "who": "tera",
             "what": "We might explode!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OverheatDrakeFix_Multi_6",
@@ -844,7 +935,8 @@
             ],
             "who": "tera",
             "what": "I can't believe you pulled that off.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_OverheatDrakeFix_Multi_6",
@@ -854,7 +946,8 @@
             ],
             "who": "tera",
             "what": "Alright alright. Maybe space pirates DO have some skill.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_OverheatDrakesFault_Multi_10",
@@ -863,7 +956,8 @@
             ],
             "who": "tera",
             "what": "Drake!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OverheatDrakesFault_Multi_11",
@@ -872,7 +966,8 @@
             ],
             "who": "tera",
             "what": "Drake, I swear to-",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OverheatDrakesFault_Multi_11",
@@ -881,7 +976,8 @@
             ],
             "who": "eunice",
             "what": "What are you gonna do, tax me to death?",
-            "loop_tag": "sly"
+            "loop_tag": "sly",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_OverheatGeneric_Multi_10",
@@ -890,7 +986,8 @@
             ],
             "who": "tera",
             "what": "This heat is gonna turn me into roast bird.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_PeriJustHit_Multi_7",
@@ -899,7 +996,8 @@
             ],
             "who": "tera",
             "what": "Woa, good job Peri!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_PeriJustHit_Multi_7",
@@ -908,7 +1006,8 @@
             ],
             "who": "peri",
             "what": "No problem.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_PeriWentMissing_Multi_5",
@@ -917,7 +1016,8 @@
             ],
             "who": "tera",
             "what": "Peri!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ShopKeepBattleInsult",
@@ -927,7 +1027,8 @@
             ],
             "who": "tera",
             "what": "Oh. Oh god.",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_SkunkFirstTurnShouts_Multi_0",
@@ -937,7 +1038,8 @@
             ],
             "who": "tera",
             "what": "Listen, we don't want the rocks, they're not good tax write-offs.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_SogginsEscapeIntent_1",
@@ -947,7 +1049,8 @@
             ],
             "who": "tera",
             "what": "That is SO much wasted money, ya know.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_SogginsEscape_1",
@@ -957,7 +1060,8 @@
             ],
             "who": "tera",
             "what": "Are you kidding me?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_Soggins_1",
@@ -967,7 +1071,8 @@
             ],
             "who": "tera",
             "what": "It sounds dangerous. Makes me a bit queasy.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_Soggins_Infinite",
@@ -977,7 +1082,8 @@
             ],
             "who": "tera",
             "what": "PLEASE do not put your missiles as a tax write-off this year.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_Soggins_Missile_Shout_1",
@@ -987,7 +1093,8 @@
             ],
             "who": "tera",
             "what": "This guy definitely does not pay his taxes.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_SpikeGetsChatty_Multi_0",
@@ -997,7 +1104,8 @@
             ],
             "who": "tera",
             "what": "Can I have a few more minutes? I'm not ready yet!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_ThatsALotOfDamageToThem_Multi_7",
@@ -1006,7 +1114,8 @@
             ],
             "who": "tera",
             "what": "Woah! We're killing it out here!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_13",
@@ -1015,7 +1124,8 @@
             ],
             "who": "tera",
             "what": "I don't think the ship is supposed to sound like that!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_14",
@@ -1024,7 +1134,8 @@
             ],
             "who": "tera",
             "what": "Uh... are we gonna be okay?",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_15",
@@ -1033,7 +1144,8 @@
             ],
             "who": "tera",
             "what": "*disgruntled bird noises*",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_15",
@@ -1042,7 +1154,8 @@
             ],
             "who": "eunice",
             "what": "...What?",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TheyHaveAutoDodgeLeft_Multi_8",
@@ -1051,7 +1164,8 @@
             ],
             "who": "tera",
             "what": "Hey, wait! They're going left! Those cheaters!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TheyHaveAutoDodgeRight_Multi_8",
@@ -1060,7 +1174,8 @@
             ],
             "who": "tera",
             "what": "They're dodging right! Don't let them dodge their taxes!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TookZeroDamageAtLowHealth_Multi_4",
@@ -1069,7 +1184,8 @@
             ],
             "who": "tera",
             "what": "Thank goodness we blocked that.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_VeryManyTurns_Multi_17",
@@ -1078,7 +1194,8 @@
             ],
             "who": "tera",
             "what": "We've been here so long, I think I'm getting used to airsickness.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeAreCorroded_Multi_9",
@@ -1087,7 +1204,8 @@
             ],
             "who": "tera",
             "what": "That smells like... acid?",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeDidOverFiveDamage_Multi_8",
@@ -1096,7 +1214,8 @@
             ],
             "who": "tera",
             "what": "Woa! Big hit!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeDidOverThreeDamage_Multi_9",
@@ -1105,7 +1224,8 @@
             ],
             "who": "tera",
             "what": "That'll show those tax evaders.",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeGotHurtButNotTooBad_Multi_8",
@@ -1114,7 +1234,8 @@
             ],
             "who": "tera",
             "what": "Okay, we can survive this one.",
-            "loop_tag": "closed"
+            "loop_tag": "closed",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeGotShotButTookNoDamage_Multi_6",
@@ -1123,7 +1244,8 @@
             ],
             "who": "tera",
             "what": "We're safe!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeJustGainedHeatAndDrakeIsHere_Multi_0",
@@ -1133,7 +1255,8 @@
             ],
             "who": "tera",
             "what": "Drake, cool it. Now.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": true
         },
         {
             "event_name": "TERAMOD_WeMissedOopsie_Multi_26",
@@ -1142,7 +1265,8 @@
             ],
             "who": "tera",
             "what": "Darn.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeMissedOopsie_Multi_27",
@@ -1151,7 +1275,8 @@
             ],
             "who": "tera",
             "what": "Next time we'll hit them. I hope.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeMissedOopsie_Multi_28",
@@ -1160,7 +1285,8 @@
             ],
             "who": "tera",
             "what": "I don't think we were supposed to miss.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_WeMissedOopsie_Multi_29",
@@ -1169,7 +1295,8 @@
             ],
             "who": "tera",
             "what": "Gosh darn it.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_0",
@@ -1178,7 +1305,8 @@
             ],
             "who": "tera",
             "what": "Woa, firing cannons isn't as hard as I thought.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_1",
@@ -1187,7 +1315,8 @@
             ],
             "who": "tera",
             "what": "We got this.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_2",
@@ -1196,7 +1325,8 @@
             ],
             "who": "peri",
             "what": "Good job.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_2",
@@ -1205,7 +1335,8 @@
             ],
             "who": "tera",
             "what": "Thank you!",
-            "loop_tag": "blush"
+            "loop_tag": "blush",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_3",
@@ -1214,7 +1345,8 @@
             ],
             "who": "tera",
             "what": "Woa, I hit them!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_3",
@@ -1223,7 +1355,8 @@
             ],
             "who": "eunice",
             "what": "At least you did SOMETHING right.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_4",
@@ -1232,7 +1365,8 @@
             ],
             "who": "tera",
             "what": "Heck yeah!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_0",
@@ -1241,7 +1375,8 @@
             ],
             "who": "tera",
             "what": "Woah, nice shot, me!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_1",
@@ -1250,7 +1385,8 @@
             ],
             "who": "tera",
             "what": "Take that, dirty tax evader!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_2",
@@ -1259,7 +1395,8 @@
             ],
             "who": "peri",
             "what": "Nice one.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_2",
@@ -1268,7 +1405,8 @@
             ],
             "who": "tera",
             "what": "Yeah! I did that!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_3",
@@ -1277,7 +1415,8 @@
             ],
             "who": "tera",
             "what": "I did the thing! The big damage thing!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_3",
@@ -1286,7 +1425,8 @@
             ],
             "who": "shard",
             "what": "You did the thing!",
-            "loop_tag": "paws"
+            "loop_tag": "paws",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_4",
@@ -1295,7 +1435,8 @@
             ],
             "who": "tera",
             "what": "Did you see that, Drake? That's how you get it done!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_4",
@@ -1304,7 +1445,8 @@
             ],
             "who": "eunice",
             "what": "Whatever.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_5",
@@ -1313,7 +1455,8 @@
             ],
             "who": "tera",
             "what": "I didn't know I was this strong!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_0",
@@ -1322,7 +1465,8 @@
             ],
             "who": "tera",
             "what": "Tax time!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_1",
@@ -1331,7 +1475,8 @@
             ],
             "who": "tera",
             "what": "Pay up!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_2",
@@ -1340,7 +1485,8 @@
             ],
             "who": "tera",
             "what": "It's tax season!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_3",
@@ -1349,7 +1495,8 @@
             ],
             "who": "tera",
             "what": "Charge it!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_4",
@@ -1358,7 +1505,8 @@
             ],
             "who": "tera",
             "what": "No money for you!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_5",
@@ -1367,7 +1515,8 @@
             ],
             "who": "tera",
             "what": "Carry the one... and bam!",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_6",
@@ -1376,7 +1525,8 @@
             ],
             "who": "tera",
             "what": "Accrue that debt...",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_7",
@@ -1385,7 +1535,8 @@
             ],
             "who": "tera",
             "what": "Just a little more tax...",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxed_Multi_8",
@@ -1394,7 +1545,8 @@
             ],
             "who": "tera",
             "what": "C'mon, don't pay attention to your taxes...",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_0",
@@ -1403,7 +1555,8 @@
             ],
             "who": "tera",
             "what": "Holy tax time!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_1",
@@ -1412,7 +1565,8 @@
             ],
             "who": "tera",
             "what": "Pay your taxes next time!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_2",
@@ -1421,7 +1575,8 @@
             ],
             "who": "tera",
             "what": "Pay up, buttercup!",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_3",
@@ -1430,7 +1585,8 @@
             ],
             "who": "tera",
             "what": "Hehehe, your payments are due.",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_0",
@@ -1439,7 +1595,8 @@
             ],
             "who": "tera",
             "what": "I... didn't mean to tax us this hard.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_9",
@@ -1448,7 +1605,8 @@
             ],
             "who": "tera",
             "what": "I can, uh, fix this!",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_1",
@@ -1457,7 +1615,8 @@
             ],
             "who": "peri",
             "what": "Tera! Taxes!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_1",
@@ -1466,7 +1625,8 @@
             ],
             "who": "tera",
             "what": "Sorry, sorry!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_2",
@@ -1475,7 +1635,8 @@
             ],
             "who": "riggs",
             "what": "I don't like paying my taxes!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_2",
@@ -1484,7 +1645,8 @@
             ],
             "who": "tera",
             "what": "Is this why taxes hurt so much!?",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_3",
@@ -1493,7 +1655,8 @@
             ],
             "who": "dizzy",
             "what": "I can't block all the taxes with shields!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_3",
@@ -1502,7 +1665,8 @@
             ],
             "who": "tera",
             "what": "Sorry! I can't pay off our debt!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_4",
@@ -1511,7 +1675,8 @@
             ],
             "who": "eunice",
             "what": "...",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_4",
@@ -1520,7 +1685,8 @@
             ],
             "who": "tera",
             "what": "...You're scaring me.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_5",
@@ -1529,7 +1695,8 @@
             ],
             "who": "shard",
             "what": "Are taxes supposed to hurt?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_5",
@@ -1538,7 +1705,8 @@
             ],
             "who": "tera",
             "what": "I don't mean for them to!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_6",
@@ -1547,7 +1715,8 @@
             ],
             "who": "goat",
             "what": "Please don't tax my drones.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_6",
@@ -1556,7 +1725,8 @@
             ],
             "who": "tera",
             "what": "I won't! I swear!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_7",
@@ -1565,7 +1735,8 @@
             ],
             "who": "hacker",
             "what": "Taxes suck.",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_7",
@@ -1574,7 +1745,8 @@
             ],
             "who": "tera",
             "what": "Sorry!",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_8",
@@ -1583,7 +1755,8 @@
             ],
             "who": "comp",
             "what": "Tera.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_8",
@@ -1592,7 +1765,8 @@
             ],
             "who": "tera",
             "what": "Oops!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_0",
@@ -1601,7 +1775,8 @@
             ],
             "who": "tera",
             "what": "Egg time!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_1",
@@ -1610,7 +1785,8 @@
             ],
             "who": "peri",
             "what": "Tera, where did you find that egg?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_1",
@@ -1619,7 +1795,8 @@
             ],
             "who": "tera",
             "what": "I dunno.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_2",
@@ -1628,7 +1805,8 @@
             ],
             "who": "riggs",
             "what": "Was that an... egg?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_2",
@@ -1637,7 +1815,8 @@
             ],
             "who": "tera",
             "what": "Maybe.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_3",
@@ -1646,7 +1825,8 @@
             ],
             "who": "goat",
             "what": "It smells like egg in here.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_3",
@@ -1655,7 +1835,8 @@
             ],
             "who": "tera",
             "what": "It does?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_4",
@@ -1664,7 +1845,8 @@
             ],
             "who": "eunice",
             "what": "...You did not.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_4",
@@ -1673,7 +1855,8 @@
             ],
             "who": "tera",
             "what": "I did.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_5",
@@ -1682,7 +1865,8 @@
             ],
             "who": "dizzy",
             "what": "Where did the egg come from?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_5",
@@ -1691,7 +1875,8 @@
             ],
             "who": "tera",
             "what": "I dunno.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_6",
@@ -1700,7 +1885,8 @@
             ],
             "who": "hacker",
             "what": "Woa. Egg.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_6",
@@ -1709,7 +1895,8 @@
             ],
             "who": "tera",
             "what": "Egg indeed.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_7",
@@ -1718,7 +1905,8 @@
             ],
             "who": "shard",
             "what": "I want eggs for breakfast!",
-            "loop_tag": "paws"
+            "loop_tag": "paws",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_7",
@@ -1727,7 +1915,8 @@
             ],
             "who": "tera",
             "what": "Books! No!",
-            "loop_tag": "scared"
+            "loop_tag": "scared",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_8",
@@ -1736,7 +1925,8 @@
             ],
             "who": "comp",
             "what": "I don't think male birds can lay-",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_8",
@@ -1745,7 +1935,8 @@
             ],
             "who": "tera",
             "what": "Shut it, CAT.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_0",
@@ -1754,7 +1945,8 @@
             ],
             "who": "tera",
             "what": "Take that, egghead!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_1",
@@ -1763,7 +1955,8 @@
             ],
             "who": "peri",
             "what": "We can't keep shooting eggs out of our cannons.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_1",
@@ -1772,7 +1965,8 @@
             ],
             "who": "tera",
             "what": "It's a valid tactical maneuver!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_2",
@@ -1781,7 +1975,8 @@
             ],
             "who": "dizzy",
             "what": "How did you boil an egg when we have no oven?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_2",
@@ -1790,7 +1985,8 @@
             ],
             "who": "tera",
             "what": "It takes a few hours.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_3",
@@ -1799,7 +1995,8 @@
             ],
             "who": "riggs",
             "what": "Are eggs supposed to hurt?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_3",
@@ -1808,7 +2005,8 @@
             ],
             "who": "tera",
             "what": "Only when you throw them really, really hard.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_4",
@@ -1817,7 +2015,8 @@
             ],
             "who": "goat",
             "what": "I wonder if I can load eggs into my drones.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_4",
@@ -1826,7 +2025,8 @@
             ],
             "who": "tera",
             "what": "If you need ammo, I know where to find some.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_5",
@@ -1835,7 +2035,8 @@
             ],
             "who": "eunice",
             "what": "Tera, PLEASE stop hogging up our fridge.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_5",
@@ -1844,7 +2045,8 @@
             ],
             "who": "tera",
             "what": "But my eggs need a place to sleep!",
-            "loop_tag": "sad"
+            "loop_tag": "sad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_6",
@@ -1853,7 +2055,8 @@
             ],
             "who": "hacker",
             "what": "Wonder if this is an easter egg?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_6",
@@ -1862,7 +2065,8 @@
             ],
             "who": "tera",
             "what": "No, it's just a bird egg.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_7",
@@ -1871,7 +2075,8 @@
             ],
             "who": "shard",
             "what": "I'm egg-static!",
-            "loop_tag": "paws"
+            "loop_tag": "paws",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_7",
@@ -1880,7 +2085,8 @@
             ],
             "who": "tera",
             "what": "And you're egg-ceptional!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_8",
@@ -1889,7 +2095,8 @@
             ],
             "who": "comp",
             "what": "These eggs are getting out of control.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_8",
@@ -1898,7 +2105,8 @@
             ],
             "who": "tera",
             "what": "...I didn't do it.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEggAndGotLucky_Multi_0",
@@ -1907,7 +2115,8 @@
             ],
             "who": "tera",
             "what": "The perfect egg throw...",
-            "loop_tag": "eggie"
+            "loop_tag": "eggie",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEggAndGotLucky_Multi_1",
@@ -1916,7 +2125,8 @@
             ],
             "who": "tera",
             "what": "This is the best egg I have ever seen...",
-            "loop_tag": "eggie"
+            "loop_tag": "eggie",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEggAndGotLucky_Multi_2",
@@ -1925,7 +2135,8 @@
             ],
             "who": "tera",
             "what": "Thank you, my eggy friend.",
-            "loop_tag": "eggie"
+            "loop_tag": "eggie",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGovernmentGrants_Multi_0",
@@ -1934,7 +2145,8 @@
             ],
             "who": "tera",
             "what": "Thank you for the extra funds!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGovernmentGrants_Multi_1",
@@ -1943,7 +2155,8 @@
             ],
             "who": "tera",
             "what": "A little cash goes a long way.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGovernmentGrants_Multi_2",
@@ -1952,7 +2165,8 @@
             ],
             "who": "tera",
             "what": "Hopefully I can buy us out of a pinch.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_0",
@@ -1961,7 +2175,8 @@
             ],
             "who": "tera",
             "what": "Ah! A morning snack!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_1",
@@ -1970,7 +2185,8 @@
             ],
             "who": "tera",
             "what": "A small energy boost to perk you up in the morning!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_2",
@@ -1979,7 +2195,8 @@
             ],
             "who": "tera",
             "what": "I think this will help us worm our way out of anything!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -1988,7 +2205,8 @@
             ],
             "who": "tera",
             "what": "You know as they say! The early bird...",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -1998,7 +2216,8 @@
             ],
             "who": "peri",
             "what": "...gets the worm.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2008,7 +2227,8 @@
             ],
             "who": "riggs",
             "what": "...I dunno, I usually sleep in.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2018,7 +2238,8 @@
             ],
             "who": "dizzy",
             "what": "...Catches their prey, of course.",
-            "loop_tag": "explains"
+            "loop_tag": "explains",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2028,7 +2249,8 @@
             ],
             "who": "goat",
             "what": "...Flies?",
-            "loop_tag": "shy"
+            "loop_tag": "shy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2038,7 +2260,8 @@
             ],
             "who": "eunice",
             "what": "...How about two birds, one stone?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2048,7 +2271,8 @@
             ],
             "who": "shard",
             "what": "...Makes me breakfast!",
-            "loop_tag": "paws"
+            "loop_tag": "paws",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2058,7 +2282,8 @@
             ],
             "who": "hacker",
             "what": "...I don't like worms in my code.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
@@ -2068,7 +2293,8 @@
             ],
             "who": "comp",
             "what": "Setting alarms for 5AM, got it.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotYearlyPayments_Multi_0",
@@ -2077,7 +2303,8 @@
             ],
             "who": "tera",
             "what": "Your taxes are way past due!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotYearlyPayments_Multi_1",
@@ -2086,7 +2313,8 @@
             ],
             "who": "tera",
             "what": "Your yearly payments are due!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotYearlyPayments_Multi_2",
@@ -2095,7 +2323,8 @@
             ],
             "who": "tera",
             "what": "These extra taxes should give us an edge in this battle.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotCapitalism_Multi_0",
@@ -2104,7 +2333,8 @@
             ],
             "who": "tera",
             "what": "Aw yeah. It's tax time.",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotCapitalism_Multi_1",
@@ -2113,7 +2343,8 @@
             ],
             "who": "tera",
             "what": "Capitalism has never caused any problems whatsoever.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotCapitalism_Multi_2",
@@ -2122,7 +2353,8 @@
             ],
             "who": "tera",
             "what": "Let's take a break, capitalism has given me more work to do.",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotCapitalism_Multi_3",
@@ -2131,7 +2363,8 @@
             ],
             "who": "tera",
             "what": "It's time to charge those credit cards!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_0",
@@ -2140,7 +2373,8 @@
             ],
             "who": "tera",
             "what": "Phew! Glad I had some spare cash.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_1",
@@ -2149,7 +2383,8 @@
             ],
             "who": "tera",
             "what": "When in doubt, bribery always works.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_2",
@@ -2158,7 +2393,8 @@
             ],
             "who": "tera",
             "what": "The money from my tax refund sure came in handy!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_3",
@@ -2167,7 +2403,8 @@
             ],
             "who": "tera",
             "what": "Hopefully losing that bailout won't financially cripple me.",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_4",
@@ -2176,7 +2413,8 @@
             ],
             "who": "tera",
             "what": "See that, Drake? Money is better than serenity!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_4",
@@ -2185,7 +2423,8 @@
             ],
             "who": "eunice",
             "what": "I don't think thast's a good moral lesson to teach me.",
-            "loop_tag": "sly"
+            "loop_tag": "sly",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_5",
@@ -2194,7 +2433,8 @@
             ],
             "who": "shard",
             "what": "Woah! Money is magic!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_5",
@@ -2203,7 +2443,8 @@
             ],
             "who": "tera",
             "what": "Not... exactly?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0",
@@ -2212,7 +2453,8 @@
             ],
             "who": "tera",
             "what": "You're welcome, Drake.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0",
@@ -2221,7 +2463,8 @@
             ],
             "who": "eunice",
             "what": "Whatever.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1",
@@ -2230,7 +2473,8 @@
             ],
             "who": "eunice",
             "what": "I don't need your handouts.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1",
@@ -2239,7 +2483,8 @@
             ],
             "who": "tera",
             "what": "These bailouts are mainly so I don't die while I'm next to you.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2",
@@ -2248,7 +2493,8 @@
             ],
             "who": "tera",
             "what": "The power of money strikes again!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2",
@@ -2257,7 +2503,8 @@
             ],
             "who": "eunice",
             "what": "And this is why I steal money.",
-            "loop_tag": "sly"
+            "loop_tag": "sly",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_0",
@@ -2266,7 +2513,8 @@
             ],
             "who": "tera",
             "what": "Time for takeoff.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_1",
@@ -2275,7 +2523,8 @@
             ],
             "who": "tera",
             "what": "Extra evade should always help!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2284,7 +2533,8 @@
             ],
             "who": "tera",
             "what": "Glad I got flight training! I didn't know how to fly a ship before.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2294,7 +2544,8 @@
             ],
             "who": "peri",
             "what": "Where did you get your pilot's license?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2304,7 +2555,8 @@
             ],
             "who": "goat",
             "what": "Oh, so you're a flightless bird? Noted.",
-            "loop_tag": "writing"
+            "loop_tag": "writing",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2314,7 +2566,8 @@
             ],
             "who": "dizzy",
             "what": "So which flightless bird species are you?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2324,7 +2577,8 @@
             ],
             "who": "eunice",
             "what": "...How are you even alive.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2334,7 +2588,8 @@
             ],
             "who": "shard",
             "what": "It's okay! I can teach you!",
-            "loop_tag": "paws"
+            "loop_tag": "paws",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2344,7 +2599,8 @@
             ],
             "who": "riggs",
             "what": "I forged my pilot's license!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2354,7 +2610,8 @@
             ],
             "who": "comp",
             "what": "Engaging autopilot mode.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
@@ -2364,7 +2621,8 @@
             ],
             "who": "hacker",
             "what": "Don't worry, CAT can steer on her own.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraAndShopkeeper",
@@ -2373,7 +2631,8 @@
             ],
             "who": "cleo",
             "what": "Tera, you know you can't tax free stuff.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedStrength_Multi_0",
@@ -2382,7 +2641,8 @@
             ],
             "who": "tera",
             "what": "You've been pardoned.",
-            "loop_tag": "closed"
+            "loop_tag": "closed",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedStrength_Multi_1",
@@ -2391,7 +2651,8 @@
             ],
             "who": "tera",
             "what": "A little kindness goes a long way.",
-            "loop_tag": "closed"
+            "loop_tag": "closed",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedStrength_Multi_2",
@@ -2400,7 +2661,8 @@
             ],
             "who": "tera",
             "what": "You are officially forgiven for your tax sins.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedDesperation_Multi_0",
@@ -2409,7 +2671,8 @@
             ],
             "who": "tera",
             "what": "I don't know what else to do. Let's just end this quickly.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedDesperation_Multi_1",
@@ -2418,7 +2681,8 @@
             ],
             "who": "tera",
             "what": "I hope this play was the right one.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedDesperation_Multi_2",
@@ -2427,7 +2691,8 @@
             ],
             "who": "tera",
             "what": "Desperate times call for desperate measures.",
-            "loop_tag": "closed"
+            "loop_tag": "closed",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedBreakout_Multi_0",
@@ -2436,7 +2701,8 @@
             ],
             "who": "tera",
             "what": "I think I can get us outta this mess!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedBreakout_Multi_1",
@@ -2445,7 +2711,8 @@
             ],
             "who": "tera",
             "what": "I'm breaking us outta this fight.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedBreakout_Multi_2",
@@ -2454,7 +2721,8 @@
             ],
             "who": "tera",
             "what": "I'm tapping into some funds. Let's hope it helps.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTenacity_Multi_0",
@@ -2463,7 +2731,8 @@
             ],
             "who": "tera",
             "what": "Just let me think here...",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTenacity_Multi_1",
@@ -2472,7 +2741,8 @@
             ],
             "who": "tera",
             "what": "My bird brain will come up with something, just gimme a sec.",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTenacity_Multi_2",
@@ -2481,7 +2751,8 @@
             ],
             "who": "tera",
             "what": "I think I got some extra ideas.",
-            "loop_tag": "taxneutral"
+            "loop_tag": "taxneutral",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedPersistence_Multi_0",
@@ -2490,7 +2761,8 @@
             ],
             "who": "tera",
             "what": "They're not escaping these taxes!",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedPersistence_Multi_1",
@@ -2499,7 +2771,8 @@
             ],
             "who": "tera",
             "what": "I was told to never give up. Let's hope that works now.",
-            "loop_tag": "nervous"
+            "loop_tag": "nervous",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedPersistence_Multi_2",
@@ -2508,7 +2781,8 @@
             ],
             "who": "tera",
             "what": "These taxes will never end.",
-            "loop_tag": "happytax"
+            "loop_tag": "happytax",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_0",
@@ -2517,7 +2791,8 @@
             ],
             "who": "tera",
             "what": "Uhh, you're an egg smeller! Wait, that's not a good insult.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_1",
@@ -2526,7 +2801,8 @@
             ],
             "who": "tera",
             "what": "You remind me of buttered toast!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_2",
@@ -2535,7 +2811,8 @@
             ],
             "who": "tera",
             "what": "You remind me of Drake if they were cool!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_2",
@@ -2544,7 +2821,8 @@
             ],
             "who": "eunice",
             "what": "You seriously need insult lessons.",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_3",
@@ -2553,7 +2831,8 @@
             ],
             "who": "tera",
             "what": "You're like Dizzy if they didn't explode stuff!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_3",
@@ -2562,7 +2841,8 @@
             ],
             "who": "dizzy",
             "what": "What can I say, I'm good at what I do.",
-            "loop_tag": "explains"
+            "loop_tag": "explains",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_4",
@@ -2571,7 +2851,8 @@
             ],
             "who": "tera",
             "what": "Uh... I can't insult someone so cute.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_4",
@@ -2580,7 +2861,8 @@
             ],
             "who": "shard",
             "what": "Insult the bad guy, not me!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_5",
@@ -2589,7 +2871,8 @@
             ],
             "who": "tera",
             "what": "You're just like Peri when she doesn't let me eat chicken nuggets!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_5",
@@ -2598,7 +2881,8 @@
             ],
             "who": "peri",
             "what": "We both know that's not a good idea.",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_6",
@@ -2607,7 +2891,8 @@
             ],
             "who": "tera",
             "what": "Isaac and you would get along, you both like nerd stuff!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_6",
@@ -2616,7 +2901,8 @@
             ],
             "who": "goat",
             "what": "Thank... you?",
-            "loop_tag": "shy"
+            "loop_tag": "shy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_7",
@@ -2625,7 +2911,8 @@
             ],
             "who": "tera",
             "what": "You and Max would both like to watch cute cat videos online!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_7",
@@ -2634,7 +2921,8 @@
             ],
             "who": "hacker",
             "what": "That would be fantastic.",
-            "loop_tag": "smile"
+            "loop_tag": "smile",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_8",
@@ -2643,7 +2931,8 @@
             ],
             "who": "tera",
             "what": "You're just as grumpy as CAT!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_8",
@@ -2652,7 +2941,8 @@
             ],
             "who": "comp",
             "what": "I'm changing all of your passwords now.",
-            "loop_tag": "grumpy"
+            "loop_tag": "grumpy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_39",
@@ -2661,7 +2951,8 @@
             ],
             "who": "tera",
             "what": "You remind me of Riggs' boba addiction!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_39",
@@ -2670,7 +2961,8 @@
             ],
             "who": "riggs",
             "what": "What addiction?",
-            "loop_tag": "bobaSlurp"
+            "loop_tag": "bobaSlurp",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_9",
@@ -2679,7 +2971,8 @@
             ],
             "who": "tera",
             "what": "You taste like onions!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_10",
@@ -2688,7 +2981,8 @@
             ],
             "who": "tera",
             "what": "You have a tiny brain!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_11",
@@ -2697,7 +2991,8 @@
             ],
             "who": "tera",
             "what": "You don't pay your taxes on time!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
@@ -2706,7 +3001,8 @@
             ],
             "who": "tera",
             "what": "I bet your taxes look like poopy!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
@@ -2716,7 +3012,8 @@
             ],
             "who": "peri",
             "what": "Tera! Language!",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
@@ -2726,7 +3023,8 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_13",
@@ -2735,7 +3033,8 @@
             ],
             "who": "tera",
             "what": "You look like a furry! ...Wait a minute.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_14",
@@ -2744,7 +3043,8 @@
             ],
             "who": "tera",
             "what": "I bet you failed flight school!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_15",
@@ -2753,7 +3053,8 @@
             ],
             "who": "tera",
             "what": "I bet you like science stuff!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_15",
@@ -2763,7 +3064,8 @@
             ],
             "who": "goat",
             "what": "Was that directed at me?",
-            "loop_tag": "shy"
+            "loop_tag": "shy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_16",
@@ -2772,7 +3074,8 @@
             ],
             "who": "tera",
             "what": "You should try being a bird next time! They're awesomer!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_17",
@@ -2781,7 +3084,8 @@
             ],
             "who": "tera",
             "what": "You're worse than a space pirate!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_17",
@@ -2791,7 +3095,8 @@
             ],
             "who": "eunice",
             "what": "And you're worse than a tax collector. ",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_18",
@@ -2800,7 +3105,8 @@
             ],
             "who": "tera",
             "what": "You're... uh... aw beans, I can't think of anything.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_19",
@@ -2809,7 +3115,8 @@
             ],
             "who": "tera",
             "what": "I bet you wish you were taller!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_20",
@@ -2818,7 +3125,8 @@
             ],
             "who": "tera",
             "what": "You, um, look like a bird??? Listen, insults are hard.",
-            "loop_tag": "lookaway"
+            "loop_tag": "lookaway",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2827,7 +3135,8 @@
             ],
             "who": "tera",
             "what": "You look like grumpy grass on a wind farm!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2837,7 +3146,8 @@
             ],
             "who": "peri",
             "what": "...What?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2847,7 +3157,8 @@
             ],
             "who": "riggs",
             "what": "Yeah, that makes sense.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2857,7 +3168,8 @@
             ],
             "who": "dizzy",
             "what": "Huh?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2867,7 +3179,8 @@
             ],
             "who": "goat",
             "what": "I don't understand-",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2877,7 +3190,8 @@
             ],
             "who": "hacker",
             "what": "Is this a secret code?",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2887,7 +3201,8 @@
             ],
             "who": "eunice",
             "what": "I bet you don't even touch grass.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2897,7 +3212,8 @@
             ],
             "who": "shard",
             "what": "Wow! Grass!",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
@@ -2907,7 +3223,8 @@
             ],
             "who": "comp",
             "what": "Please speak coherently.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_22",
@@ -2916,7 +3233,8 @@
             ],
             "who": "tera",
             "what": "You smell like a bad hair day!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_23",
@@ -2925,7 +3243,8 @@
             ],
             "who": "tera",
             "what": "You probably were hatched from an egg!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_24",
@@ -2934,7 +3253,8 @@
             ],
             "who": "tera",
             "what": "I bet you are a gamer! Boo!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_25",
@@ -2943,7 +3263,8 @@
             ],
             "who": "tera",
             "what": "I bet your tax return was very small!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_26",
@@ -2952,7 +3273,8 @@
             ],
             "who": "tera",
             "what": "Your mom is probably very lovely!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_27",
@@ -2961,7 +3283,8 @@
             ],
             "who": "tera",
             "what": "You, erm... aren't good at video games?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_28",
@@ -2970,7 +3293,8 @@
             ],
             "who": "tera",
             "what": "Your ship reminds me of mobile game ads. Ew.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_29",
@@ -2979,7 +3303,8 @@
             ],
             "who": "tera",
             "what": "Hey, you... wait, no... ugh, nevermind.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_30",
@@ -2988,7 +3313,8 @@
             ],
             "who": "tera",
             "what": "I'm gonna tax you so hard, you're gonna have a negative bank account!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_31",
@@ -2997,7 +3323,8 @@
             ],
             "who": "tera",
             "what": "Stinky!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_32",
@@ -3006,7 +3333,8 @@
             ],
             "who": "tera",
             "what": "Stupid!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_32",
@@ -3016,7 +3344,8 @@
             ],
             "who": "eunice",
             "what": "Speak for yourself.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_33",
@@ -3025,7 +3354,8 @@
             ],
             "who": "tera",
             "what": "Dummy!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
@@ -3034,7 +3364,8 @@
             ],
             "who": "tera",
             "what": "I'm gonna kick your heiney!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
@@ -3044,7 +3375,8 @@
             ],
             "who": "peri",
             "what": "Tera! Language!",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
@@ -3054,7 +3386,8 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
@@ -3063,7 +3396,8 @@
             ],
             "who": "tera",
             "what": "Your nose looks funny!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
@@ -3073,7 +3407,8 @@
             ],
             "who": "eunice",
             "what": "Speak for yourself.",
-            "loop_tag": ""
+            "loop_tag": "",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
@@ -3082,7 +3417,8 @@
             ],
             "who": "tera",
             "what": "Your ship sucks at literally everything!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_36",
@@ -3091,7 +3427,8 @@
             ],
             "who": "tera",
             "what": "I'm out of ideas. Can you just, insult yourself this time?",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
@@ -3100,7 +3437,8 @@
             ],
             "who": "tera",
             "what": "Consider your butt about to be kicked!",
-            "loop_tag": "happy"
+            "loop_tag": "happy",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
@@ -3110,7 +3448,8 @@
             ],
             "who": "peri",
             "what": "Tera! Language!",
-            "loop_tag": "mad"
+            "loop_tag": "mad",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
@@ -3120,7 +3459,8 @@
             ],
             "who": "dizzy",
             "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
         },
         {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_38",
@@ -3129,7 +3469,168 @@
             ],
             "who": "tera",
             "what": "I wish I could avoid you as much as people avoid taxes.",
-            "loop_tag": "squint"
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_0",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, get back here!",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, please stop hiding.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Ah, the bird's hiding under the control panel again.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Ah! Tera ran and knocked over my boba!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Never seen a bird waddle that fast.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Why doesn't he like, fly away?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "Aww, he did the head bob thing as he ran away.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "Tera, can you stop hiding underneath my drones?",
+            "loop_tag": "shy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_8",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "He left his pilot seat again. Coward.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_9",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "Chickening out, huh? ",
+            "loop_tag": "sly",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_10",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Tera, stop running my by monitors!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_11",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Huh. Didn't know birds can run that fast.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_12",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Tera! You knocked over my crystals!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_13",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "While you're gone, can you pick me up some snacks?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_14",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "Tera. To the cockpit. Now.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_15",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "Sometimes, I wonder why we brought him on this ship.",
+            "loop_tag": "",
+            "is_inserted": false
         }
     ]
 }

@@ -47,6 +47,7 @@ def main():
             is_new = False
 
             stock_event = all.get(node_name)
+            parent_is_say_switch = False
             if stock_event:
                 lines = stock_event['lines']
                 for index in parsed_indices:
@@ -59,6 +60,7 @@ def main():
                         break
 
                     entry = lines[index]
+                    parent_is_say_switch = entry['$type'] == 'SaySwitch, CobaltCore'
                     lines = entry.get('lines')
 
             else:
@@ -74,7 +76,8 @@ def main():
                 'indices': parsed_indices,
                 'who': who,
                 'what': what,
-                'loop_tag': loop_tag
+                'loop_tag': loop_tag,
+                'is_inserted': parent_is_say_switch
             }
             items.append(payload)
 

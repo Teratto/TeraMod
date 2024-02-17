@@ -1596,6 +1596,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_0": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1605,6 +1608,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_1": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1614,6 +1620,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_2": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "eunice"
@@ -1624,6 +1633,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_3": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "dizzy"
@@ -1634,6 +1646,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_4": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "shard"
@@ -1644,6 +1659,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_5": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "peri"
@@ -1654,6 +1672,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_6": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "goat"
@@ -1664,6 +1685,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_7": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "hacker"
@@ -1674,6 +1698,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_8": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "comp"
@@ -1684,6 +1711,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_9": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "riggs"
@@ -1694,6 +1724,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_10": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1703,6 +1736,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_11": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1712,6 +1748,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_12": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1721,6 +1760,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_13": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1730,6 +1772,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_14": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1739,6 +1784,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_15": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1748,6 +1796,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_16": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1757,6 +1808,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_17": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1766,6 +1820,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_18": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1775,6 +1832,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_19": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1784,6 +1844,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_20": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1793,6 +1856,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_21": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1802,6 +1868,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_22": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1811,6 +1880,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_23": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1820,6 +1892,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_24": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1829,6 +1904,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_25": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1838,6 +1916,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_26": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1847,6 +1928,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_27": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1856,6 +1940,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_28": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1865,6 +1952,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_29": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1874,6 +1964,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_30": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1883,6 +1976,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_31": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1892,6 +1988,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_32": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1901,6 +2000,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_33": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1910,6 +2012,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_34": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1919,6 +2024,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_35": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1928,6 +2036,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_36": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1937,6 +2048,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_37": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1946,6 +2060,9 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_38": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1955,11 +2072,238 @@
     },
     "TERAMOD_TeraPlayedTaunt_Multi_39": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
         "lookup": [
             "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_0": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "peri",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_1": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "peri",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_2": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_3": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "riggs",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_4": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_5": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "riggs",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_6": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_7": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_8": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_9": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_10": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_11": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_12": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_13": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_14": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
+        ]
+    },
+    "TERAMOD_TeraWentMissing_Multi_15": {
+        "oncePerRun": true,
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraGoByeBye"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraLeftLOL"
         ]
     }
 }
