@@ -5,7 +5,6 @@ using CobaltCoreModding.Definitions.ModManifests;
 using Tera.Cards;
 using Microsoft.Extensions.Logging;
 using HarmonyLib;
-using System.Runtime.Loader;
 using Tera.StatusPatches;
 
 namespace Tera
