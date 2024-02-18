@@ -1,4 +1,4 @@
-﻿namespace Tera;
+﻿namespace Shockah.Kokoro;
 
 public partial interface IKokoroApi
 {
