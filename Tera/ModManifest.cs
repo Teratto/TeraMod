@@ -356,7 +356,7 @@ namespace Tera
             registry.RegisterCard(teraCardRefund);
 
             ExternalCard teraCardTaxRun = new ExternalCard("Teratto.TeraMod.TeraTaxRun", typeof(TeraCardTaxRun), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
-            teraCardTaxRun.AddLocalisation("Taxing escape");
+            teraCardTaxRun.AddLocalisation("Taxing Escape");
             registry.RegisterCard(teraCardTaxRun);
 
             ExternalCard teraCardExemption = new ExternalCard("Teratto.TeraMod.TeraExemption", typeof(TeraCardExemption), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));

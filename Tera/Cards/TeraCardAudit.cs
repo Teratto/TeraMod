@@ -21,6 +21,10 @@
             switch (this.upgrade)
             {
                 case Upgrade.None:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -38,6 +42,10 @@
                     break;
 
                 case Upgrade.A:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -54,6 +62,10 @@
                     break;
 
                 case Upgrade.B:
+                    list.Add(new AVariableHint()
+                    {
+                        status = TeraModStatuses.Taxation,
+                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -75,21 +87,10 @@
 
         public override CardData GetData(State state)
         {
-            string desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 1</c>.";
-            if (upgrade == Upgrade.A)
-            {
-                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 2</c>.";
-
-            }
-            else if (upgrade == Upgrade.B)
-            {
-                desc = "Attack for dmg equal to enemy's <c=status>tax.</c> <c=downside>Set enemy tax to 3</c>.";
-
-            }
+          
             return new CardData()
             {
                 exhaust = upgrade == Upgrade.B,
-                description = desc,
                 cost = 1,
                 art = Spr.cards_GoatDrone,
             };
