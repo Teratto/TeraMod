@@ -1,16 +1,11 @@
 ﻿using CobaltCoreModding.Definitions;
-using CobaltCoreModding.Definitions.ExternalItems;
 using CobaltCoreModding.Definitions.ModContactPoints;
 using CobaltCoreModding.Definitions.ModManifests;
-using Tera.StoryStuff;
 using HarmonyLib;
 using Microsoft.Extensions.Logging;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Runtime.CompilerServices;
-using System.Reflection;
 using Tera.StoryInjector;
 
 namespace Tera
@@ -40,15 +35,15 @@ namespace Tera
         {
             foreach (InjectedItem item in _container.Items)
             {
-                if (!DB.story.all.TryGetValue(item.EventName, out StoryNode? node))
+                if (!DB.story.all.TryGetValue(item.NodeName, out StoryNode? node))
                 {
-                    if (!_nodesToInject.TryGetValue(item.EventName, out node))
+                    if (!_nodesToInject.TryGetValue(item.NodeName, out node))
                     {
-                        Console.WriteLine($"TeraMod: Cannot find StoryNode named {item.EventName} in either stock DB or mod StoryNodes. Is one of the files out of date?");
+                        Logger?.LogWarning("TeraMod: Cannot find StoryNode named {NodeName} in either stock DB or mod StoryNodes. Is one of the files out of date?", item.NodeName);
                         continue;
                     }
 
-                    DB.story.all[item.EventName] = node;
+                    DB.story.all[item.NodeName] = node;
                 }
 
                 InstructionListWrapper instructions = new();
@@ -71,12 +66,12 @@ namespace Tera
                             instructions.Add(new SaySwitch()
                             {
                                 lines = new List<Say>()
-                            }); ;
+                            });
                         }
                         else
                         {
                             instructions.Add(new Say() {
-                                who = "Teratto.TeraMod.Tera",
+                                who = TERA_DECK_ID,
                                 hash = "Missing line... I should double check my indices!"
                             });
                         }
@@ -96,11 +91,11 @@ namespace Tera
 
                 if (targetInstruction is not Say say)
                 {
-                    Console.WriteLine($"Failed to inject a line into story {item.EventName} at index {string.Join(',',item.Indices)} with what = '{item.What}'!!");
+                    Console.WriteLine($"Failed to inject a line into story {item.NodeName} at index {string.Join(',',item.Indices)} with what = '{item.What}'!!");
                     continue;
                 }
 
-                say.who = item.Who.ToLower() == "tera" ? "Teratto.TeraMod.Tera" : item.Who;
+                say.who = item.Who.ToLower() == "tera" ? TERA_DECK_ID : item.Who;
                 say.hash = GetHash(item.What);
                 say.loopTag = string.IsNullOrEmpty(item.LoopTag) ? null : item.LoopTag;
             }
@@ -125,7 +120,7 @@ namespace Tera
             foreach (InjectedItem item in _instance._container.Items)
             {
                 string hash = GetHash(item.What);
-                string key = $"{item.EventName}:{hash}";
+                string key = $"{item.NodeName}:{hash}";
                 __result[key] = item.What;
             }
         }

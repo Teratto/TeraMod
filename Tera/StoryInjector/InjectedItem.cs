@@ -5,7 +5,7 @@ namespace Tera.StoryInjector;
 public class InjectedItem
 {
     [JsonPropertyName("event_name")]
-    public string EventName;
+    public string NodeName;
 
     [JsonPropertyName("indices")]
     public int[] Indices = Array.Empty<int>();
