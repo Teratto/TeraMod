@@ -24,7 +24,7 @@
                     });
                     list.Add(new ADrawCard()
                     {
-                        count = 2
+                        count = 3
                     });
                     list.Add(new ADiscard()
                     {
@@ -50,7 +50,7 @@
                     });
                     list.Add(new ADrawCard()
                     {
-                        count = 2
+                        count = 3
                     });
 
                     break;
@@ -58,7 +58,7 @@
                 case Upgrade.B:
                     list.Add(new ADrawCard()
                     {
-                        count = 2,
+                        count = 3,
                         dialogueSelector = ".teraTenacitySpeak"
                     });
                     break;
