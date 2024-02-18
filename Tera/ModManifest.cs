@@ -32,9 +32,7 @@ namespace Tera
         // Constructor!! :D
         public ModManifest()
         {
-            Dependencies = new DependencyEntry[] {
-                // new DependencyEntry<Shockah.Kokoro.ModEntry>("Kokoro", ignoreIfMissing: true) // TODO: MAKE THIS *NOT* IGNORE IF MISSING!!
-            };
+            Dependencies = new DependencyEntry[] { };
         }
 
         public void BootMod(IModLoaderContact contact)
@@ -274,11 +272,6 @@ namespace Tera
             });
             registry.RegisterAnimation(taxneutralAnimation);
 
-            ExternalAnimation defaultAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.default", TeraDeck, "neutral", false, new ExternalSprite[] {
-                sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Neutral1")
-            });
-            registry.RegisterAnimation(defaultAnimation);
-
             ExternalAnimation miniAnimation = new ExternalAnimation("Teratto.TeraMod.Tera.mini", TeraDeck, "mini", false, new ExternalSprite[] {
                 sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Mini1")
             });
@@ -434,12 +427,11 @@ namespace Tera
         {
             var tera_spr = sprite_registry!.LookupSprite("Teratto.TeraMod.Tera.Panel");
 
-            ExternalAnimation default_animation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.default");
-            ExternalAnimation mini_animation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
-        
-
+            ExternalAnimation neutralAnimation = animation_registry!.LookupAnimation("Teratto.TeraMod.Tera.neutral");
+            ExternalAnimation miniAnimation = animation_registry.LookupAnimation("Teratto.TeraMod.Tera.mini");
+            
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
-            var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", TeraDeck!, tera_spr, start_cards, new Type[0], default_animation, mini_animation);
+            var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", TeraDeck!, tera_spr, start_cards, Array.Empty<Type>(), neutralAnimation, miniAnimation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
             playable_birdnerd_character.AddDescLocalisation("<c=tera>TERA</c>\nA tax collector. His cards <c=status>debuff</c> enemies, while also <c=downside>debuffing</c> yourself.");
             registry.RegisterCharacter(playable_birdnerd_character);
@@ -449,7 +441,6 @@ namespace Tera
 
         public void LoadManifest(IGlossaryRegisty registry)
         {
-
             ExternalSprite conditionalIcon = ExternalSprite.GetRaw((int)Spr.icons_questionMark);
             ExternalGlossary conditionalGlossary = new ExternalGlossary("Teratto.TeraMod.Conditional", "Conditional", false, ExternalGlossary.GlossayType.cardtrait, conditionalIcon);
             conditionalGlossary.AddLocalisation("en", "Conditional", "The card can be played only when the enemy has enough tax that can be spent.");
