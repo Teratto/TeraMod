@@ -566,6 +566,7 @@
     },
     "TERAMOD_JustHitGeneric_Multi_45": {
         "type": "combat",
+        "oncePerRun": true,
         "allPresent": [
             "eunice",
             "Teratto.TeraMod.Tera"
@@ -732,8 +733,7 @@
     "TERAMOD_ThatsALotOfDamageToUs_Multi_15": {
         "type": "combat",
         "allPresent": [
-            "Teratto.TeraMod.Tera",
-            "eunice"
+            "Teratto.TeraMod.Tera"
         ],
         "enemyShotJustHit": true,
         "minDamageDealtToPlayerThisTurn": 3
