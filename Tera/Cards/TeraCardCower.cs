@@ -37,20 +37,21 @@
                     });
                     list.Add(new AStatus()
                     {
-
-                        status = Status.energyLessNextTurn,
-                        statusAmount = 1,
-                        targetPlayer = true
-
-                    });
-                    list.Add(new AStatus()
-                    {
                         status = Status.tempShield,
                         statusAmount = 2,
                         targetPlayer = true,
                         dialogueSelector = ".TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
 
                     });
+                    list.Add(new AStatus()
+                    {
+
+                        status = Status.energyLessNextTurn,
+                        statusAmount = 1,
+                        targetPlayer = true
+
+                    });
+                   
                     break;
 
                 case Upgrade.B:
@@ -63,12 +64,19 @@
                     list.Add(new AStatus()
                     {
 
-                        status = Status.drawLessNextTurn,
+                        status = Status.tempPayback,
                         statusAmount = 1,
-                        targetPlayer = true,
-                        dialogueSelector = ".TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
-
+                        targetPlayer = true
                     });
+                     list.Add(new AStatus()
+                     {
+
+                         status = Status.energyLessNextTurn,
+                         statusAmount = 1,
+                         targetPlayer = true
+
+                     });
+        
                     break;
             }
 

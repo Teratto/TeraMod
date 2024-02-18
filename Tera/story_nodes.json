@@ -2082,6 +2082,18 @@
             "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
         ]
     },
+    "TERAMOD_TeraPlayedTaunt_Multi_40": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
     "TERAMOD_TeraWentMissing_Multi_0": {
         "oncePerRun": true,
         "oncePerCombat": true,

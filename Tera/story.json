@@ -2600,7 +2600,7 @@
             ],
             "who": "riggs",
             "what": "I forged my pilot's license!",
-            "loop_tag": "squint",
+            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -3253,7 +3253,7 @@
                 0
             ],
             "who": "tera",
-            "what": "I bet you are a gamer! Boo!",
+            "what": "I bet you're a gamer! Boo!",
             "loop_tag": "happy",
             "is_inserted": false
         },
@@ -3471,6 +3471,16 @@
             "who": "tera",
             "what": "I wish I could avoid you as much as people avoid taxes.",
             "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_40",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I bet you breathe too much!",
+            "loop_tag": "happy",
             "is_inserted": false
         },
         {

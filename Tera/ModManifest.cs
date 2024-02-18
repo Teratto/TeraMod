@@ -504,7 +504,7 @@ namespace Tera
         {
             ExternalSprite taxesIcon = sprite_registry!.LookupSprite("Teratto.TeraMod.coin");
             ExternalStatus taxationStatus = new("Teratto.DemoMod.Taxation", false, System.Drawing.Color.Magenta, System.Drawing.Color.DarkMagenta, taxesIcon, affectedByTimestop: false);
-            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</c> damage for every <c=keyword>3</> taxation. (Does not reset to 0 at end of turn.)");
+            taxationStatus.AddLocalisation("Tax", "At end of turn, deal <c=keyword>1</c> damage for every <c=keyword>3</> tax.");
             statusRegistry.RegisterStatus(taxationStatus);
 
             TeraModStatuses.Taxation = (Status)taxationStatus.Id!;
