@@ -74,6 +74,7 @@
                 unplayable = currentTax < requiredTax,
                 cost = 0,
                 art = Spr.cards_GoatDrone,
+                exhaust = upgrade == Upgrade.B
             };
         }
 

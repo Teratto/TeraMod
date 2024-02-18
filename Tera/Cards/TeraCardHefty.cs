@@ -13,7 +13,7 @@
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 4,
+                        statusAmount = 3,
                         targetPlayer = false
 
                     });
@@ -24,7 +24,7 @@
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 4,
+                        statusAmount = 3,
                         targetPlayer = false
                     });
                     break;
@@ -33,7 +33,7 @@
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
-                        statusAmount = 7,
+                        statusAmount = 6,
                         targetPlayer = false
                     });
                     break;
