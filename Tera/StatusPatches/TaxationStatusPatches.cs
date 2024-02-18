@@ -21,22 +21,24 @@ namespace Tera.StatusPatches
             int taxationStatusAmmount = __instance.Get(TeraModStatuses.Taxation);
             int bigTaxTime = 3;
            
-            if (inflationGet == true)
+            if (inflationGet)
             {
                 bigTaxTime = 2;
             }
 
             if (taxationStatusAmmount >= bigTaxTime)
             {
-
                 bool isPlayer = __instance == s.ship;
-
+                int hurtAmmount = taxationStatusAmmount / bigTaxTime; 
+                
                 c.QueueImmediate(new AHurt()
                 {
                     hurtShieldsFirst = true,
-                    hurtAmount = taxationStatusAmmount / bigTaxTime,
-                    targetPlayer = isPlayer
+                    hurtAmount = hurtAmmount,
+                    targetPlayer = isPlayer,
+                    dialogueSelector = hurtAmmount >= 5 && !isPlayer ? ".HurtALotFromTeraTax" : null
                 });
+                
             }
         }
 

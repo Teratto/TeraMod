@@ -983,6 +983,54 @@
         "whoDidThat": "shard",
         "minDamageDealtToEnemyThisAction": 1
     },
+    "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_0": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraTaxedAndDidBigDamage"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "HurtALotFromTeraTax"
+        ]
+    },
+    "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_1": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraTaxedAndDidBigDamage"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "HurtALotFromTeraTax"
+        ]
+    },
+    "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_2": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraTaxedAndDidBigDamage"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "HurtALotFromTeraTax"
+        ]
+    },
+    "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_3": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraTaxedAndDidBigDamage"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "HurtALotFromTeraTax"
+        ]
+    },
     "TERAMOD_TeraJustPlayedAnEgg_Multi_0": {
         "oncePerCombatTags": [
             "EggGaming"
