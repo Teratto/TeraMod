@@ -80,14 +80,15 @@
                     break;
                 case Upgrade.A:
                     {
-                        list.Add(new AStatus()
-                        {
-                            status = Status.evade,
-                            statusAmount = requiredTax,
-                            targetPlayer = true
-                        });
+                        
                         if (enemyTax >= requiredTax)
                         {
+                            list.Add(new AStatus()
+                            {
+                                status = Status.evade,
+                                statusAmount = requiredTax,
+                                targetPlayer = true
+                            });
                             list.Add(new AStatus()
                             {
                                 status = Status.tempShield,

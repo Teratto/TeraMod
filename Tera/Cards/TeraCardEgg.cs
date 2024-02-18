@@ -32,12 +32,16 @@
                         stunEnemy = true,
                         dialogueSelector =  useSpecialDialogue ? SpecialSelector : ".TeraPlayedAnEgg"
                     });
+                    list.Add(new ADrawCard()
+                    {
+                        count = 1
+                    });
                     break;
 
                 case Upgrade.B:
                     list.Add(new AAttack() 
                     {
-                        damage = GetDmg(s, 2),
+                        damage = GetDmg(s, 0),
                         fast = true,
                         stunEnemy = true,
                         dialogueSelector = useSpecialDialogue ? SpecialSelector : ".TeraPlayedAHardboiledEgg"
