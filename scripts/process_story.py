@@ -71,8 +71,14 @@ def main():
 
             # This is new!
             print('Found new line: ' + ', '.join(line))
+
+            # Add a prefix if this corresponds to a StoryNode not in the stock game.
+            prefix = ''
+            if node_name not in all:
+                prefix = cobaltcsv.NODE_PREFIX
+
             payload = {
-                'event_name': cobaltcsv.NODE_PREFIX + node_name,
+                'event_name': prefix + node_name,
                 'indices': parsed_indices,
                 'who': who,
                 'what': what,
