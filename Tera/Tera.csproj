@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>net6.0-windows7.0</TargetFramework>
+	  <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PlatformTarget>x64</PlatformTarget>
@@ -9,8 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.2.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="Nickel.ModBuildConfig" Version="0.4.0" PrivateAssets="All" ExcludeAssets="runtime" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,10 +22,6 @@
   <ItemGroup>
     <Reference Include="CobaltCore">
       <HintPath>..\CobaltCore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Kokoro">
-      <HintPath>..\Kokoro\Kokoro.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -52,29 +47,6 @@
   <ItemGroup>
     <!-- These files should show up in the Solution Explorer, but are not part of any build. -->
     <TeraScriptFile Include="../scripts/**/*.py" />
-  </ItemGroup>
-  
-  <PropertyGroup>
-  </PropertyGroup>
-  
-  <Target Name="CopyToNickel" AfterTargets="AfterBuild" Condition="'$(NICKEL_MOD_LIBRARY)' != ''">
-    <PropertyGroup>
-      <TeraFolder>$(NICKEL_MOD_LIBRARY)\Tera</TeraFolder>
-    </PropertyGroup>
-    <Message Importance="high" Text="Copying files from $(OutputPath) to $(TeraFolder)" />
-    <MakeDir Directories="$(TeraFolder)" />
-    <ItemGroup>
-      <FilesToCopy Include="$(OutputPath)/**/*" />
-    </ItemGroup>
-    <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(TeraFolder)\%(RecursiveDir)" />
-  </Target>
-
-  <Target Name="CopyToNickelNotSet" AfterTargets="AfterBuild" Condition="'$(NICKEL_MOD_LIBRARY)'==''">
-    <Warning Text="NICKEL_MOD_LIBRARY was not set, built files were not copied to your Nickel mod library folder." />
-  </Target>
-
-  <ItemGroup>
-    <Folder Include="StoryStuff\" />
   </ItemGroup>
 
 </Project>

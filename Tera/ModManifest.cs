@@ -5,6 +5,7 @@ using CobaltCoreModding.Definitions.ModManifests;
 using Tera.Cards;
 using Microsoft.Extensions.Logging;
 using HarmonyLib;
+using Shockah.Kokoro;
 using Tera.StatusPatches;
 
 namespace Tera
@@ -27,12 +28,15 @@ namespace Tera
         public DirectoryInfo? ModRootFolder { get; set; }
         public string Name => "Teratto.TeraMod.MainManifest";
 
+        public static IKokoroApi Kokoro = null!;
+        
         private static ModManifest _instance = null!; 
         
         // Constructor!! :D
         public ModManifest()
         {
-            Dependencies = new DependencyEntry[] { };
+            Dependencies = new DependencyEntry[] {
+            };
         }
 
         public void BootMod(IModLoaderContact contact)
@@ -48,6 +52,8 @@ namespace Tera
             TeraModCardInterfacePatch.Apply(harmony, Logger);
 
             Colors.colorDict["tera"] = 0xff266fd8;
+
+            Kokoro = contact.GetApi<IKokoroApi>("Shockah.Kokoro") ?? throw new InvalidOperationException("Failed to load Kokoro API!");
         }
 
         /// <summary>

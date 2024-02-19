@@ -1,4 +1,6 @@
-﻿namespace Tera.Cards
+﻿using Shockah.Kokoro;
+
+namespace Tera.Cards
 {
 
     [CardMeta(deck = Deck.test, rarity = Rarity.uncommon, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B })]
@@ -18,14 +20,17 @@
         {
             var list = new List<CardAction>();
 
+            AVariableHint variableHint = ModManifest.Kokoro.Actions.SetTargetPlayer(
+                new AVariableHint() {
+                    status = TeraModStatuses.Taxation,
+                },
+                targetPlayer: false
+            );
+            list.Add(variableHint);
+            
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                 
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -39,7 +44,6 @@
                         targetPlayer = false
 
                     });
-
                     break;
 
                 case Upgrade.A:
