@@ -24,6 +24,7 @@
                     list.Add(new AVariableHint()
                     {
                         status = TeraModStatuses.Taxation,
+                 
                     });
                     list.Add(new AAttack()
                     {
@@ -42,10 +43,6 @@
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
@@ -62,10 +59,6 @@
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AVariableHint()
-                    {
-                        status = TeraModStatuses.Taxation,
-                    });
                     list.Add(new AAttack()
                     {
                         damage = GetTaxAmnt(s, c),
