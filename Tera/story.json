@@ -1375,8 +1375,8 @@
                 0
             ],
             "who": "tera",
-            "what": "Woah, nice shot, me!",
-            "loop_tag": "happy",
+            "what": "Woah, nice shot, me.",
+            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1475,7 +1475,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Payday. ",
+            "what": "I'll get them to pay up, don't worry.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1485,8 +1485,8 @@
                 0
             ],
             "who": "tera",
-            "what": "It's tax season!",
-            "loop_tag": "happy",
+            "what": "Time to start taxing.",
+            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1495,7 +1495,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Time to charge some cards.",
+            "what": "Let's charge some cards.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1505,8 +1505,8 @@
                 0
             ],
             "who": "tera",
-            "what": "No money for you!",
-            "loop_tag": "happy",
+            "what": "Let's empty those bank accounts.",
+            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1515,7 +1515,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Carry the one... and bam!",
+            "what": "Carry the one...",
             "loop_tag": "taxneutral",
             "is_inserted": false
         },
@@ -1545,7 +1545,7 @@
                 0
             ],
             "who": "tera",
-            "what": "C'mon, don't pay attention to your taxes...",
+            "what": "C'mon, don't pay attention...",
             "loop_tag": "squint",
             "is_inserted": false
         },
@@ -1566,7 +1566,7 @@
             ],
             "who": "tera",
             "what": "Pay your taxes next time!",
-            "loop_tag": "happy",
+            "loop_tag": "happytax",
             "is_inserted": false
         },
         {
@@ -1585,7 +1585,7 @@
                 0
             ],
             "who": "tera",
-            "what": "Hehehe, your payments are due.",
+            "what": "I love this job sometimes.",
             "loop_tag": "happytax",
             "is_inserted": false
         },
@@ -1716,7 +1716,7 @@
             ],
             "who": "goat",
             "what": "I don't think taxes are supposed to work like this.",
-            "loop_tag": "sad",
+            "loop_tag": "squint",
             "is_inserted": false
         },
         {
