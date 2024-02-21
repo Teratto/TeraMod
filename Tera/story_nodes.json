@@ -983,6 +983,127 @@
         "whoDidThat": "shard",
         "minDamageDealtToEnemyThisAction": 1
     },
+    "TERAMOD_TeraJustTaxed_Multi_0": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_1": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_2": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_3": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_4": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_5": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_6": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_7": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_8": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
     "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_0": {
         "type": "combat",
         "oncePerCombatTags": [
@@ -2131,6 +2252,138 @@
         ]
     },
     "TERAMOD_TeraPlayedTaunt_Multi_40": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_41": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_42": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_43": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_44": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_45": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_46": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_47": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_48": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_49": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_50": {
+        "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "TeraTaunted"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraSaysAReallyBadThingAndIAmSorryForWhatHeSaidToYou"
+        ]
+    },
+    "TERAMOD_TeraPlayedTaunt_Multi_51": {
         "oncePerCombat": true,
         "oncePerCombatTags": [
             "TeraTaunted"

@@ -3484,6 +3484,116 @@
             "is_inserted": false
         },
         {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_41",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Hmm... this paper says that you're a butthead. ",
+            "loop_tag": "taxneutral",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_42",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Ugh. I don't even think you even deserve an insult. ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_43",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I kinda don't wanna be mean right now. Just, look in the mirror or something.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_44",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I bet you play with motion controls. Gross.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_45",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Hmm... Have you tried makeup? It should help you out a bit. ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_46",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Pack up your stuff and leave, you already lost!",
+            "loop_tag": "happy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_47",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I bet you use Bing! Ew!",
+            "loop_tag": "happy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_48",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "I bet you don't like mustard!",
+            "loop_tag": "happy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_49",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Your head is shaped like an egg. ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_50",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "You look like moldy bread! ",
+            "loop_tag": "happy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_51",
+            "indices": [
+                0
+            ],
+            "who": "tera",
+            "what": "Uh... Your mom???",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
             "event_name": "TERAMOD_TeraWentMissing_Multi_0",
             "indices": [
                 0

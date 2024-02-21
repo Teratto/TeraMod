@@ -439,7 +439,7 @@ namespace Tera
             var start_cards = new Type[] { typeof(TeraCardTariff), typeof(TeraCardRefund)};
             var playable_birdnerd_character = new ExternalCharacter("Teratto.TeraMod.Tera", TeraDeck!, tera_spr, start_cards, Array.Empty<Type>(), neutralAnimation, miniAnimation);
             playable_birdnerd_character.AddNameLocalisation("Tera");
-            playable_birdnerd_character.AddDescLocalisation("<c=tera>TERA</c>\nA tax collector. His cards <c=status>debuff</c> enemies, while also <c=downside>debuffing</c> yourself.");
+            playable_birdnerd_character.AddDescLocalisation("<c=tera>TERA</c>\nA tax collector. His cards <c=keyword>debuff</c> enemies, while also <c=keyword>debuffing</c> yourself.");
             registry.RegisterCharacter(playable_birdnerd_character);
         }
 
