@@ -5,6 +5,7 @@ take one damage, and it does not decrease at the end of the turn! Play defensive
 
 Watch out, though. Many of Tera's cards also come with hefty debuffs to your own ship. Can you survive the onslaught of debuffs, or will you use BAILOUT to 
 prevent those debuffs in the first place?
+
 ---
 
 Hey, so uh, I'm not sure what else to write here. Congrats on reading this!
@@ -16,6 +17,7 @@ Huge thanks to these people. I couldn't have made this mod without them.
 * **Arin** - The other sprite artist and first beta-tester. Arin made the artifact sprites, and also let me rant to them constantly about balance ideas.
 
 ---
+
 Tera is still NOT finished! We still have more dialogue to add, card art, and some MEMORIES to add! I want him to feel like a vanilla character :)
 
 Also devs if you're reading this hi hello please do not murder me I just like the funny animal game
