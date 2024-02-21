@@ -29,14 +29,20 @@ namespace Tera.StatusPatches
             if (taxationStatusAmmount >= bigTaxTime)
             {
                 bool isPlayer = __instance == s.ship;
-                int hurtAmmount = taxationStatusAmmount / bigTaxTime; 
+                int hurtAmmount = taxationStatusAmmount / bigTaxTime;
+
+                string dialogueSelector = isPlayer ? ".TeraTaxHurtUs" : ".TeraTaxHurtEnemy";
+                if (hurtAmmount >= 5) {
+                    dialogueSelector += "ALot";
+                }
                 
                 c.QueueImmediate(new AHurt()
                 {
                     hurtShieldsFirst = true,
                     hurtAmount = hurtAmmount,
                     targetPlayer = isPlayer,
-                    dialogueSelector = hurtAmmount >= 5 && !isPlayer ? ".HurtALotFromTeraTax" : null
+                    dialogueSelector = dialogueSelector,
+                    whoDidThis = (Deck)ModManifest.TeraDeck!.Id!.Value
                 });
                 
             }
