@@ -6,6 +6,7 @@ take one damage, and it does not decrease at the end of the turn! Play defensive
 Watch out, though. Many of Tera's cards also come with hefty debuffs to your own ship. Can you survive the onslaught of debuffs, or will you use BAILOUT to 
 prevent those debuffs in the first place?
 
+NOTE: THIS MOD REQUIRES BOTH NICKEL AND KOKORO TO FUNCTION PROPERLY.
 ---
 
 Hey, so uh, I'm not sure what else to write here. Congrats on reading this!
