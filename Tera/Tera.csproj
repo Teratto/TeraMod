@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    <PackageReference Include="Nanoray.ExtractSingleFileApplicationResourceTask" Version="1.0.0" />
     <PackageReference Include="Nickel.ModBuildConfig" Version="0.4.0" PrivateAssets="All" ExcludeAssets="runtime" />
   </ItemGroup>
 
