@@ -66,7 +66,6 @@
             return new CardData()
             {
                 cost = 0,
-                art = Spr.cards_Fleetfoot,
                 exhaust = true,
                 retain = upgrade == Upgrade.A,
                 //exhaust = upgrade == Upgrade.B

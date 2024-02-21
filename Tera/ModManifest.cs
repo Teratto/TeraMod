@@ -48,7 +48,7 @@ namespace Tera
             TaxationStatusPatches.Apply(harmony, Logger);
             StallAndLockNextTurnStatusPatches.Apply(harmony, Logger);
             InterestStatusPatches.Apply(harmony, Logger);
-            BailoutPatches.Apply(harmony, Logger);
+            AStatusBeginPatches.Apply(harmony, Logger);
             TeraModCardInterfacePatch.Apply(harmony, Logger);
 
             Colors.colorDict["tera"] = 0xff266fd8;
@@ -168,7 +168,7 @@ namespace Tera
             LoadSprite(artRegistry, "Teratto.Teramod.TeraEgg", "teraegg.png");
             LoadSprite(artRegistry, "Teratto.Teramod.TeraInflation", "ArtifactInflation.png");
 
-            LoadSprite(artRegistry, "Teratto.TeraMod.CardEgg", "CargBgs\\CardEgg.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardEgg", "CardBgs\\CardEgg.png");
         }
 
         /// <summary>
@@ -323,7 +323,7 @@ namespace Tera
         /// <param name="registry"></param>
         public void LoadManifest(ICardRegistry registry)
         {
-            ExternalCard teraEggCard = new ExternalCard("Teratto.TeraMod.TeraEgg", typeof(TeraCardEgg), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraEggCard = new ExternalCard("Teratto.TeraMod.TeraEgg", typeof(TeraCardEgg), sprite_registry.LookupSprite("Teratto.TeraMod.CardEgg"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             //add card name in english
             teraEggCard.AddLocalisation("Egg Toss");
             //register card in the db extender.

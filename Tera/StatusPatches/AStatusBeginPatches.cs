@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Tera.StatusPatches
 {
-    public class BailoutPatches
+    public class AStatusBeginPatches
     {
 
         public static void Apply(Harmony harmony, ILogger logger)
@@ -16,7 +16,7 @@ namespace Tera.StatusPatches
 
             harmony.Patch(
                 original: AccessTools.DeclaredMethod(typeof(AStatus), nameof(AStatus.Begin)),
-                prefix: new HarmonyMethod(typeof(BailoutPatches), nameof(AStatus_Begin_Prefix))
+                prefix: new HarmonyMethod(typeof(AStatusBeginPatches), nameof(AStatus_Begin_Prefix))
             );
         }
 
@@ -66,6 +66,11 @@ namespace Tera.StatusPatches
 
             return true;
         }
+
+        //public static bool AStatus_Begin_Postfix(AStatus __instance, G g, State s, Combat c)
+        //{
+
+        //}
 
     }
 }
