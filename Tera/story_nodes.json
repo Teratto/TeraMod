@@ -1766,6 +1766,92 @@
         "maxTurnsThisCombat": 1,
         "turnStart": true
     },
+    "TERAMOD_TeraJustBailedUsOut_Multi_0": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_1": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_2": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_3": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_4": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_5": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
+    },
     "TERAMOD_TeraPlayedStrength_Multi_0": {
         "oncePerRun": true,
         "allPresent": [
