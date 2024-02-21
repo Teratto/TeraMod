@@ -973,15 +973,12 @@
     },
     "TERAMOD_TeraJustHitAndDidBigDamage_Multi_5": {
         "type": "combat",
-        "oncePerCombatTags": [
-            "BooksShotThatGuy"
-        ],
         "allPresent": [
-            "shard"
+            "Teratto.TeraMod.Tera"
         ],
         "playerShotJustHit": true,
-        "whoDidThat": "shard",
-        "minDamageDealtToEnemyThisAction": 1
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
     },
     "TERAMOD_TeraJustTaxed_Multi_0": {
         "type": "combat",

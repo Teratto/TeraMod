@@ -37,7 +37,7 @@ def main():
                 seen_header = True
                 continue
 
-            if not node_name or node_name.lower().startswith('note'):
+            if not node_name or node_name.lower().startswith('note') or node_name.startswith('//'):
                 continue
 
             indices = line_index.split(',')
