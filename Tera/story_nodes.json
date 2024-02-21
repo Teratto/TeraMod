@@ -973,15 +973,133 @@
     },
     "TERAMOD_TeraJustHitAndDidBigDamage_Multi_5": {
         "type": "combat",
-        "oncePerCombatTags": [
-            "BooksShotThatGuy"
-        ],
         "allPresent": [
-            "shard"
+            "Teratto.TeraMod.Tera"
         ],
         "playerShotJustHit": true,
-        "whoDidThat": "shard",
-        "minDamageDealtToEnemyThisAction": 1
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_0": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_1": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_2": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_3": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera",
+        "minDamageDealtToEnemyThisAction": 3
+    },
+    "TERAMOD_TeraJustTaxed_Multi_4": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_5": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_6": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_7": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxed_Multi_8": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraDidATax"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "EnemyGotATax"
+        ],
+        "whoDidThat": "tera"
     },
     "TERAMOD_TeraJustTaxed_Multi_0": {
         "type": "combat",
@@ -1113,7 +1231,7 @@
             "Teratto.TeraMod.Tera"
         ],
         "lookup": [
-            "HurtALotFromTeraTax"
+            "TeraTaxHurtEnemyALot"
         ]
     },
     "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_1": {
@@ -1125,7 +1243,7 @@
             "Teratto.TeraMod.Tera"
         ],
         "lookup": [
-            "HurtALotFromTeraTax"
+            "TeraTaxHurtEnemyALot"
         ]
     },
     "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_2": {
@@ -1137,7 +1255,7 @@
             "Teratto.TeraMod.Tera"
         ],
         "lookup": [
-            "HurtALotFromTeraTax"
+            "TeraTaxHurtEnemyALot"
         ]
     },
     "TERAMOD_TeraJustTaxedAndDidBigDamage_Multi_3": {
@@ -1149,8 +1267,146 @@
             "Teratto.TeraMod.Tera"
         ],
         "lookup": [
-            "HurtALotFromTeraTax"
+            "TeraTaxHurtEnemyALot"
         ]
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_0": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_1": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "peri",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_2": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "riggs",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_3": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "dizzy",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_4": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_5": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_6": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "goat",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_7": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "hacker",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_8": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "comp",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
+    },
+    "TERAMOD_TeraJustTaxedUs_Multi_9": {
+        "type": "combat",
+        "oncePerCombatTags": [
+            "TeraJustTaxedUs"
+        ],
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraTaxHurtUs"
+        ],
+        "whoDidThat": "tera"
     },
     "TERAMOD_TeraJustPlayedAnEgg_Multi_0": {
         "oncePerCombatTags": [
@@ -1627,6 +1883,92 @@
         ],
         "maxTurnsThisCombat": 1,
         "turnStart": true
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_0": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_1": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_2": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_3": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_4": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOut_Multi_5": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "shard",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOut"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "eunice",
+            "Teratto.TeraMod.Tera"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
+    },
+    "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2": {
+        "oncePerCombat": true,
+        "allPresent": [
+            "Teratto.TeraMod.Tera",
+            "eunice"
+        ],
+        "lookup": [
+            "TeraBailedUsOutHeat"
+        ]
     },
     "TERAMOD_TeraPlayedStrength_Multi_0": {
         "oncePerRun": true,

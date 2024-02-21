@@ -1370,7 +1370,7 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_0",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_0",
             "indices": [
                 0
             ],
@@ -1380,17 +1380,17 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_1",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_1",
             "indices": [
                 0
             ],
             "who": "tera",
-            "what": "Take that, dirty tax evader!",
-            "loop_tag": "happy",
+            "what": "That's what you tax evaders get. ",
+            "loop_tag": "happytax",
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_2",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_2",
             "indices": [
                 0
             ],
@@ -1400,27 +1400,27 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_2",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_2",
             "indices": [
                 1
             ],
             "who": "tera",
-            "what": "Yeah! I did that!",
-            "loop_tag": "happy",
+            "what": "Thanks, Peri.",
+            "loop_tag": "blush",
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_3",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_3",
             "indices": [
                 0
             ],
             "who": "tera",
-            "what": "I did the thing! The big damage thing!",
+            "what": "Woa, I did the big damage thing.",
             "loop_tag": "",
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_3",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_3",
             "indices": [
                 1
             ],
@@ -1430,7 +1430,7 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_4",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_4",
             "indices": [
                 0
             ],
@@ -1440,7 +1440,7 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_4",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_4",
             "indices": [
                 1
             ],
@@ -1450,7 +1450,7 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHidAndDidBigDamage_Multi_5",
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_5",
             "indices": [
                 0
             ],
@@ -1605,7 +1605,7 @@
                 1
             ],
             "who": "tera",
-            "what": "I can, uh, fix this!",
+            "what": "I can, uh, fix this.",
             "loop_tag": "lookaway",
             "is_inserted": false
         },
@@ -1635,7 +1635,7 @@
                 0
             ],
             "who": "riggs",
-            "what": "I don't like paying my taxes!",
+            "what": "I don't like paying my taxes.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1645,7 +1645,7 @@
                 1
             ],
             "who": "tera",
-            "what": "Is this why taxes hurt so much!?",
+            "what": "I never knew they hurt this much.",
             "loop_tag": "nervous",
             "is_inserted": false
         },
@@ -1665,7 +1665,7 @@
                 1
             ],
             "who": "tera",
-            "what": "Sorry! I can't pay off our debt!",
+            "what": "I'll try to pay off the debt!",
             "loop_tag": "nervous",
             "is_inserted": false
         },
@@ -1715,8 +1715,8 @@
                 0
             ],
             "who": "goat",
-            "what": "Please don't tax my drones.",
-            "loop_tag": "",
+            "what": "I don't think taxes are supposed to work like this.",
+            "loop_tag": "sad",
             "is_inserted": false
         },
         {
@@ -1725,7 +1725,7 @@
                 1
             ],
             "who": "tera",
-            "what": "I won't! I swear!",
+            "what": "I don't know how to turn them off...",
             "loop_tag": "nervous",
             "is_inserted": false
         },
@@ -1755,7 +1755,7 @@
                 0
             ],
             "who": "comp",
-            "what": "Tera.",
+            "what": "Tera. Why.",
             "loop_tag": "squint",
             "is_inserted": false
         },
@@ -2622,16 +2622,6 @@
             ],
             "who": "hacker",
             "what": "Don't worry, CAT can steer on her own.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraAndShopkeeper",
-            "indices": [
-                0
-            ],
-            "who": "cleo",
-            "what": "Tera, you know you can't tax free stuff.",
             "loop_tag": "",
             "is_inserted": false
         },

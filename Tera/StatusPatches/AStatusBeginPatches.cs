@@ -40,15 +40,25 @@ namespace Tera.StatusPatches
             bool isBad = !DB.statuses[__instance.status].isGood && __instance.status != TeraModStatuses.Bailout;
             int currentBailout = ship.Get(TeraModStatuses.Bailout); 
 
-            if (__instance.statusAmount > 0 && currentBailout > 0 && isBad)
-            {
+            if (__instance.statusAmount > 0 && currentBailout > 0 && isBad) {
+                string? dialogueSelector = null;
+                if (__instance.targetPlayer) {
+                    dialogueSelector = ".TeraBailedUsOut";
+                    switch (__instance.status) {
+                        case Status.heat:
+                            dialogueSelector += "Heat";
+                            break;
+                    }
+                }
+                
                 // Remove 1 bailout from the ship.
                 c.QueueImmediate(new AStatus()
                 {
                     targetPlayer = __instance.targetPlayer,
                     statusAmount = -1,
                     mode = AStatusMode.Add,
-                    status = TeraModStatuses.Bailout
+                    status = TeraModStatuses.Bailout,
+                    dialogueSelector = dialogueSelector
                 });
 
                 // Return now and don't run original code.
