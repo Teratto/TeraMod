@@ -58,19 +58,25 @@ namespace Tera.StatusPatches
             // We want an immediate shout if Tera goes missing (not wait until end of turn like the others)
             if (__instance.status == TeraModStatuses.MissingTera)
             {
-                c.QueueImmediate(new CardAction()
-                {
-                    dialogueSelector = ".TeraLeftLOL"
-                });
+                Narrative.SpeakBecauseOfAction(g, c, ".TeraLeftLOL");
             }
 
             return true;
         }
 
-        //public static bool AStatus_Begin_Postfix(AStatus __instance, G g, State s, Combat c)
-        //{
-
-        //}
+        public static void AStatus_Begin_Postfix(AStatus __instance, G g, State s, Combat c)
+        {
+            if (
+                !__instance.targetPlayer 
+                && __instance.status == TeraModStatuses.Taxation 
+                && __instance.mode == AStatusMode.Add 
+                && __instance.statusAmount > 0
+            )
+            {
+                Narrative.SpeakBecauseOfAction(g, c, ".EnemyGotATax");
+            }
+            
+        }
 
     }
 }
