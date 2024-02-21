@@ -55,6 +55,15 @@ namespace Tera.StatusPatches
                 return false;
             }
 
+            // We want an immediate shout if Tera goes missing (not wait until end of turn like the others)
+            if (__instance.status == TeraModStatuses.MissingTera)
+            {
+                c.QueueImmediate(new CardAction()
+                {
+                    dialogueSelector = ".TeraLeftLOL"
+                });
+            }
+
             return true;
         }
 

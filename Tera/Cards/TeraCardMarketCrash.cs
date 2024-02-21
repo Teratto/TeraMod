@@ -14,21 +14,19 @@
                     {
                         status = TeraModStatuses.Taxation,
                         statusAmount = 2,
-                        dialogueSelector = ".TeraLeftLOL"
                     });
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
                         statusAmount = 2,
                         targetPlayer = true,
-                        dialogueSelector = ".TeraLeftLOL"
                     });
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = ".TeraLeftLOL"
+                        //dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
 

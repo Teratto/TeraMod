@@ -30,7 +30,7 @@
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = ".TeraLeftLOL"
+                        //dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
 
@@ -52,7 +52,7 @@
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = ".TeraLeftLOL"
+                        //dialogueSelector = ".TeraLeftLOL"
                     });
 
                     break;
@@ -76,7 +76,7 @@
                         status = TeraModStatuses.MissingTera,
                         statusAmount = 1,
                         targetPlayer = true,
-                        dialogueSelector = ".TeraLeftLOL"
+                        //dialogueSelector = ".TeraLeftLOL"
                     });
                     break;
             }
