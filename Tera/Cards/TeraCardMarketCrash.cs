@@ -40,13 +40,7 @@
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 2,
-                        targetPlayer = true
-                    });
-                    list.Add(new AStatus()
-                    {
-                        status = Status.shield,
-                        statusAmount = 2,
+                        statusAmount = 3,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
@@ -61,7 +55,7 @@
                 list.Add(new AStatus()
                 {
                     status = TeraModStatuses.Taxation,
-                    statusAmount = 4
+                    statusAmount = 3
                 });
                 list.Add(new AStatus()
                 {
