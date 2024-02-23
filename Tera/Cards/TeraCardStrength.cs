@@ -8,7 +8,7 @@
         private int GetRequiredTax()
         {
 
-            int requiredTax = 1;
+            int requiredTax = 2;
             return requiredTax;
         }
 
@@ -48,15 +48,15 @@
 
         public override CardData GetData(State state)
         {
-            string desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>2 energy</c>.";
+            string desc = "<c=downside>Spend 2 enemy tax</c> to gain <c=status>2 energy</c>.";
             if (upgrade == Upgrade.A)
             {
-                desc = "<c=downside>Spend 1 enemy tax</c> to gain 2 <c=status>energy</c> and draw 1 card.";
+                desc = "<c=downside>Spend 2 enemy tax</c> to gain 2 <c=status>energy</c> and draw 1 card.";
 
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "<c=downside>Spend 1 enemy tax</c> to gain <c=status>2 energy</c>.";
+                desc = "<c=downside>Spend 2 enemy tax</c> to gain <c=status>2 energy</c>.";
 
             }
             int requiredTax = GetRequiredTax();

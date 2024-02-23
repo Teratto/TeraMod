@@ -61,7 +61,7 @@
                   
                     list.Add(new AAttack()
                     {
-                        damage = GetDmg(s, 0),
+                        damage = GetDmg(s, 1),
                         status = TeraModStatuses.Taxation,
                         statusAmount = 1
                     });
