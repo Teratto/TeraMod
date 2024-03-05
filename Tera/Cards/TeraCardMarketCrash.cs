@@ -40,7 +40,13 @@
                     list.Add(new AStatus()
                     {
                         status = Status.tempShield,
-                        statusAmount = 3,
+                        statusAmount = 2,
+                        targetPlayer = true
+                    });
+                    list.Add(new AStatus()
+                    {
+                        status = Status.shield,
+                        statusAmount = 1,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
@@ -60,7 +66,7 @@
                 list.Add(new AStatus()
                 {
                     status = Status.tempShield,
-                    statusAmount = 3,
+                    statusAmount = 4,
                     targetPlayer = true
                 });
                 list.Add(new AStatus()
@@ -81,7 +87,6 @@
             return new CardData()
             {
                 cost = 2,
-                art = new Spr?(Spr.cards_GoatDrone),
             };
         }
 

@@ -28,7 +28,6 @@
                 exhaust = true,
                 retain = true,
                 cost = 0,
-                art = Spr.cards_GoatDrone,
             };
         }
         public override string Name()

@@ -52,12 +52,6 @@
                         targetPlayer = true,
                         mode = AStatusMode.Add
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = -1,
-                        targetPlayer = false
-                    });
                     break;
             }
 
@@ -74,7 +68,7 @@
             }
             else if(upgrade == Upgrade.B)
             {
-                desc = "Gain <c=status>temp shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
+                desc = "Gain <c=status>temp shield</c> equal to enemy's <c=status>tax</c>.";
 
             }
             return new CardData()

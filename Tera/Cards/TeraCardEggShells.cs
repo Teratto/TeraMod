@@ -28,7 +28,6 @@
             return new CardData()
             {
                 cost = 0,
-                art = Spr.cards_GoatDrone,
                 exhaust = true,
                 temporary = true,
             };

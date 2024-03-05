@@ -79,7 +79,6 @@
             {
                 temporary = isTemporary,
                 cost = cost,
-                art = new Spr?(Spr.cards_GoatDrone),
                 exhaust = upgrade != Upgrade.B,
                 infinite = upgrade == Upgrade.B
             };

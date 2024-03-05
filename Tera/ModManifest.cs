@@ -169,6 +169,23 @@ namespace Tera
             LoadSprite(artRegistry, "Teratto.Teramod.TeraInflation", "ArtifactInflation.png");
 
             LoadSprite(artRegistry, "Teratto.TeraMod.CardEgg", "CardBgs\\CardEgg.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardBailout", "CardBgs\\CardBailout.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardBreakout", "CardBgs\\CardBreakout.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardPayment", "CardBgs\\CardPayment.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardSalesTax", "CardBgs\\CardSalesTax.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardHeftyTax", "CardBgs\\CardHeftyTax.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardNumberCrunch", "CardBgs\\CardNumberCrunch.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardAudit", "CardBgs\\CardAudit.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardEggShells", "CardBgs\\cardEggShells.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardAllIn", "CardBgs\\cardAllIn.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardDesperation", "CardBgs\\cardDesperatioon.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardForgiveness", "CardBgs\\cardForgiveness.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardGetsTheWorm", "CardBgs\\cardGetsTheWorm.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardTariff", "CardBgs\\cardTariff.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardTaxFraud", "CardBgs\\cardTaxFraud.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardTaxingEscape", "CardBgs\\cardTaxingEscape.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardTenacity", "CardBgs\\cardTenacity.png");
+            LoadSprite(artRegistry, "Teratto.TeraMod.CardMarketCrash", "CardBgs\\cardMarketCrash.png");
         }
 
         /// <summary>
@@ -333,7 +350,7 @@ namespace Tera
             teraCardCower.AddLocalisation("Taunt");
             registry.RegisterCard(teraCardCower);
 
-            ExternalCard teraCardCaw = new ExternalCard("Teratto.TeraMod.TeraCaw", typeof(TeraCardCaw), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardCaw = new ExternalCard("Teratto.TeraMod.TeraCaw", typeof(TeraCardCaw), sprite_registry.LookupSprite("Teratto.TeraMod.CardBreakout"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardCaw.AddLocalisation("Breakout");
             registry.RegisterCard(teraCardCaw);
 
@@ -341,19 +358,19 @@ namespace Tera
             teraCardGetaway.AddLocalisation("Frenzied Getaway");
             registry.RegisterCard(teraCardGetaway);
 
-            ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardPanic = new ExternalCard("Teratto.TeraMod.TeraPanic", typeof(TeraCardPanic), sprite_registry.LookupSprite("Teratto.TeraMod.CardNumberCrunch"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardPanic.AddLocalisation("Number Crunching");
             registry.RegisterCard(teraCardPanic);
 
-            ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardTariff = new ExternalCard("Teratto.TeraMod.TeraTariff", typeof(TeraCardTariff), sprite_registry.LookupSprite("Teratto.TeraMod.CardTariff"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardTariff.AddLocalisation("Tariff");
             registry.RegisterCard(teraCardTariff);
 
-            ExternalCard teraCardAudit = new ExternalCard("Teratto.TeraMod.TeraAudit", typeof(TeraCardAudit), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardAudit = new ExternalCard("Teratto.TeraMod.TeraAudit", typeof(TeraCardAudit), sprite_registry.LookupSprite("Teratto.TeraMod.CardAudit"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardAudit.AddLocalisation("Audit");
             registry.RegisterCard(teraCardAudit);
 
-            ExternalCard teraCardMarketCrash = new ExternalCard("Teratto.TeraMod.TeraMarketCrash", typeof(TeraMarketCrash), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardMarketCrash = new ExternalCard("Teratto.TeraMod.TeraMarketCrash", typeof(TeraMarketCrash), sprite_registry.LookupSprite("Teratto.TeraMod.CardMarketCrash"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardMarketCrash.AddLocalisation("Market Crash");
             registry.RegisterCard(teraCardMarketCrash);
 
@@ -361,7 +378,7 @@ namespace Tera
             teraCardRefund.AddLocalisation("Tax Evasion");
             registry.RegisterCard(teraCardRefund);
 
-            ExternalCard teraCardTaxRun = new ExternalCard("Teratto.TeraMod.TeraTaxRun", typeof(TeraCardTaxRun), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardTaxRun = new ExternalCard("Teratto.TeraMod.TeraTaxRun", typeof(TeraCardTaxRun), sprite_registry.LookupSprite("Teratto.TeraMod.CardTaxingEscape"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardTaxRun.AddLocalisation("Taxing Escape");
             registry.RegisterCard(teraCardTaxRun);
 
@@ -369,15 +386,15 @@ namespace Tera
             teraCardExemption.AddLocalisation("Tax Exemption");
             registry.RegisterCard(teraCardExemption);
 
-            ExternalCard teraCardDesperation = new ExternalCard("Teratto.TeraMod.TeraDesperation", typeof(TeraCardDesperation), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardDesperation = new ExternalCard("Teratto.TeraMod.TeraDesperation", typeof(TeraCardDesperation), sprite_registry.LookupSprite("Teratto.TeraMod.CardDesperation"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardDesperation.AddLocalisation("Desperation");
             registry.RegisterCard(teraCardDesperation);
 
-            ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
+            ExternalCard teraCardStrength = new ExternalCard("Teratto.TeraMod.TeraStrength", typeof(TeraCardStrength), sprite_registry.LookupSprite("Teratto.TeraMod.CardForgiveness"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"), new[] { ConditionalGlossaryKey });
             teraCardStrength.AddLocalisation("Forgiveness");
             registry.RegisterCard(teraCardStrength);
 
-            ExternalCard teraCardSalesTax = new ExternalCard("Teratto.TeraMod.TeraSalesTax", typeof(TeraCardSalesTax), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardSalesTax = new ExternalCard("Teratto.TeraMod.TeraSalesTax", typeof(TeraCardSalesTax), sprite_registry.LookupSprite("Teratto.TeraMod.CardSalesTax"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardSalesTax.AddLocalisation("Sales Tax");
             registry.RegisterCard(teraCardSalesTax);
 
@@ -385,15 +402,15 @@ namespace Tera
             teraCardPersistence.AddLocalisation("Persistence");
             registry.RegisterCard(teraCardPersistence);
 
-            ExternalCard teraCardHefty = new ExternalCard("Teratto.TeraMod.teraHefty", typeof(TeraCardHefty), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardHefty = new ExternalCard("Teratto.TeraMod.teraHefty", typeof(TeraCardHefty), sprite_registry.LookupSprite("Teratto.TeraMod.CardHeftyTax"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardHefty.AddLocalisation("Hefty Tax");
             registry.RegisterCard(teraCardHefty);
 
-            ExternalCard teraCardFraud = new ExternalCard("Teratto.TeraMod.teraFraud", typeof(TeraCardFraud), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardFraud = new ExternalCard("Teratto.TeraMod.teraFraud", typeof(TeraCardFraud), sprite_registry.LookupSprite("Teratto.TeraMod.CardTaxFraud"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardFraud.AddLocalisation("Tax Fraud");
             registry.RegisterCard(teraCardFraud);
 
-            ExternalCard teraCardWorm = new ExternalCard("Teratto.TeraMod.teraWorm", typeof(TeraCardWorm), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardWorm = new ExternalCard("Teratto.TeraMod.teraWorm", typeof(TeraCardWorm), sprite_registry.LookupSprite("Teratto.TeraMod.CardGetsTheWorm"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardWorm.AddLocalisation("Gets the Worm");
             registry.RegisterCard(teraCardWorm);
 
@@ -401,23 +418,23 @@ namespace Tera
             teraCardHealthInsurance.AddLocalisation("Health Insurance");
             registry.RegisterCard(teraCardHealthInsurance);
 
-            ExternalCard teraCardBailout = new ExternalCard("Teratto.TeraMod.teraBailout", typeof(TeraCardBailout), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardBailout = new ExternalCard("Teratto.TeraMod.teraBailout", typeof(TeraCardBailout), sprite_registry.LookupSprite("Teratto.TeraMod.CardBailout"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardBailout.AddLocalisation("Bailout");
             registry.RegisterCard(teraCardBailout);
 
-            ExternalCard teraCardTenacity = new ExternalCard("Teratto.TeraMod.teraTenacity", typeof(TeraCardTenacity), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardTenacity = new ExternalCard("Teratto.TeraMod.teraTenacity", typeof(TeraCardTenacity), sprite_registry.LookupSprite("Teratto.TeraMod.CardTenacity"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardTenacity.AddLocalisation("Tenacity");
             registry.RegisterCard(teraCardTenacity);
 
-            ExternalCard teraCardAllIn = new ExternalCard("Teratto.TeraMod.teraAllIn", typeof(TeraCardAllIn), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardAllIn = new ExternalCard("Teratto.TeraMod.teraAllIn", typeof(TeraCardAllIn), sprite_registry.LookupSprite("Teratto.TeraMod.CardAllIn"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardAllIn.AddLocalisation("All-In");
             registry.RegisterCard(teraCardAllIn);
 
-            ExternalCard teraCardEggShells = new ExternalCard("Teratto.TeraMod.teraEggShells", typeof(TeraCardEggShells), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardEggShells = new ExternalCard("Teratto.TeraMod.teraEggShells", typeof(TeraCardEggShells), sprite_registry.LookupSprite("Teratto.TeraMod.CardEggShells"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardEggShells.AddLocalisation("Egg Shells");
             registry.RegisterCard(teraCardEggShells);
 
-            ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.teraPayment", typeof(TeraCardPayment), ExternalSprite.GetRaw((int)Spr.cards_test), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
+            ExternalCard teraCardPayment = new ExternalCard("Teratto.TeraMod.teraPayment", typeof(TeraCardPayment), sprite_registry.LookupSprite("Teratto.TeraMod.CardPayment"), deck_registry!.LookupDeck("Teratto.TeraMod.Tera"));
             teraCardPayment.AddLocalisation("Payment");
             registry.RegisterCard(teraCardPayment);
         }

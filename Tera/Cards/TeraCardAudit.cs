@@ -90,8 +90,6 @@ namespace Tera.Cards
                 exhaust = upgrade == Upgrade.B,
                 cost = 1,
                 recycle = upgrade == Upgrade.B ? false : true,
-               
-                art = Spr.cards_GoatDrone,
             };
         }
 

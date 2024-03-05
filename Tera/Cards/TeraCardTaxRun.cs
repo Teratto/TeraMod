@@ -90,7 +90,6 @@
             {
                 flippable = upgrade == Upgrade.A,
                 cost = 0,
-                art = Spr.cards_GoatDrone,
             };
         }
         public override string Name()

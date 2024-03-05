@@ -77,7 +77,6 @@
                 description = desc,
                 recycle = upgrade == Upgrade.A,
                 cost = 0,
-                art = Spr.cards_GoatDrone,
             };
         }
 

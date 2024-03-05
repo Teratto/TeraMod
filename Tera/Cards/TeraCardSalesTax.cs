@@ -17,7 +17,10 @@
                         targetPlayer = false
 
                     });
-                  
+                    list.Add(new ADrawCard()
+                    {
+                        count = 1
+                    });
                     break;
 
                 case Upgrade.A:
@@ -30,7 +33,7 @@
                     });
                     list.Add(new ADrawCard()
                     {
-                        count = 1
+                        count = 2
                     });
                     break;
 
@@ -47,7 +50,7 @@
                         {
                             temporaryOverride = true,
                         },
-                        destination = CardDestination.Deck,
+                        destination = CardDestination.Discard,
                         amount = 1,
                     });
                     break;
@@ -67,8 +70,6 @@
 
             {
                 cost = cost,
-                art = new Spr?(Spr.cards_GoatDrone),
-                exhaust = upgrade == Upgrade.B ? true : false,
             };
         }
         public override string Name()

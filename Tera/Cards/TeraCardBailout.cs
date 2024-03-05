@@ -59,7 +59,6 @@
             return new CardData()
             {
                 cost = cost,
-                art = Spr.cards_GoatDrone,
                 exhaust = upgrade != Upgrade.B
             };
         }
