@@ -135,7 +135,6 @@
             {
                 description = desc,
                 cost = 0,
-                art = new Spr?(Spr.cards_GoatDrone),
             };
         }
 

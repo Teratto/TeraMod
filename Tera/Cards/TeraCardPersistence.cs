@@ -61,7 +61,6 @@
 
             {
                 cost = cost,
-                art = new Spr?(Spr.cards_GoatDrone),
                 exhaust = true
             };
         }

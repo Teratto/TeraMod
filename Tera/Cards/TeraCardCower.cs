@@ -28,7 +28,6 @@
                     break;
 
                 case Upgrade.A:
-
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
@@ -51,10 +50,12 @@
                         targetPlayer = true
 
                     });
-                   
+
+
                     break;
 
                 case Upgrade.B:
+                   
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
@@ -88,7 +89,6 @@
             return new CardData()
             {
                 cost = 1,
-                art = Spr.cards_GoatDrone,
                 //exhaust = upgrade == Upgrade.B
             };
         }

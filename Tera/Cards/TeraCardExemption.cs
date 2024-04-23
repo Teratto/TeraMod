@@ -75,7 +75,6 @@
             {
                 description = desc,
                 cost = 1,
-                art = Spr.cards_GoatDrone,
                 //exhaust = upgrade == Upgrade.B
             };
         }
