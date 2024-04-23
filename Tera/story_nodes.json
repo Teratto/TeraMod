@@ -522,9 +522,6 @@
     },
     "TERAMOD_JustHitGeneric_Multi_40": {
         "type": "combat",
-        "oncePerCombatTags": [
-            "f"
-        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1765,6 +1762,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_0": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1774,6 +1774,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_1": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1783,6 +1786,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_2": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1792,6 +1798,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_3": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1801,6 +1810,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_4": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "eunice"
@@ -1811,6 +1823,9 @@
     },
     "TERAMOD_TeraJustBailedUsOut_Multi_5": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "BailoutisCool"
+        ],
         "allPresent": [
             "shard",
             "Teratto.TeraMod.Tera"
@@ -1821,6 +1836,9 @@
     },
     "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "PhewNoHeat"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "eunice"
@@ -1831,6 +1849,9 @@
     },
     "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "PhewNoHeat"
+        ],
         "allPresent": [
             "eunice",
             "Teratto.TeraMod.Tera"
@@ -1841,6 +1862,9 @@
     },
     "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2": {
         "oncePerCombat": true,
+        "oncePerCombatTags": [
+            "PhewNoHeat"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera",
             "eunice"
@@ -1851,6 +1875,9 @@
     },
     "TERAMOD_TeraPlayedStrength_Multi_0": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1860,6 +1887,9 @@
     },
     "TERAMOD_TeraPlayedStrength_Multi_1": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1869,6 +1899,9 @@
     },
     "TERAMOD_TeraPlayedStrength_Multi_2": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1878,6 +1911,9 @@
     },
     "TERAMOD_TeraPlayedDesperation_Multi_0": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1887,6 +1923,9 @@
     },
     "TERAMOD_TeraPlayedDesperation_Multi_1": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1896,6 +1935,9 @@
     },
     "TERAMOD_TeraPlayedDesperation_Multi_2": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1905,6 +1947,9 @@
     },
     "TERAMOD_TeraPlayedBreakout_Multi_0": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1914,6 +1959,9 @@
     },
     "TERAMOD_TeraPlayedBreakout_Multi_1": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1923,6 +1971,9 @@
     },
     "TERAMOD_TeraPlayedBreakout_Multi_2": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1932,6 +1983,9 @@
     },
     "TERAMOD_TeraPlayedTenacity_Multi_0": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1941,6 +1995,9 @@
     },
     "TERAMOD_TeraPlayedTenacity_Multi_1": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1950,6 +2007,9 @@
     },
     "TERAMOD_TeraPlayedTenacity_Multi_2": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1959,6 +2019,9 @@
     },
     "TERAMOD_TeraPlayedPersistence_Multi_0": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1968,6 +2031,9 @@
     },
     "TERAMOD_TeraPlayedPersistence_Multi_1": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],
@@ -1977,6 +2043,9 @@
     },
     "TERAMOD_TeraPlayedPersistence_Multi_2": {
         "oncePerRun": true,
+        "oncePerCombatTags": [
+            "TeraRareCard"
+        ],
         "allPresent": [
             "Teratto.TeraMod.Tera"
         ],

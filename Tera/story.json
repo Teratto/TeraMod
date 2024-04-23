@@ -1,6 +1,1268 @@
 {
     "items": [
         {
+            "event_name": "TERAMOD_ChoiceCardRewardOfYourColorChoice_tera",
+            "indices": [
+                2
+            ],
+            "who": "comp",
+            "what": "Energy readings are back to normal.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_45",
+            "indices": [
+                1
+            ],
+            "who": "comp",
+            "what": "Alright, I won't.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_55",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "It's time to reset.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_8",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "Tera. Why.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_8",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "I don't think male birds can lay-",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_8",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "These eggs are getting out of control.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                7
+            ],
+            "who": "comp",
+            "what": "Setting alarms for 5AM, got it.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                6
+            ],
+            "who": "comp",
+            "what": "Engaging autopilot mode.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_8",
+            "indices": [
+                1
+            ],
+            "who": "comp",
+            "what": "I'm changing all of your passwords now.",
+            "loop_tag": "grumpy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                7
+            ],
+            "who": "comp",
+            "what": "Please speak coherently.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_14",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "Tera. To the cockpit. Now.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_15",
+            "indices": [
+                0
+            ],
+            "who": "comp",
+            "what": "Sometimes, I wonder why we brought him on this ship.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_43",
+            "indices": [
+                1
+            ],
+            "who": "dizzy",
+            "what": "Probably.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_52",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Welp.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ManyTurns_Multi_12",
+            "indices": [
+                1,
+                2
+            ],
+            "who": "dizzy",
+            "what": "Do birds get sick from flying?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "I can't block all the taxes with shields!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Where did the egg come from?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "How did you boil an egg when we have no oven?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                2
+            ],
+            "who": "dizzy",
+            "what": "...Catches their prey, of course.",
+            "loop_tag": "explains",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                2
+            ],
+            "who": "dizzy",
+            "what": "So which flightless bird species are you?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_3",
+            "indices": [
+                1
+            ],
+            "who": "dizzy",
+            "what": "What can I say, I'm good at what I do.",
+            "loop_tag": "explains",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "dizzy",
+            "what": "Hey, watch what you're saying!",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                2
+            ],
+            "who": "dizzy",
+            "what": "Huh?",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "dizzy",
+            "what": "Hey, watch what you're saying!",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "dizzy",
+            "what": "Hey, watch what you're saying!",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Ah, the bird's hiding under the control panel again.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "dizzy",
+            "what": "Never seen a bird waddle that fast.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ArtifactTiderunner_Multi_11",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "drake",
+            "what": "It means you're a dweeb.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ArtifactTiderunner_Multi_12",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "drake",
+            "what": "How about a knuckle sandwich?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "This cockpit change seems cowardly.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_47",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "We're ALL going down, bird brain. ",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_51",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "This run is scuffed.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_JustHitGeneric_Multi_44",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "Nicer than you.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_JustHitGeneric_Multi_45",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "Too easy.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ManyTurns_Multi_12",
+            "indices": [
+                1,
+                3
+            ],
+            "who": "eunice",
+            "what": "But... you're a bird?",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_OverheatDrakesFault_Multi_11",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "What are you gonna do, tax me to death?",
+            "loop_tag": "sly",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_15",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "eunice",
+            "what": "...What?",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustHit_Multi_3",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "At least you did SOMETHING right.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_4",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "Whatever.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "...",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "...You did not.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "Tera, PLEASE stop hogging up our fridge.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                4
+            ],
+            "who": "eunice",
+            "what": "...How about two birds, one stone?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_4",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "I don't think that's a good moral lesson to teach me.",
+            "loop_tag": "sly",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "Whatever.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "I don't need your handouts.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "And this is why I steal money.",
+            "loop_tag": "sly",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                3
+            ],
+            "who": "eunice",
+            "what": "...How are you even alive.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_2",
+            "indices": [
+                1
+            ],
+            "who": "eunice",
+            "what": "You seriously need insult lessons.",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_17",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "eunice",
+            "what": "And you're worse than a tax collector. ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                5
+            ],
+            "who": "eunice",
+            "what": "I bet you don't even touch grass.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_32",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "eunice",
+            "what": "Speak for yourself.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "eunice",
+            "what": "Speak for yourself.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_8",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "He left his pilot seat again. Coward.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_9",
+            "indices": [
+                0
+            ],
+            "who": "eunice",
+            "what": "Chickening out, huh? ",
+            "loop_tag": "sly",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_46",
+            "indices": [
+                1
+            ],
+            "who": "goat",
+            "what": "You get used to it.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_50",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "About time to loop again.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ManyTurns_Multi_12",
+            "indices": [
+                1,
+                4
+            ],
+            "who": "goat",
+            "what": "Birds... hate... flying...",
+            "loop_tag": "writing",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "I don't think taxes are supposed to work like this.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "It smells like egg in here.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_4",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "I wonder if I can load eggs into my drones.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                3
+            ],
+            "who": "goat",
+            "what": "...Flies?",
+            "loop_tag": "shy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "goat",
+            "what": "Oh, so you're a flightless bird? Noted.",
+            "loop_tag": "writing",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_6",
+            "indices": [
+                1
+            ],
+            "who": "goat",
+            "what": "Thank... you?",
+            "loop_tag": "shy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_15",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "goat",
+            "what": "Was that directed at me?",
+            "loop_tag": "shy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                3
+            ],
+            "who": "goat",
+            "what": "I don't understand-",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "Aww, he did the head bob thing as he ran away.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "goat",
+            "what": "Tera, can you stop hiding underneath my drones?",
+            "loop_tag": "shy",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
+            "indices": [
+                1
+            ],
+            "who": "hacker",
+            "what": "Fight smarter, not harder.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_48",
+            "indices": [
+                1
+            ],
+            "who": "hacker",
+            "what": "That's illegal.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_54",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "It's over man.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Taxes suck.",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Woa. Egg.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_6",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Wonder if this is an easter egg?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                6
+            ],
+            "who": "hacker",
+            "what": "...I don't like worms in my code.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                7
+            ],
+            "who": "hacker",
+            "what": "Don't worry, CAT can steer on her own.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_7",
+            "indices": [
+                1
+            ],
+            "who": "hacker",
+            "what": "That would be fantastic.",
+            "loop_tag": "smile",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                4
+            ],
+            "who": "hacker",
+            "what": "Is this a secret code?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_10",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Tera, stop running by my monitors!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_11",
+            "indices": [
+                0
+            ],
+            "who": "hacker",
+            "what": "Huh. Didn't know birds can run that fast.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_44",
+            "indices": [
+                1
+            ],
+            "who": "peri",
+            "what": "Tera, breathe.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_LookOutMissile_Multi_4",
+            "indices": [
+                1
+            ],
+            "who": "peri",
+            "what": "Just shoot it down!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ManyTurns_Multi_12",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, take a break.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_PeriJustHit_Multi_7",
+            "indices": [
+                1
+            ],
+            "who": "peri",
+            "what": "No problem.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustHit_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Good job.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Nice one.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera! Taxes!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, where did you find that egg?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "We can't keep shooting eggs out of our cannons.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "...gets the worm.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "Where did you get your pilot's license?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_5",
+            "indices": [
+                1
+            ],
+            "who": "peri",
+            "what": "We both know that's not a good idea.",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "Tera! Language!",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "...What?",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "Tera! Language!",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
+            "indices": [
+                1,
+                0
+            ],
+            "who": "peri",
+            "what": "Tera! Language!",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_0",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, get back here!",
+            "loop_tag": "mad",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_1",
+            "indices": [
+                0
+            ],
+            "who": "peri",
+            "what": "Tera, please stop hiding.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_42",
+            "indices": [
+                1
+            ],
+            "who": "riggs",
+            "what": "Yeah, me neither. ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_ManyTurns_Multi_12",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "riggs",
+            "what": "I'll get the puke bag!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "I don't like paying my taxes.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_2",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Was that an... egg?",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Are eggs supposed to hurt?",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "riggs",
+            "what": "...I dunno, I usually sleep in.",
+            "loop_tag": "squint",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                5
+            ],
+            "who": "riggs",
+            "what": "I forged my pilot's license!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_39",
+            "indices": [
+                1
+            ],
+            "who": "riggs",
+            "what": "What addiction?",
+            "loop_tag": "bobaSlurp",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                1
+            ],
+            "who": "riggs",
+            "what": "Yeah, that makes sense.",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_3",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Ah! Tera knocked over my boba!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "riggs",
+            "what": "Why doesn't he like, fly away?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_49",
+            "indices": [
+                1
+            ],
+            "who": "shard",
+            "what": "No! We can do it! ",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_53",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Tera! Tax us outta here!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_3",
+            "indices": [
+                1
+            ],
+            "who": "shard",
+            "what": "You did the thing!",
+            "loop_tag": "paws",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Are taxes supposed to hurt?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "I want eggs for breakfast!",
+            "loop_tag": "paws",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_7",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "I'm egg-static!",
+            "loop_tag": "paws",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
+            "indices": [
+                1,
+                5
+            ],
+            "who": "shard",
+            "what": "...Makes me breakfast!",
+            "loop_tag": "paws",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_5",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Woah! Money is magic!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
+            "indices": [
+                1,
+                4
+            ],
+            "who": "shard",
+            "what": "It's okay! I can teach you!",
+            "loop_tag": "paws",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_4",
+            "indices": [
+                1
+            ],
+            "who": "shard",
+            "what": "Insult the bad guy, not me!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
+            "indices": [
+                1,
+                6
+            ],
+            "who": "shard",
+            "what": "Wow! Grass!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_12",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "Tera! You knocked over my crystals!",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
+            "event_name": "TERAMOD_TeraWentMissing_Multi_13",
+            "indices": [
+                0
+            ],
+            "who": "shard",
+            "what": "While you're gone, can you pick me up some snacks?",
+            "loop_tag": "",
+            "is_inserted": false
+        },
+        {
             "event_name": "AbandonedShipyard_Repaired",
             "indices": [
                 1,
@@ -175,17 +1437,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_ArtifactTiderunner_Multi_11",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "drake",
-            "what": "It means you're a dweeb.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_ArtifactTiderunner_Multi_12",
             "indices": [
                 0
@@ -193,37 +1444,6 @@
             "who": "tera",
             "what": "Squawk! Tera wants a cracker!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ArtifactTiderunner_Multi_12",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "drake",
-            "what": "How about a knuckle sandwich?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "This cockpit change seems cowardly.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ArtifactTridimensionalCockpit_Multi_9",
-            "indices": [
-                1
-            ],
-            "who": "hacker",
-            "what": "Fight smarter, not harder.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -305,16 +1525,6 @@
             "who": "tera",
             "what": "I don't want people in my head!",
             "loop_tag": "sad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ChoiceCardRewardOfYourColorChoice_tera",
-            "indices": [
-                2
-            ],
-            "who": "comp",
-            "what": "Energy readings are back to normal.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -402,16 +1612,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_42",
-            "indices": [
-                1
-            ],
-            "who": "riggs",
-            "what": "Yeah, me neither. ",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_43",
             "indices": [
                 0
@@ -419,16 +1619,6 @@
             "who": "tera",
             "what": "Is this where we reset?",
             "loop_tag": "nervous",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_43",
-            "indices": [
-                1
-            ],
-            "who": "dizzy",
-            "what": "Probably.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -442,16 +1632,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_44",
-            "indices": [
-                1
-            ],
-            "who": "peri",
-            "what": "Tera, breathe.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_45",
             "indices": [
                 0
@@ -459,16 +1639,6 @@
             "who": "tera",
             "what": "Please don't tell me we reset here...",
             "loop_tag": "nervous",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_45",
-            "indices": [
-                1
-            ],
-            "who": "comp",
-            "what": "Alright, I won't.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -482,16 +1652,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_46",
-            "indices": [
-                1
-            ],
-            "who": "goat",
-            "what": "You get used to it.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_47",
             "indices": [
                 0
@@ -499,16 +1659,6 @@
             "who": "tera",
             "what": "If I die, Drake's going down with me!",
             "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_47",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "We're ALL going down, bird brain. ",
-            "loop_tag": "mad",
             "is_inserted": false
         },
         {
@@ -522,16 +1672,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_48",
-            "indices": [
-                1
-            ],
-            "who": "hacker",
-            "what": "That's illegal.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_49",
             "indices": [
                 0
@@ -539,26 +1679,6 @@
             "who": "tera",
             "what": "We're gonna explode!",
             "loop_tag": "sad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_49",
-            "indices": [
-                1
-            ],
-            "who": "shard",
-            "what": "No! We can do it! ",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_50",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "About time to loop again.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -574,16 +1694,6 @@
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_51",
             "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "This run is scuffed.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_51",
-            "indices": [
                 1
             ],
             "who": "tera",
@@ -594,30 +1704,10 @@
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_52",
             "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "Welp.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_52",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Darn.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_53",
-            "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "Tera! Tax us outta here!",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -634,30 +1724,10 @@
         {
             "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_54",
             "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "It's over man.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_54",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Yeah, I can feel it.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_Duo_AboutToDieAndLoop_Multi_55",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "It's time to reset.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -773,26 +1843,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_JustHitGeneric_Multi_44",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "Nicer than you.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_JustHitGeneric_Multi_45",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "Too easy.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_JustHitGeneric_Multi_45",
             "indices": [
                 1
@@ -823,16 +1873,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_LookOutMissile_Multi_4",
-            "indices": [
-                1
-            ],
-            "who": "peri",
-            "what": "Just shoot it down!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_LoseCharacterCard_tera",
             "indices": [
                 0
@@ -850,61 +1890,6 @@
             "who": "tera",
             "what": "If we keep fighting, I might get airsickness...",
             "loop_tag": "nervous",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ManyTurns_Multi_12",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "Tera, take a break.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ManyTurns_Multi_12",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "riggs",
-            "what": "I'll get the puke bag!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ManyTurns_Multi_12",
-            "indices": [
-                1,
-                2
-            ],
-            "who": "dizzy",
-            "what": "Do birds get sick from flying?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ManyTurns_Multi_12",
-            "indices": [
-                1,
-                3
-            ],
-            "who": "eunice",
-            "what": "But... you're a bird?",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_ManyTurns_Multi_12",
-            "indices": [
-                1,
-                4
-            ],
-            "who": "goat",
-            "what": "Birds... hate... flying...",
-            "loop_tag": "writing",
             "is_inserted": false
         },
         {
@@ -970,16 +1955,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_OverheatDrakesFault_Multi_11",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "What are you gonna do, tax me to death?",
-            "loop_tag": "sly",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_OverheatGeneric_Multi_10",
             "indices": [
                 0
@@ -997,16 +1972,6 @@
             "who": "tera",
             "what": "Woa, good job Peri!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_PeriJustHit_Multi_7",
-            "indices": [
-                1
-            ],
-            "who": "peri",
-            "what": "No problem.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1148,17 +2113,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_ThatsALotOfDamageToUs_Multi_15",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "eunice",
-            "what": "...What?",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TheyHaveAutoDodgeLeft_Multi_8",
             "indices": [
                 0
@@ -1285,7 +2239,7 @@
                 0
             ],
             "who": "tera",
-            "what": "I don't think we were supposed to miss.",
+            "what": "I don't think we're supposed to miss.",
             "loop_tag": "nervous",
             "is_inserted": false
         },
@@ -1322,16 +2276,6 @@
         {
             "event_name": "TERAMOD_TeraJustHit_Multi_2",
             "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Good job.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustHit_Multi_2",
-            "indices": [
                 1
             ],
             "who": "tera",
@@ -1347,16 +2291,6 @@
             "who": "tera",
             "what": "Woa, I hit them!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustHit_Multi_3",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "At least you did SOMETHING right.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1392,16 +2326,6 @@
         {
             "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_2",
             "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Nice one.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_2",
-            "indices": [
                 1
             ],
             "who": "tera",
@@ -1420,16 +2344,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_3",
-            "indices": [
-                1
-            ],
-            "who": "shard",
-            "what": "You did the thing!",
-            "loop_tag": "paws",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_4",
             "indices": [
                 0
@@ -1437,16 +2351,6 @@
             "who": "tera",
             "what": "Did you see that, Drake? That's how you get it done!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustHitAndDidBigDamage_Multi_4",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "Whatever.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1612,31 +2516,11 @@
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_1",
             "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Tera! Taxes!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_1",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Sorry, sorry!",
             "loop_tag": "sad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_2",
-            "indices": [
-                0
-            ],
-            "who": "riggs",
-            "what": "I don't like paying my taxes.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1652,31 +2536,11 @@
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_3",
             "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "I can't block all the taxes with shields!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_3",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "I'll try to pay off the debt!",
             "loop_tag": "nervous",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_4",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "...",
-            "loop_tag": "mad",
             "is_inserted": false
         },
         {
@@ -1692,31 +2556,11 @@
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_5",
             "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "Are taxes supposed to hurt?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_5",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "I don't mean for them to!",
             "loop_tag": "sad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_6",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "I don't think taxes are supposed to work like this.",
-            "loop_tag": "squint",
             "is_inserted": false
         },
         {
@@ -1732,31 +2576,11 @@
         {
             "event_name": "TERAMOD_TeraJustTaxedUs_Multi_7",
             "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "Taxes suck.",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_7",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Sorry!",
             "loop_tag": "nervous",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustTaxedUs_Multi_8",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "Tera. Why.",
-            "loop_tag": "squint",
             "is_inserted": false
         },
         {
@@ -1782,16 +2606,6 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_1",
             "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Tera, where did you find that egg?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_1",
-            "indices": [
                 1
             ],
             "who": "tera",
@@ -1802,30 +2616,10 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_2",
             "indices": [
-                0
-            ],
-            "who": "riggs",
-            "what": "Was that an... egg?",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_2",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Maybe.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_3",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "It smells like egg in here.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1842,30 +2636,10 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_4",
             "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "...You did not.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_4",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "I did.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_5",
-            "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "Where did the egg come from?",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1882,16 +2656,6 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_6",
             "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "Woa. Egg.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_6",
-            "indices": [
                 1
             ],
             "who": "tera",
@@ -1902,31 +2666,11 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_7",
             "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "I want eggs for breakfast!",
-            "loop_tag": "paws",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_7",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Books! No!",
             "loop_tag": "scared",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAnEgg_Multi_8",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "I don't think male birds can lay-",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -1952,30 +2696,10 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_1",
             "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "We can't keep shooting eggs out of our cannons.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_1",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "It's a valid tactical maneuver!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_2",
-            "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "How did you boil an egg when we have no oven?",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -1992,30 +2716,10 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_3",
             "indices": [
-                0
-            ],
-            "who": "riggs",
-            "what": "Are eggs supposed to hurt?",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_3",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "Only when you throw them really, really hard.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_4",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "I wonder if I can load eggs into my drones.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -2032,31 +2736,11 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_5",
             "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "Tera, PLEASE stop hogging up our fridge.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_5",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "But my eggs need a place to sleep!",
             "loop_tag": "sad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_6",
-            "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "Wonder if this is an easter egg?",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -2072,31 +2756,11 @@
         {
             "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_7",
             "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "I'm egg-static!",
-            "loop_tag": "paws",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_7",
-            "indices": [
                 1
             ],
             "who": "tera",
             "what": "And you're egg-ceptional!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustPlayedAHardBoiledEgg_Multi_8",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "These eggs are getting out of control.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -2207,94 +2871,6 @@
             "who": "tera",
             "what": "You know as they say! The early bird...",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "...gets the worm.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "riggs",
-            "what": "...I dunno, I usually sleep in.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                2
-            ],
-            "who": "dizzy",
-            "what": "...Catches their prey, of course.",
-            "loop_tag": "explains",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                3
-            ],
-            "who": "goat",
-            "what": "...Flies?",
-            "loop_tag": "shy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                4
-            ],
-            "who": "eunice",
-            "what": "...How about two birds, one stone?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                5
-            ],
-            "who": "shard",
-            "what": "...Makes me breakfast!",
-            "loop_tag": "paws",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                6
-            ],
-            "who": "hacker",
-            "what": "...I don't like worms in my code.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraGotAWorm_Multi_3",
-            "indices": [
-                1,
-                7
-            ],
-            "who": "comp",
-            "what": "Setting alarms for 5AM, got it.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -2418,26 +2994,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_4",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "I don't think thast's a good moral lesson to teach me.",
-            "loop_tag": "sly",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_5",
-            "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "Woah! Money is magic!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraJustBailedUsOut_Multi_5",
             "indices": [
                 1
@@ -2454,26 +3010,6 @@
             ],
             "who": "tera",
             "what": "You're welcome, Drake.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_0",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "Whatever.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_1",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "I don't need your handouts.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -2495,16 +3031,6 @@
             "who": "tera",
             "what": "The power of money strikes again!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustBailedUsOutOfHeat_Multi_2",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "And this is why I steal money.",
-            "loop_tag": "sly",
             "is_inserted": false
         },
         {
@@ -2534,94 +3060,6 @@
             ],
             "who": "tera",
             "what": "Glad I got flight training! I didn't know how to fly a ship before.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "Where did you get your pilot's license?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "goat",
-            "what": "Oh, so you're a flightless bird? Noted.",
-            "loop_tag": "writing",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                2
-            ],
-            "who": "dizzy",
-            "what": "So which flightless bird species are you?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                3
-            ],
-            "who": "eunice",
-            "what": "...How are you even alive.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                4
-            ],
-            "who": "shard",
-            "what": "It's okay! I can teach you!",
-            "loop_tag": "paws",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                5
-            ],
-            "who": "riggs",
-            "what": "I forged my pilot's license!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                6
-            ],
-            "who": "comp",
-            "what": "Engaging autopilot mode.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraJustGotFlightTraining_Multi_2",
-            "indices": [
-                1,
-                7
-            ],
-            "who": "hacker",
-            "what": "Don't worry, CAT can steer on her own.",
             "loop_tag": "",
             "is_inserted": false
         },
@@ -2806,16 +3244,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_2",
-            "indices": [
-                1
-            ],
-            "who": "eunice",
-            "what": "You seriously need insult lessons.",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_3",
             "indices": [
                 0
@@ -2823,16 +3251,6 @@
             "who": "tera",
             "what": "You're like Dizzy if they didn't explode stuff!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_3",
-            "indices": [
-                1
-            ],
-            "who": "dizzy",
-            "what": "What can I say, I'm good at what I do.",
-            "loop_tag": "explains",
             "is_inserted": false
         },
         {
@@ -2846,16 +3264,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_4",
-            "indices": [
-                1
-            ],
-            "who": "shard",
-            "what": "Insult the bad guy, not me!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_5",
             "indices": [
                 0
@@ -2863,16 +3271,6 @@
             "who": "tera",
             "what": "You're just like Peri when she doesn't let me eat chicken nuggets!",
             "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_5",
-            "indices": [
-                1
-            ],
-            "who": "peri",
-            "what": "We both know that's not a good idea.",
-            "loop_tag": "mad",
             "is_inserted": false
         },
         {
@@ -2886,16 +3284,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_6",
-            "indices": [
-                1
-            ],
-            "who": "goat",
-            "what": "Thank... you?",
-            "loop_tag": "shy",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_7",
             "indices": [
                 0
@@ -2903,16 +3291,6 @@
             "who": "tera",
             "what": "You and Max would both like to watch cute cat videos online!",
             "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_7",
-            "indices": [
-                1
-            ],
-            "who": "hacker",
-            "what": "That would be fantastic.",
-            "loop_tag": "smile",
             "is_inserted": false
         },
         {
@@ -2926,16 +3304,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_8",
-            "indices": [
-                1
-            ],
-            "who": "comp",
-            "what": "I'm changing all of your passwords now.",
-            "loop_tag": "grumpy",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_39",
             "indices": [
                 0
@@ -2943,16 +3311,6 @@
             "who": "tera",
             "what": "You remind me of Riggs' boba addiction!",
             "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_39",
-            "indices": [
-                1
-            ],
-            "who": "riggs",
-            "what": "What addiction?",
-            "loop_tag": "bobaSlurp",
             "is_inserted": false
         },
         {
@@ -2996,28 +3354,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "Tera! Language!",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_12",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "dizzy",
-            "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_13",
             "indices": [
                 0
@@ -3048,17 +3384,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_15",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "goat",
-            "what": "Was that directed at me?",
-            "loop_tag": "shy",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_16",
             "indices": [
                 0
@@ -3076,17 +3401,6 @@
             "who": "tera",
             "what": "You're worse than a space pirate!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_17",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "eunice",
-            "what": "And you're worse than a tax collector. ",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -3127,94 +3441,6 @@
             "who": "tera",
             "what": "You look like grumpy grass on a wind farm!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "...What?",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "riggs",
-            "what": "Yeah, that makes sense.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                2
-            ],
-            "who": "dizzy",
-            "what": "Huh?",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                3
-            ],
-            "who": "goat",
-            "what": "I don't understand-",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                4
-            ],
-            "who": "hacker",
-            "what": "Is this a secret code?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                5
-            ],
-            "who": "eunice",
-            "what": "I bet you don't even touch grass.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                6
-            ],
-            "who": "shard",
-            "what": "Wow! Grass!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_21",
-            "indices": [
-                1,
-                7
-            ],
-            "who": "comp",
-            "what": "Please speak coherently.",
-            "loop_tag": "squint",
             "is_inserted": false
         },
         {
@@ -3328,17 +3554,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_32",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "eunice",
-            "what": "Speak for yourself.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_33",
             "indices": [
                 0
@@ -3359,28 +3574,6 @@
             "is_inserted": false
         },
         {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "Tera! Language!",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_34",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "dizzy",
-            "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
             "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
             "indices": [
                 0
@@ -3388,17 +3581,6 @@
             "who": "tera",
             "what": "Your nose looks funny!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_35",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "eunice",
-            "what": "Speak for yourself.",
-            "loop_tag": "",
             "is_inserted": false
         },
         {
@@ -3429,28 +3611,6 @@
             "who": "tera",
             "what": "Consider your butt about to be kicked!",
             "loop_tag": "happy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
-            "indices": [
-                1,
-                0
-            ],
-            "who": "peri",
-            "what": "Tera! Language!",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraPlayedTaunt_Multi_37",
-            "indices": [
-                1,
-                1
-            ],
-            "who": "dizzy",
-            "what": "Hey, watch what you're saying!",
-            "loop_tag": "squint",
             "is_inserted": false
         },
         {
@@ -3580,166 +3740,6 @@
             ],
             "who": "tera",
             "what": "Uh... Your mom???",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_0",
-            "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Tera, get back here!",
-            "loop_tag": "mad",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_1",
-            "indices": [
-                0
-            ],
-            "who": "peri",
-            "what": "Tera, please stop hiding.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_2",
-            "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "Ah, the bird's hiding under the control panel again.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_3",
-            "indices": [
-                0
-            ],
-            "who": "riggs",
-            "what": "Ah! Tera knocked over my boba!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_4",
-            "indices": [
-                0
-            ],
-            "who": "dizzy",
-            "what": "Never seen a bird waddle that fast.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_5",
-            "indices": [
-                0
-            ],
-            "who": "riggs",
-            "what": "Why doesn't he like, fly away?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_6",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "Aww, he did the head bob thing as he ran away.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_7",
-            "indices": [
-                0
-            ],
-            "who": "goat",
-            "what": "Tera, can you stop hiding underneath my drones?",
-            "loop_tag": "shy",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_8",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "He left his pilot seat again. Coward.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_9",
-            "indices": [
-                0
-            ],
-            "who": "eunice",
-            "what": "Chickening out, huh? ",
-            "loop_tag": "sly",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_10",
-            "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "Tera, stop running my by monitors!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_11",
-            "indices": [
-                0
-            ],
-            "who": "hacker",
-            "what": "Huh. Didn't know birds can run that fast.",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_12",
-            "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "Tera! You knocked over my crystals!",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_13",
-            "indices": [
-                0
-            ],
-            "who": "shard",
-            "what": "While you're gone, can you pick me up some snacks?",
-            "loop_tag": "",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_14",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "Tera. To the cockpit. Now.",
-            "loop_tag": "squint",
-            "is_inserted": false
-        },
-        {
-            "event_name": "TERAMOD_TeraWentMissing_Multi_15",
-            "indices": [
-                0
-            ],
-            "who": "comp",
-            "what": "Sometimes, I wonder why we brought him on this ship.",
             "loop_tag": "",
             "is_inserted": false
         }

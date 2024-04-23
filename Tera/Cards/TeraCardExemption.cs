@@ -22,7 +22,7 @@
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = GetTaxAmnt(s, c),
+                        statusAmount = GetTaxAmnt(s, c) ,
                         targetPlayer = true,
                         mode = AStatusMode.Add 
                     });
@@ -38,7 +38,7 @@
                     list.Add(new AStatus()
                     {
                         status = Status.shield,
-                        statusAmount = GetTaxAmnt(s, c),
+                        statusAmount = GetTaxAmnt(s, c) - 1,
                         targetPlayer = true,
                         mode = AStatusMode.Add
                     });
@@ -63,7 +63,7 @@
             string desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
             if(upgrade == Upgrade.A)
             {
-                desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>.";
+                desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, minus one.";
 
             }
             else if(upgrade == Upgrade.B)
