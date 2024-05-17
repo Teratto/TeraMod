@@ -18,8 +18,8 @@
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.energyLessNextTurn,
-                        statusAmount = 1,
+                     status = Status.drawLessNextTurn,
+                     statusAmount = 1,
                         targetPlayer = true
                     });
                     break;
@@ -32,7 +32,7 @@
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.energyLessNextTurn,
+                        status = Status.drawLessNextTurn,
                         statusAmount = 1,
                         targetPlayer = true
                     });
@@ -41,13 +41,13 @@
                 case Upgrade.B:
                     list.Add(new AHeal()
                     {
-                        healAmount = 4,
+                        healAmount = 5,
                         targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
-                        status = Status.energyLessNextTurn,
-                        statusAmount = 2,
+                        status = Status.drawLessNextTurn,
+                        statusAmount = 50,
                         targetPlayer = true
                     });
                     break;

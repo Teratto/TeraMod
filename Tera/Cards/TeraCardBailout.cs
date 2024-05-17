@@ -36,12 +36,6 @@
                         statusAmount = 1,
                         targetPlayer = true,
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Bailout,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
 
                     break;
             }

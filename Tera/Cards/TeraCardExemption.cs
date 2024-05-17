@@ -21,17 +21,18 @@
                 case Upgrade.None:
                     list.Add(new AStatus()
                     {
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = -1,
+                        targetPlayer = false
+                    });
+                    list.Add(new AStatus()
+                    {
                         status = Status.shield,
                         statusAmount = GetTaxAmnt(s, c) ,
                         targetPlayer = true,
                         mode = AStatusMode.Add 
                     });
-                    list.Add(new AStatus()
-                    {
-                        status = TeraModStatuses.Taxation,
-                        statusAmount = -1,
-                        targetPlayer = false
-                    });
+                   
                     break;
 
                 case Upgrade.A:
@@ -60,7 +61,7 @@
 
         public override CardData GetData(State state)
         {
-            string desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, then <c=downside>remove one tax.</c>";
+            string desc = "<c=downside>Remove one tax</c>, then gain <c=status>shield</c> equal to enemy's <c=status>tax</c>.";
             if(upgrade == Upgrade.A)
             {
                 desc = "Gain <c=status>shield</c> equal to enemy's <c=status>tax</c>, minus one.";
