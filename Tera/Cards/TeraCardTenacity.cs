@@ -12,16 +12,6 @@
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAddCard()
-                    {
-                        card = new TeraCardTenacity()
-                        {
-                            isTemporary = true
-                        },
-                        destination = CardDestination.Hand,
-                        amount = 1,
-                        dialogueSelector = ".teraTenacitySpeak"
-                    });
                     list.Add(new ADrawCard()
                     {
                         count = 3
@@ -33,17 +23,6 @@
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AAddCard()
-                    {
-                        card = new TeraCardTenacity()
-                        {
-                            upgrade = Upgrade.A,
-                            isTemporary = true
-                        },
-                        destination = CardDestination.Hand,
-                        amount = 1,
-                        dialogueSelector = ".teraTenacitySpeak"
-                    });
                     list.Add(new ADiscard()
                     {
                         count = 3
@@ -79,8 +58,7 @@
             {
                 temporary = isTemporary,
                 cost = cost,
-                exhaust = upgrade != Upgrade.B,
-                infinite = upgrade == Upgrade.B
+                infinite = true
             };
         }
         public override string Name()

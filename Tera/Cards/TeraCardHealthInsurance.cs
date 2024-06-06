@@ -47,7 +47,7 @@
                     list.Add(new AStatus()
                     {
                         status = Status.drawLessNextTurn,
-                        statusAmount = 50,
+                        statusAmount =999,
                         targetPlayer = true
                     });
                     break;

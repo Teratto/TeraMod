@@ -1,7 +1,7 @@
 ﻿namespace Tera.Cards
 {
 
-    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { }, dontOffer = true)]
+    [CardMeta(deck = Deck.test, rarity = Rarity.common, upgradesTo = new Upgrade[] { Upgrade.A, Upgrade.B }, dontOffer = true)]
     public class TeraCardPayment : Card
     {
         public override List<CardAction> GetActions(State s, Combat c)
@@ -16,6 +16,26 @@
                       status = TeraModStatuses.Bailout,
                       statusAmount = 1,
                       targetPlayer = true,
+                    });
+                    break;
+                case Upgrade.A:
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 2,
+                        targetPlayer = true,
+                    });
+                    break;
+                case Upgrade.B:
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 1,
+                        targetPlayer = true,
+                    });
+                    list.Add(new ADrawCard()
+                    {
+                        count = 2,
                     });
                     break;
             }

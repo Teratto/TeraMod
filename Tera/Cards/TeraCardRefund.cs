@@ -33,25 +33,19 @@
             switch (this.upgrade)
             {
                 case Upgrade.B:
-                    list.Add(new AStatus()
-                    {
-                        status = Status.tempShield,
-                        statusAmount = 1,
-                        targetPlayer = true
-                    });
                     if (enemyTax >= requiredTax)
                     {
                         list.Add(new AStatus()
                         {
                             status = Status.evade,
-                            statusAmount = 1,
+                            statusAmount = 2,
                             targetPlayer = true
 
                         });
                         list.Add(new AStatus()
                         {
                             status = Status.tempShield,
-                            statusAmount = 1,
+                            statusAmount = 2,
                             targetPlayer = true
                         });
 
@@ -118,7 +112,7 @@
             }
             else if (upgrade == Upgrade.B)
             {
-                desc = "Gain 1 <c=status>temp shield</c>. <c=downside>Spend 1 enemy tax</c> to gain 1 <c=status>evade</c> and 1 <c=status>temp shield</c>.";
+                desc = "<c=downside>Spend 1 enemy tax</c> to gain 2 <c=status>evade</c> and 2 <c=status>temp shield</c>.";
 
             }
             int requiredTax = GetRequiredTax();
@@ -129,12 +123,17 @@
             {
                 currentTax = combat.otherShip.Get(TeraModStatuses.Taxation);
             }
+            int cost = 0;
+            if (upgrade == Upgrade.B)
+            {
+                cost = 1;
+            }
 
-            
             return new CardData()
             {
+
                 description = desc,
-                cost = 0,
+                cost = cost,
             };
         }
 

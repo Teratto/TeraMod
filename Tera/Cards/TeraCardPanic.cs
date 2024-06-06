@@ -12,7 +12,7 @@
                 case Upgrade.None:
                     list.Add(new ADrawCard()
                     {
-                        count = 4
+                        count = 5
                     });
                     list.Add(new AStatus()
                     {
@@ -25,7 +25,7 @@
            case Upgrade.A:
                     list.Add(new ADrawCard()
                     {
-                        count = 6
+                        count = 7
                     });
                     list.Add(new AStatus()
                     {
@@ -39,12 +39,12 @@
                 case Upgrade.B:
                     list.Add(new ADrawCard()
                     {
-                        count = 9
+                        count = 10
                     });
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.MissingTera,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = true,
                         //dialogueSelector = ".TeraLeftLOL"
                     });

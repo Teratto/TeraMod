@@ -32,9 +32,9 @@
                 case Upgrade.B:
                     list.Add(new AStatus()
                     {
-                        status = Status.energyLessNextTurn,
+                        status = TeraModStatuses.Bailout,
                         statusAmount = 1,
-                        targetPlayer = true,
+                        targetPlayer = true
                     });
 
                     break;
