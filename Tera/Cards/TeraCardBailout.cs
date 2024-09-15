@@ -36,6 +36,12 @@
                         statusAmount = 1,
                         targetPlayer = true
                     });
+                    list.Add(new AStatus()
+                    {
+                        status = TeraModStatuses.Taxation,
+                        statusAmount = 2,
+                        targetPlayer = false
+                    });
 
                     break;
             }
@@ -53,7 +59,7 @@
             return new CardData()
             {
                 cost = cost,
-                exhaust = upgrade != Upgrade.B
+                exhaust = true
             };
         }
         public override string Name()

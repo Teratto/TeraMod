@@ -31,10 +31,11 @@ namespace Tera.Cards
             switch (this.upgrade)
             {
                 case Upgrade.None:
-                    list.Add(new AAttack()
+                    list.Add(new AStatus ()
                     {
-                        damage = GetTaxAmnt(s, c),
-                        xHint = 1
+                        status = TeraModStatuses.Bailout,   
+                        statusAmount = 1, 
+                        targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
@@ -47,26 +48,28 @@ namespace Tera.Cards
                     break;
 
                 case Upgrade.A:
-                    list.Add(new AAttack()
+                    list.Add(new AStatus()
                     {
-                        damage = GetTaxAmnt(s, c),
-                        xHint = 1
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 2,
+                        targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
                         status = TeraModStatuses.Taxation,
                         mode = AStatusMode.Set,
-                        statusAmount = 2,
+                        statusAmount = 1,
                         targetPlayer = false
 
                     });
                     break;
 
                 case Upgrade.B:
-                    list.Add(new AAttack()
+                    list.Add(new AStatus()
                     {
-                        damage = GetTaxAmnt(s, c),
-                        xHint = 1
+                        status = TeraModStatuses.Bailout,
+                        statusAmount = 1,
+                        targetPlayer = true
                     });
                     list.Add(new AStatus()
                     {
@@ -87,9 +90,7 @@ namespace Tera.Cards
           
             return new CardData()
             {
-                exhaust = upgrade == Upgrade.B,
                 cost = 1,
-                recycle = upgrade == Upgrade.B ? false : true,
             };
         }
 
