@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 using HarmonyLib;
 using Shockah.Kokoro;
 using Tera.StatusPatches;
+using System.IO;
+using System;
 
 namespace Tera
 {
@@ -589,7 +591,7 @@ namespace Tera
                 // We aren't localized ;-;
                 return;
             }
-            
+
             __result.TryAdd($"char.{TeraDeck.Id}.desc.missing", "<c=tera>TERA..?</c>\nTera is missing.");
         }
         

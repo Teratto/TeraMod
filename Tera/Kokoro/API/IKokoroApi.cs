@@ -1,5 +1,7 @@
 ﻿namespace Shockah.Kokoro;
 
+using System;
+
 public partial interface IKokoroApi
 {
 	IActionApi Actions { get; }

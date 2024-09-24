@@ -1,5 +1,7 @@
-﻿using HarmonyLib;
+﻿global using System.Collections.Generic;
+using HarmonyLib;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace Tera
 {
